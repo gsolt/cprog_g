@@ -134,6 +134,8 @@ ST[0].nSiteList[27]= 3019;  ST[0].nLinkList[27]	=RADIO6_2;	/* RADIO6_2	 	60-41		
 ST[0].nSiteList[28]= 3018;  ST[0].nLinkList[28]	=RADIO6_2;	/* RADIO6_2	 	60-43						CSEP */
 ST[0].nSiteList[29]= 3020;  ST[0].nLinkList[29]	=RADIO6_2;	/* RADIO6_2	 	60-45						CSEP */
 ST[0].nSiteList[30]= 9005;  ST[0].nLinkList[30]	=RADIO5_2;	/* RADIO5_1	 	Komárom, Alumetál			IGM  */
+ST[0].nSiteList[31]= 9006;  ST[0].nLinkList[31]	=RADIO5_2;	/* RADIO5_2	 	Tata, bioerûmû				IGM  */
+ST[0].nSiteList[32]= 9007;  ST[0].nLinkList[32]	=RADIO6_1;	/* RADIO6_1	 	Szombathely,vársháza		SZOM  */
 
 
 
@@ -231,7 +233,7 @@ ST[0].sRAD_K1[0].nIndx[8]=24;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 8; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 9; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -240,13 +242,14 @@ ST[0].sRAD_K2[0].nIndx[4]=26;
 ST[0].sRAD_K2[0].nIndx[5]=27;
 ST[0].sRAD_K2[0].nIndx[6]=28;
 ST[0].sRAD_K2[0].nIndx[7]=29;
+ST[0].sRAD_K2[0].nIndx[8]=32;
 
 
 
 
 
 /* K3 : SZVAR, ORNY, IG, MOR */
-ST[0].sRAD_K3[0].nRtuNumRad = 14; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 15; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -261,6 +264,7 @@ ST[0].sRAD_K3[0].nIndx[10]=10;
 ST[0].sRAD_K3[0].nIndx[11]=18;
 ST[0].sRAD_K3[0].nIndx[12]=19;
 ST[0].sRAD_K3[0].nIndx[13]=30;
+ST[0].sRAD_K3[0].nIndx[14]=31;
 
 
 /*RST[0].sLINK RTUk indexei*/
