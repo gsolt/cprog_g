@@ -112,6 +112,10 @@ sT[0].sCP[0].sCPR[27].nDCStart = 99;    sT[0].sCP[0].sCPR[27].nDCNum = 1;    sT[
 sT[0].sCP[0].sCPR[28].nDCStart =102;    sT[0].sCP[0].sCPR[28].nDCNum = 1;    sT[0].sCP[0].sCPR[28].nSCStart =103;    sT[0].sCP[0].sCPR[28].nAckStart =104;    sT[0].sCP[0].sCPR[28].nAckNum =1;   sT[0].sCP[0].sCPR[28].nSPOffsetCS = 543;  sT[0].sCP[0].sCPR[28].nSPOffsetLek = 544;
 sT[0].sCP[0].sCPR[29].nDCStart =105;    sT[0].sCP[0].sCPR[29].nDCNum = 1;    sT[0].sCP[0].sCPR[29].nSCStart =106;    sT[0].sCP[0].sCPR[29].nAckStart =107;    sT[0].sCP[0].sCPR[29].nAckNum =1;   sT[0].sCP[0].sCPR[29].nSPOffsetCS = 559;  sT[0].sCP[0].sCPR[29].nSPOffsetLek = 560;
 sT[0].sCP[0].sCPR[30].nDCStart =108;    sT[0].sCP[0].sCPR[30].nDCNum = 4;    sT[0].sCP[0].sCPR[30].nSCStart =112;    sT[0].sCP[0].sCPR[30].nAckStart = 0;	  sT[0].sCP[0].sCPR[30].nAckNum =0;   sT[0].sCP[0].sCPR[30].nSPOffsetCS = 600;  sT[0].sCP[0].sCPR[30].nSPOffsetLek = 601;
+sT[0].sCP[0].sCPR[31].nDCStart =113;    sT[0].sCP[0].sCPR[31].nDCNum = 4;    sT[0].sCP[0].sCPR[31].nSCStart =117;    sT[0].sCP[0].sCPR[31].nAckStart = 0;	  sT[0].sCP[0].sCPR[31].nAckNum =0;   sT[0].sCP[0].sCPR[31].nSPOffsetCS = 637;  sT[0].sCP[0].sCPR[31].nSPOffsetLek = 638;
+sT[0].sCP[0].sCPR[32].nDCStart =118;    sT[0].sCP[0].sCPR[32].nDCNum = 4;    sT[0].sCP[0].sCPR[32].nSCStart =122;    sT[0].sCP[0].sCPR[32].nAckStart = 0;	  sT[0].sCP[0].sCPR[32].nAckNum =0;   sT[0].sCP[0].sCPR[32].nSPOffsetCS = 674;  sT[0].sCP[0].sCPR[32].nSPOffsetLek = 675;
+sT[0].sCP[0].sCPR[33].nDCStart =123;    sT[0].sCP[0].sCPR[33].nDCNum = 4;    sT[0].sCP[0].sCPR[33].nSCStart =127;    sT[0].sCP[0].sCPR[33].nAckStart = 0;	  sT[0].sCP[0].sCPR[33].nAckNum =0;   sT[0].sCP[0].sCPR[33].nSPOffsetCS = 711;  sT[0].sCP[0].sCPR[33].nSPOffsetLek = 712;
+sT[0].sCP[0].sCPR[34].nDCStart =128;    sT[0].sCP[0].sCPR[34].nDCNum = 4;    sT[0].sCP[0].sCPR[34].nSCStart =132;    sT[0].sCP[0].sCPR[34].nAckStart = 0;	  sT[0].sCP[0].sCPR[34].nAckNum =0;   sT[0].sCP[0].sCPR[34].nSPOffsetCS = 748;  sT[0].sCP[0].sCPR[34].nSPOffsetLek = 749;
 
 
 
@@ -377,6 +381,58 @@ sT[0].sTI[30].nType = TYP_TAL;
 		sT[0].sTAL[30].nIEC_NM				= 122;
 		sT[0].sTAL[30].nNMNum		  		= 4;
 		sT[0].sTAL[30].nKommStatusNum		= 4;
+
+/* Tata, boierõmû -----------------------------------------------------------*/
+sT[0].sTI[31].nType = TYP_TAL;
+
+		sT[0].sTAL[31].nIEC_SP       		= 602;
+		sT[0].sTAL[31].nIEC_OsszevontHiba	= 634;
+		sT[0].sTAL[31].nIEC_MT_KommHiba		= 635;
+		sT[0].sTAL[31].nIEC_DP       		= 82;
+		sT[0].sTAL[31].nIEC_DP_FSZ1  		= 86;
+		sT[0].sTAL[31].nIEC_NM				= 126;
+		sT[0].sTAL[31].nNMNum		  		= 11;
+		sT[0].sTAL[31].nKommStatusNum		= 2;
+
+		
+/* Szombathely, városháza -----------------------------------------------------------*/
+sT[0].sTI[32].nType = TYP_TAL;
+
+		sT[0].sTAL[32].nIEC_SP       		= 639;
+		sT[0].sTAL[32].nIEC_OsszevontHiba	= 671;
+		sT[0].sTAL[32].nIEC_MT_KommHiba		= 672;
+		sT[0].sTAL[32].nIEC_DP       		= 90;
+		sT[0].sTAL[32].nIEC_DP_FSZ1  		= 94;
+		sT[0].sTAL[32].nIEC_NM				= 137;
+		sT[0].sTAL[32].nNMNum		  		= 4;
+		sT[0].sTAL[32].nKommStatusNum		= 2;
+		sT[0].sTAL[32].nIEC_DP_2BIT1 		= 98;
+		sT[0].sTAL[32].nIEC_DP_2BIT_KINT1	= 912;
+		sT[0].sTAL[32].nIEC_DP_2BIT_BENT1	= 913;
+
+/* Fehérvárcsurgó, naperõmû  -----------------------------------------------------------*/
+sT[0].sTI[33].nType = TYP_TAL;
+
+		sT[0].sTAL[33].nIEC_SP       		= 676;
+		sT[0].sTAL[33].nIEC_OsszevontHiba	= 708;
+		sT[0].sTAL[33].nIEC_MT_KommHiba		= 709;
+		sT[0].sTAL[33].nIEC_DP       		= 99;
+		sT[0].sTAL[33].nIEC_DP_FSZ1  		= 103;
+		sT[0].sTAL[33].nIEC_NM				= 141;
+		sT[0].sTAL[33].nNMNum		  		= 11;
+		sT[0].sTAL[33].nKommStatusNum		= 2;
+
+/* Tata, napelempark  -----------------------------------------------------------*/
+sT[0].sTI[34].nType = TYP_TAL;
+
+		sT[0].sTAL[34].nIEC_SP       		= 719;
+		sT[0].sTAL[34].nIEC_OsszevontHiba	= 745;
+		sT[0].sTAL[34].nIEC_MT_KommHiba		= 746;
+		sT[0].sTAL[34].nIEC_DP       		= 107;
+		sT[0].sTAL[34].nIEC_DP_FSZ1  		= 111;
+		sT[0].sTAL[34].nIEC_NM				= 152;
+		sT[0].sTAL[34].nNMNum		  		= 11;
+		sT[0].sTAL[34].nKommStatusNum		= 2;
 
 } /* end fnSetDataPar()*/
 
