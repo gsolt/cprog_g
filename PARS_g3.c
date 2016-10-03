@@ -118,6 +118,13 @@ sT[0].sCP[0].sCPR[33].nDCStart =123;    sT[0].sCP[0].sCPR[33].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[34].nDCStart =128;    sT[0].sCP[0].sCPR[34].nDCNum = 4;    sT[0].sCP[0].sCPR[34].nSCStart =132;    sT[0].sCP[0].sCPR[34].nAckStart = 0;	  sT[0].sCP[0].sCPR[34].nAckNum =0;   sT[0].sCP[0].sCPR[34].nSPOffsetCS = 748;  sT[0].sCP[0].sCPR[34].nSPOffsetLek = 749;
 sT[0].sCP[0].sCPR[35].nDCStart =133;    sT[0].sCP[0].sCPR[35].nDCNum = 1;    sT[0].sCP[0].sCPR[35].nSCStart =134;    sT[0].sCP[0].sCPR[35].nAckStart =135;	  sT[0].sCP[0].sCPR[35].nAckNum =1;   sT[0].sCP[0].sCPR[35].nSPOffsetCS = 764;  sT[0].sCP[0].sCPR[35].nSPOffsetLek = 765;
 
+sT[0].sCP[0].sCPR[36].nDCStart =136;    sT[0].sCP[0].sCPR[36].nDCNum = 1;    sT[0].sCP[0].sCPR[36].nSCStart =137;    sT[0].sCP[0].sCPR[36].nAckStart =0;	  sT[0].sCP[0].sCPR[36].nAckNum =0;   sT[0].sCP[0].sCPR[36].nSPOffsetCS = 780;  sT[0].sCP[0].sCPR[36].nSPOffsetLek = 781;
+sT[0].sCP[0].sCPR[37].nDCStart =139;    sT[0].sCP[0].sCPR[37].nDCNum = 1;    sT[0].sCP[0].sCPR[37].nSCStart =140;    sT[0].sCP[0].sCPR[37].nAckStart =0;	  sT[0].sCP[0].sCPR[37].nAckNum =0;   sT[0].sCP[0].sCPR[37].nSPOffsetCS = 796;  sT[0].sCP[0].sCPR[37].nSPOffsetLek = 797;
+sT[0].sCP[0].sCPR[38].nDCStart =142;    sT[0].sCP[0].sCPR[38].nDCNum = 1;    sT[0].sCP[0].sCPR[38].nSCStart =143;    sT[0].sCP[0].sCPR[38].nAckStart =144;	  sT[0].sCP[0].sCPR[38].nAckNum =1;   sT[0].sCP[0].sCPR[38].nSPOffsetCS = 812;  sT[0].sCP[0].sCPR[38].nSPOffsetLek = 813;
+sT[0].sCP[0].sCPR[39].nDCStart =145;    sT[0].sCP[0].sCPR[39].nDCNum = 1;    sT[0].sCP[0].sCPR[39].nSCStart =146;    sT[0].sCP[0].sCPR[39].nAckStart =147;	  sT[0].sCP[0].sCPR[39].nAckNum =1;   sT[0].sCP[0].sCPR[39].nSPOffsetCS = 828;  sT[0].sCP[0].sCPR[39].nSPOffsetLek = 829;
+sT[0].sCP[0].sCPR[40].nDCStart =148;    sT[0].sCP[0].sCPR[40].nDCNum = 1;    sT[0].sCP[0].sCPR[40].nSCStart =149;    sT[0].sCP[0].sCPR[40].nAckStart =150;	  sT[0].sCP[0].sCPR[40].nAckNum =1;   sT[0].sCP[0].sCPR[40].nSPOffsetCS = 844;  sT[0].sCP[0].sCPR[40].nSPOffsetLek = 845;
+
+
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -441,6 +448,43 @@ sT[0].sTI[35].nType = TYP_TMOK;
 	sT[0].sMOT[35].nIEC_SP				= 750;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[35].nIEC_DP				= 115;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[35].nIEC_NM				= 163;		/* Mérések IEC kezdõcíme */
+
+/* 34-02  -----------------------------------------------------------*/	
+sT[0].sTI[36].nType = TYP_TMOK;
+
+	sT[0].sMOT[36].nIEC_SP				= 766;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[36].nIEC_DP				= 116;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[36].nIEC_NM				= 166;		/* Mérések IEC kezdõcíme */
+
+/* 80-87  -----------------------------------------------------------*/	
+sT[0].sTI[37].nType = TYP_TMOK;
+
+	sT[0].sMOT[37].nIEC_SP				= 782;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[37].nIEC_DP				= 117;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[37].nIEC_NM				= 169;		/* Mérések IEC kezdõcíme */
+
+/* 87-29  -----------------------------------------------------------*/	
+sT[0].sTI[38].nType = TYP_TMOK;
+
+	sT[0].sMOT[38].nIEC_SP				= 798;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[38].nIEC_DP				= 118;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[38].nIEC_NM				= 172;		/* Mérések IEC kezdõcíme */
+
+
+/* 87-33  -----------------------------------------------------------*/	
+sT[0].sTI[39].nType = TYP_TMOK;
+
+	sT[0].sMOT[39].nIEC_SP				= 814;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[39].nIEC_DP				= 119;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[39].nIEC_NM				= 175;		/* Mérések IEC kezdõcíme */
+
+/* 31-64  -----------------------------------------------------------*/	
+sT[0].sTI[40].nType = TYP_TMOK;
+
+	sT[0].sMOT[40].nIEC_SP				= 830;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[40].nIEC_DP				= 120;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[40].nIEC_NM				= 178;		/* Mérések IEC kezdõcíme */
+
 
 
 

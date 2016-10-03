@@ -140,6 +140,12 @@ ST[0].nSiteList[33]= 9008;  ST[0].nLinkList[33]	=RADIO9_4;	/* RADIO9_4	 	Fehérvá
 ST[0].nSiteList[34]= 9009;  ST[0].nLinkList[34]	=RADIO5_2;	/* RADIO5_2	 	Tata, napeelempark			IGM  */
 ST[0].nSiteList[35]= 8130;  ST[0].nLinkList[35]	=RADIO4_2;	/* RADIO4_2	 	72-15						IGM  */
 
+ST[0].nSiteList[36]= 6137;  ST[0].nLinkList[36]	=RADIO1_1;	/* RADIO1_1	 	34-02						SZVAR  */
+ST[0].nSiteList[37]= 3198;  ST[0].nLinkList[37]	=RADIO3_7;	/* RADIO3_7	 	80-87						SZVAR  */
+ST[0].nSiteList[38]= 6199;  ST[0].nLinkList[38]	=RADIO1_8;	/* RADIO1_8	 	87-29						SZVAR  */
+ST[0].nSiteList[39]= 3115;  ST[0].nLinkList[39]	=RADIO1_9;	/* RADIO1_9	 	87-33						SZVAR  */
+ST[0].nSiteList[40]= 6169;  ST[0].nLinkList[40]	=RADIO1_1;	/* RADIO1_1	 	31-64						SZVAR  */
+
 
 
 
@@ -253,7 +259,7 @@ ST[0].sRAD_K2[0].nIndx[8]=32;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR */
-ST[0].sRAD_K3[0].nRtuNumRad = 18; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 23; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -272,6 +278,11 @@ ST[0].sRAD_K3[0].nIndx[14]=31;
 ST[0].sRAD_K3[0].nIndx[15]=33;
 ST[0].sRAD_K3[0].nIndx[16]=34;
 ST[0].sRAD_K3[0].nIndx[17]=35;
+ST[0].sRAD_K3[0].nIndx[18]=36;
+ST[0].sRAD_K3[0].nIndx[19]=37;
+ST[0].sRAD_K3[0].nIndx[20]=38;
+ST[0].sRAD_K3[0].nIndx[21]=39;
+ST[0].sRAD_K3[0].nIndx[22]=40;
 
 
 /*RST[0].sLINK RTUk indexei*/
