@@ -115,7 +115,7 @@ sT[0].sCP[0].sCPR[30].nDCStart =108;    sT[0].sCP[0].sCPR[30].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[31].nDCStart =113;    sT[0].sCP[0].sCPR[31].nDCNum = 4;    sT[0].sCP[0].sCPR[31].nSCStart =117;    sT[0].sCP[0].sCPR[31].nAckStart = 0;	  sT[0].sCP[0].sCPR[31].nAckNum =0;   sT[0].sCP[0].sCPR[31].nSPOffsetCS = 637;  sT[0].sCP[0].sCPR[31].nSPOffsetLek = 638;
 sT[0].sCP[0].sCPR[32].nDCStart =118;    sT[0].sCP[0].sCPR[32].nDCNum = 4;    sT[0].sCP[0].sCPR[32].nSCStart =122;    sT[0].sCP[0].sCPR[32].nAckStart = 0;	  sT[0].sCP[0].sCPR[32].nAckNum =0;   sT[0].sCP[0].sCPR[32].nSPOffsetCS = 674;  sT[0].sCP[0].sCPR[32].nSPOffsetLek = 675;
 sT[0].sCP[0].sCPR[33].nDCStart =123;    sT[0].sCP[0].sCPR[33].nDCNum = 4;    sT[0].sCP[0].sCPR[33].nSCStart =127;    sT[0].sCP[0].sCPR[33].nAckStart = 0;	  sT[0].sCP[0].sCPR[33].nAckNum =0;   sT[0].sCP[0].sCPR[33].nSPOffsetCS = 711;  sT[0].sCP[0].sCPR[33].nSPOffsetLek = 712;
-sT[0].sCP[0].sCPR[34].nDCStart =128;    sT[0].sCP[0].sCPR[34].nDCNum = 4;    sT[0].sCP[0].sCPR[34].nSCStart =132;    sT[0].sCP[0].sCPR[34].nAckStart = 0;	  sT[0].sCP[0].sCPR[34].nAckNum =0;   sT[0].sCP[0].sCPR[34].nSPOffsetCS = 748;  sT[0].sCP[0].sCPR[34].nSPOffsetLek = 749;
+sT[0].sCP[0].sCPR[34].nDCStart =128;    sT[0].sCP[0].sCPR[34].nDCNum = 4;    sT[0].sCP[0].sCPR[34].nSCStart =132;    sT[0].sCP[0].sCPR[34].nAckStart = 0;	  sT[0].sCP[0].sCPR[34].nAckNum =0;   sT[0].sCP[0].sCPR[34].nSPOffsetCS = 747;  sT[0].sCP[0].sCPR[34].nSPOffsetLek = 748;
 sT[0].sCP[0].sCPR[35].nDCStart =133;    sT[0].sCP[0].sCPR[35].nDCNum = 1;    sT[0].sCP[0].sCPR[35].nSCStart =134;    sT[0].sCP[0].sCPR[35].nAckStart =135;	  sT[0].sCP[0].sCPR[35].nAckNum =1;   sT[0].sCP[0].sCPR[35].nSPOffsetCS = 764;  sT[0].sCP[0].sCPR[35].nSPOffsetLek = 765;
 
 sT[0].sCP[0].sCPR[36].nDCStart =136;    sT[0].sCP[0].sCPR[36].nDCNum = 1;    sT[0].sCP[0].sCPR[36].nSCStart =137;    sT[0].sCP[0].sCPR[36].nAckStart =0;	  sT[0].sCP[0].sCPR[36].nAckNum =0;   sT[0].sCP[0].sCPR[36].nSPOffsetCS = 780;  sT[0].sCP[0].sCPR[36].nSPOffsetLek = 781;
@@ -433,9 +433,9 @@ sT[0].sTI[33].nType = TYP_TAL;
 /* Tata, napelempark  -----------------------------------------------------------*/
 sT[0].sTI[34].nType = TYP_TAL;
 
-		sT[0].sTAL[34].nIEC_SP       		= 719;
-		sT[0].sTAL[34].nIEC_OsszevontHiba	= 745;
-		sT[0].sTAL[34].nIEC_MT_KommHiba		= 746;
+		sT[0].sTAL[34].nIEC_SP       		= 713;
+		sT[0].sTAL[34].nIEC_OsszevontHiba	= 749;
+		sT[0].sTAL[34].nIEC_MT_KommHiba		= 745;
 		sT[0].sTAL[34].nIEC_DP       		= 107;
 		sT[0].sTAL[34].nIEC_DP_FSZ1  		= 111;
 		sT[0].sTAL[34].nIEC_NM				= 152;
