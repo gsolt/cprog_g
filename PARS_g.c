@@ -135,7 +135,7 @@ ST[0].nSiteList[28]= 3018;  ST[0].nLinkList[28]	=RADIO6_2;	/* RADIO6_2	 	60-43		
 ST[0].nSiteList[29]= 3020;  ST[0].nLinkList[29]	=RADIO6_2;	/* RADIO6_2	 	60-45						CSEP */
 ST[0].nSiteList[30]= 9005;  ST[0].nLinkList[30]	=RADIO5_2;	/* RADIO5_1	 	Komárom, Alumetál			IGM  */
 ST[0].nSiteList[31]= 9006;  ST[0].nLinkList[31]	=RADIO5_2;	/* RADIO5_2	 	Tata, bioerûmû				IGM  */
-ST[0].nSiteList[32]= 9007;  ST[0].nLinkList[32]	=RADIO6_1;	/* RADIO6_1	 	Szombathely,városháza		SZOM  */
+ST[0].nSiteList[32]= 9007;  ST[0].nLinkList[32]	=RADIO6_6;	/* RADIO6_1	 	Szombathely,városháza		SZOM  */
 ST[0].nSiteList[33]= 9008;  ST[0].nLinkList[33]	=RADIO9_4;	/* RADIO9_4	 	Fehérvárcsurgó, naperõmû	MOR  */
 ST[0].nSiteList[34]= 9009;  ST[0].nLinkList[34]	=RADIO5_2;	/* RADIO5_2	 	Tata, napeelempark			IGM  */
 ST[0].nSiteList[35]= 8130;  ST[0].nLinkList[35]	=RADIO4_2;	/* RADIO4_2	 	72-15						IGM  */
