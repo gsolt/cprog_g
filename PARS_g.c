@@ -148,6 +148,12 @@ ST[0].nSiteList[40]= 6169;  ST[0].nLinkList[40]	=RADIO1_1;	/* RADIO1_1	 	31-64		
 
 
 
+ST[0].nSiteList[41]= 9010;  ST[0].nLinkList[41]	=RADIO1_7;	/* RADIO1_7	 	31-58						SZVAR  */
+ST[0].nSiteList[42]= 9011;  ST[0].nLinkList[42]	=RADIO1_7;	/* RADIO1_7	 	31-63						SZVAR  */
+
+
+
+
 
 
 
@@ -259,7 +265,7 @@ ST[0].sRAD_K2[0].nIndx[8]=32;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR */
-ST[0].sRAD_K3[0].nRtuNumRad = 23; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 25; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -283,6 +289,8 @@ ST[0].sRAD_K3[0].nIndx[19]=37;
 ST[0].sRAD_K3[0].nIndx[20]=38;
 ST[0].sRAD_K3[0].nIndx[21]=39;
 ST[0].sRAD_K3[0].nIndx[22]=40;
+ST[0].sRAD_K3[0].nIndx[22]=41;
+ST[0].sRAD_K3[0].nIndx[23]=42;
 
 
 /*RST[0].sLINK RTUk indexei*/
