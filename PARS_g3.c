@@ -497,9 +497,9 @@ sT[0].sTI[41].nType = TYP_TMOK;
 /* 31-64  -----------------------------------------------------------*/	
 sT[0].sTI[42].nType = TYP_TMOK;
 
-	sT[0].sMOT[42].nIEC_SP				= 846;		/* Egybites értékek IEC kezdõcíme*/
-	sT[0].sMOT[42].nIEC_DP				= 121;		/* Kétbites értékek IEC kezdõcíme*/
-	sT[0].sMOT[42].nIEC_NM				= 185;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[42].nIEC_SP				= 862;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[42].nIEC_DP				= 122;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[42].nIEC_NM				= 188;		/* Mérések IEC kezdõcíme */
 
 } /* end fnSetDataPar()*/
 
