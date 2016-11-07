@@ -2011,7 +2011,15 @@ if (pTAL->nNMNum > 0)
 		
 	for (nI=0; nI<4 && nI<pTAL->nNMNum; nI++)
 	{
+		if ((nNMStart+nI>136) && (nNMStart+nI<141)) /* Szombathely városháza */
+		{
+		fnWriteNM( nNMStart+nI,nRxBuf[12+nI]);
+		}
+		else 
+		{
 		fnWriteNM( nNMStart+nI,nRxBuf[12+nI]*3200/750);
+		}
+		
 	} /*end for*/
 	
 	/*Ha van PM500 vagy SEPAM*/
