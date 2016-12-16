@@ -154,6 +154,7 @@ ST[0].nSiteList[42]= 9011;  ST[0].nLinkList[42]	=RADIO1_7;	/* RADIO1_7	 	31-63		
 ST[0].nSiteList[43]= 9012;  ST[0].nLinkList[43]	=RADIO6_2;	/* RADIO6_2	 	41-87						CSEP  */
 ST[0].nSiteList[44]= 9013;  ST[0].nLinkList[44]	=RADIO6_2;	/* RADIO6_2	 	41-62						CSEP  */
 
+ST[0].nSiteList[45]= 3103;  ST[0].nLinkList[45]	=RADIO4_2;	/* RADIO4_2	 	90-18						CELL  */
 
 
 
@@ -237,7 +238,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL */
-ST[0].sRAD_K1[0].nRtuNumRad = 9; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 10; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -247,6 +248,7 @@ ST[0].sRAD_K1[0].nIndx[5]=16;
 ST[0].sRAD_K1[0].nIndx[6]=22; 
 ST[0].sRAD_K1[0].nIndx[7]=23; 
 ST[0].sRAD_K1[0].nIndx[8]=24; 
+ST[0].sRAD_K1[0].nIndx[9]=45; 
 
 
 /* K2 : SZOM, MOS, CSEP*/
