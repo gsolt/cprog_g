@@ -158,6 +158,8 @@ ST[0].nSiteList[45]= 3103;  ST[0].nLinkList[45]	=RADIO4_2;	/* RADIO4_2	 	90-18		
 
 ST[0].nSiteList[46]= 9014;  ST[0].nLinkList[46]	=RADIO7_1;	/* RADIO7_1	 	12-75						MVAR  */
 
+ST[0].nSiteList[47]= 9015;  ST[0].nLinkList[47]	=RADIO7_1;	/* RADIO7_1	 	14-03						MVAR  */
+
 
 
 
@@ -253,7 +255,7 @@ ST[0].sRAD_K1[0].nIndx[9]=45;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 12; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 13; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -266,6 +268,7 @@ ST[0].sRAD_K2[0].nIndx[8]=32;
 ST[0].sRAD_K2[0].nIndx[9]=43;
 ST[0].sRAD_K2[0].nIndx[10]=44;
 ST[0].sRAD_K2[0].nIndx[11]=46;
+ST[0].sRAD_K2[0].nIndx[12]=47;
 
 
 
