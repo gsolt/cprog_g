@@ -502,7 +502,7 @@ sT[0].sTI[41].nType = TYP_TMOK;
 	sT[0].sMOT[41].nIEC_DP				= 121;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[41].nIEC_NM				= 185;		/* Mérések IEC kezdõcíme */
 
-/* 31-64  -----------------------------------------------------------*/	
+/* 31-63  -----------------------------------------------------------*/	
 sT[0].sTI[42].nType = TYP_TMOK;
 
 	sT[0].sMOT[42].nIEC_SP				= 862;		/* Egybites értékek IEC kezdõcíme*/
