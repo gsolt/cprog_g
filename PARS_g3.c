@@ -556,6 +556,17 @@ sT[0].sTI[48].nType = TYP_TMOK;
 	sT[0].sMOT[48].nIEC_NM				= 212;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[48].nNMNum      			= 4;
 
+/* Front end A -----------------------------------------------------------*/
+sT[0].sTI[49].nType = TYP_FRONTEND;
+
+/* Front end C -----------------------------------------------------------*/
+sT[0].sTI[50].nType = TYP_FRONTEND;
+
+/* Front end G -----------------------------------------------------------*/
+sT[0].sTI[51].nType = TYP_FRONTEND;
+
+/* Redundancia A -----------------------------------------------------------*/
+sT[0].sTI[52].nType = TYP_FRONTEND;
 
 } /* end fnSetDataPar()*/
 
