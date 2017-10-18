@@ -159,7 +159,7 @@ ST[0].nSiteList[45]= 3103;  ST[0].nLinkList[45]	=RADIO4_2;	/* RADIO4_2	 	90-18		
 ST[0].nSiteList[46]= 9014;  ST[0].nLinkList[46]	=RADIO7_1;	/* RADIO7_1	 	12-75						MVAR  */
 
 ST[0].nSiteList[47]= 9015;  ST[0].nLinkList[47]	=RADIO7_1;	/* RADIO7_1	 	14-03						MVAR  */
-ST[0].nSiteList[48]= 9016;  ST[0].nLinkList[48]	=RADIO4_1;	/* RADIO4_1	 	48642						IK  */
+ST[0].nSiteList[48]= 9016;  ST[0].nLinkList[48]	=RADIO6_6;	/* RADIO4_1	 	48642						IK  */
 
 ST[0].nSiteList[49]=3;	 	ST[0].nLinkList[49]=RSLINK3;	/* Front end A								*/
 ST[0].nSiteList[50]=5000; 	ST[0].nLinkList[50]=RSLINK3;	/* Front end C								*/
