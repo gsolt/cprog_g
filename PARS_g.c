@@ -166,6 +166,8 @@ ST[0].nSiteList[50]=5000; 	ST[0].nLinkList[50]=RSLINK3;	/* Front end C								*/
 ST[0].nSiteList[51]=7000; 	ST[0].nLinkList[51]=RSLINK3;	/* Front end E								*/
 ST[0].nSiteList[52]=8990; 	ST[0].nLinkList[52]=RSLINK3;	/* Redundancia A							*/
 
+ST[0].nSiteList[53]=580; 	ST[0].nLinkList[53]=LINE2;			/* Komárom DAC							*/
+
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
