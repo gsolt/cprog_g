@@ -161,12 +161,20 @@ ST[0].nSiteList[46]= 9014;  ST[0].nLinkList[46]	=RADIO7_1;	/* RADIO7_1	 	12-75		
 ST[0].nSiteList[47]= 9015;  ST[0].nLinkList[47]	=RADIO7_1;	/* RADIO7_1	 	14-03						MVAR  */
 ST[0].nSiteList[48]= 9016;  ST[0].nLinkList[48]	=RADIO6_6;	/* RADIO4_1	 	48642						IK  */
 
-ST[0].nSiteList[49]=3;	 	ST[0].nLinkList[49]=RSLINK3;	/* Front end A								*/
+ST[0].nSiteList[49]=3;	 	  ST[0].nLinkList[49]=RSLINK3;	/* Front end A								*/
 ST[0].nSiteList[50]=5000; 	ST[0].nLinkList[50]=RSLINK3;	/* Front end C								*/
 ST[0].nSiteList[51]=7000; 	ST[0].nLinkList[51]=RSLINK3;	/* Front end E								*/
 ST[0].nSiteList[52]=8990; 	ST[0].nLinkList[52]=RSLINK3;	/* Redundancia A							*/
 
-ST[0].nSiteList[53]=580; 	ST[0].nLinkList[53]=LINE2;			/* Komárom DAC							*/
+ST[0].nSiteList[53]=580; 	  ST[0].nLinkList[53]=LINE2;			/* Komárom DAC							*/
+
+ST[0].nSiteList[54]= 9017;  ST[0].nLinkList[54]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Óvoda						              MVAR  */
+ST[0].nSiteList[55]= 9018;  ST[0].nLinkList[55]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Vásártér Gimnázium						  MVAR  */
+
+
+
+
+
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -262,7 +270,7 @@ ST[0].sRAD_K1[0].nIndx[10]=48;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 13; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 15; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -276,6 +284,8 @@ ST[0].sRAD_K2[0].nIndx[9]=43;
 ST[0].sRAD_K2[0].nIndx[10]=44;
 ST[0].sRAD_K2[0].nIndx[11]=46;
 ST[0].sRAD_K2[0].nIndx[12]=47;
+ST[0].sRAD_K2[0].nIndx[13]=54;
+ST[0].sRAD_K2[0].nIndx[14]=55;
 
 
 
