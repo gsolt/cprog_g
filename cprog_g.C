@@ -1404,7 +1404,7 @@ else if (nCtrRS >=nLimitRslink)
 
 
 			/* Ha napváltás volt  2017.12.08, szinkronizálás miatt GZS*/
-			MOSCAD_get_datetime(&mdt);
+			/*MOSCAD_get_datetime(&mdt);
 			if ( mdt.hours < nMoscadHours_RS[nActIndxRS] )
 				{
    				MOSCAD_sprintf(message,"Napvaltas LINE, Site Index: %d",sLIN.nIndx[nActIndxRS]);
@@ -1418,10 +1418,10 @@ else if (nCtrRS >=nLimitRslink)
 
 
 				}
-			nMoscadHours_RS[nActIndxRS] = mdt.hours;
+			nMoscadHours_RS[nActIndxRS] = mdt.hours;  */
 			
-  				MOSCAD_sprintf(message,"nMoscadHours_RS[nActIndxRS]: %d, nActIndxRS: %d",nMoscadHours_RS[nActIndxRS],nActIndxRS);
-   			 	MOSCAD_error(message ); 				
+  				/* MOSCAD_sprintf(message,"nMoscadHours_RS[nActIndxRS]: %d, nActIndxRS: %d",nMoscadHours_RS[nActIndxRS],nActIndxRS);
+   			 	MOSCAD_error(message );  */				
 
 
 
