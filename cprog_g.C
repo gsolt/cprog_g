@@ -290,6 +290,8 @@ STATION_DESC_MOT	sMOT[MAX_RTU];
 TOTAL_PAR			sT;
 int					nTotalRTU;
 BYTE			nMoscadHours;
+BYTE			nMoscadHours_RS[20];
+
 /*--------------------------------------------------------------------------*/
 /* The list of the function included in this block                          */
 /*--------------------------------------------------------------------------*/
@@ -690,13 +692,6 @@ nMoscadHours = mdt.hours;
  
 			/*Szinkronizalasi igeny erkezett*/
 			
-			if (buff_len==4*2 &&  nRxBuf[0] == 17 && nRxBuf[1] == 7)
-			{
-				MOSCAD_sync(site_inx);
-				MOSCAD_sprintf(message,"Szinkronizalas tortent, index: %d",site_inx);
-   			 	MOSCAD_error(message ); 				
-
-			}
  			
  			if (nType == TYP_TAL && (nRxBuf[0] == 2048 || nRxBuf[0] == 2049) && nRxBuf[2] == 2048 && buff_len < 42 * 2)
  			{
@@ -737,6 +732,14 @@ nMoscadHours = mdt.hours;
  		    			    	
  			}
  			
+			else if (buff_len==4*2 &&  nRxBuf[0] == 17 && nRxBuf[1] == 7)
+			{
+				MOSCAD_sync(site_inx);
+				MOSCAD_sprintf(message,"Szinkronizalas tortent, index: %d",site_inx);
+   			 	MOSCAD_error(message ); 				
+
+			}
+			
  			
  			else
  			{
@@ -1195,14 +1198,19 @@ int			nTemp;
 static int	nCtrK1;
 static int	nCtrK2;
 static int	nCtrK3;
-static int	nActIndxK1;
-static int	nActIndxK2;
-static int	nActIndxK3;
-static int	nActIndxRS;
+static int	nActIndxK1=0;
+static int	nActIndxK2=0;
+static int	nActIndxK3=0;
+static int	nActIndxRS=0;
 
 int			nFirstCycle1;
 int			nFirstCycle2;
 int			nFirstCycle3;
+
+
+	MOSCAD_DATE_TM	mdt;
+
+
 
 
 nFirstCycle1 = p_col_Stat[10];
@@ -1214,7 +1222,7 @@ nFirstCycle3 = p_col_Stat[12];
 nLimitRadioK2 = 24;
 nLimitRadioK3 = 25;*/
 	
-nLimitRslink = 65;
+nLimitRslink = 11; /*65;*/
 
 if (nFirstCycle1 == 0)
 {
@@ -1393,6 +1401,30 @@ else if (nCtrRS >=nLimitRslink)
    	            setvalue_CLekX(sLIN.nIndx[nActIndxRS],nTemp + 1);
 
    			} /* end else */
+
+
+			/* Ha napváltás volt  2017.12.08, szinkronizálás miatt GZS*/
+			MOSCAD_get_datetime(&mdt);
+			if ( mdt.hours < nMoscadHours_RS[nActIndxRS] )
+				{
+   				MOSCAD_sprintf(message,"Napvaltas LINE, Site Index: %d",sLIN.nIndx[nActIndxRS]);
+   			 	MOSCAD_error(message ); 				
+
+				if ( MOSCAD_sync(sLIN.nIndx[nActIndxRS]) != 0)
+					{
+		 		  	  MOSCAD_sprintf(message,"Could not send frame RSLINK sync, index: %d",sLIN.nIndx[nActIndxRS] );
+				      MOSCAD_error(message );
+					}
+
+
+				}
+			nMoscadHours_RS[nActIndxRS] = mdt.hours;
+			
+  				MOSCAD_sprintf(message,"nMoscadHours_RS[nActIndxRS]: %d, nActIndxRS: %d",nMoscadHours_RS[nActIndxRS],nActIndxRS);
+   			 	MOSCAD_error(message ); 				
+
+
+
 	              			
 			if (nActIndxRS < sLIN.nRtuNumLin-1)
 			{
