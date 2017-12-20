@@ -320,8 +320,11 @@ ST[0].sRAD_K3[0].nIndx[23]=42;
 
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 1;
+ST[0].sLIN[0].nRtuNumLin = 2;
 ST[0].sLIN[0].nIndx[0] =17;
+ST[0].sLIN[0].nIndx[1] =53;
+ST[0].sLIN[0].nIndx[2] =56;
+ST[0].sLIN[0].nIndx[3] =249;
 
 
 
