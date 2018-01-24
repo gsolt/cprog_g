@@ -170,6 +170,7 @@ ST[0].nSiteList[53]=580; 	  ST[0].nLinkList[53]=LINE2;			/* Komárom DAC							*/
 
 ST[0].nSiteList[54]= 9017;  ST[0].nLinkList[54]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Óvoda						              MVAR  */
 ST[0].nSiteList[55]= 9018;  ST[0].nLinkList[55]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Vásártér Gimnázium						  MVAR  */
+ST[0].nSiteList[56]= 9019;  ST[0].nLinkList[56]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, sóstói stadion				SZVAR  */
 
 
 
@@ -291,7 +292,7 @@ ST[0].sRAD_K2[0].nIndx[14]=55;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR */
-ST[0].sRAD_K3[0].nRtuNumRad = 24; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 25; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -317,6 +318,7 @@ ST[0].sRAD_K3[0].nIndx[21]=39;
 ST[0].sRAD_K3[0].nIndx[22]=40;
 ST[0].sRAD_K3[0].nIndx[22]=41;
 ST[0].sRAD_K3[0].nIndx[23]=42;
+ST[0].sRAD_K3[0].nIndx[24]=56;
 
 
 /*RST[0].sLINK RTUk indexei*/
