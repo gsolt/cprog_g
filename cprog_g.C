@@ -1222,7 +1222,7 @@ nFirstCycle3 = p_col_Stat[12];
 nLimitRadioK2 = 24;
 nLimitRadioK3 = 25;*/
 	
-nLimitRslink = 11; /*65;*/
+nLimitRslink = 65; /*65;*/
 
 if (nFirstCycle1 == 0)
 {
