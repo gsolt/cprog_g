@@ -136,6 +136,7 @@ sT[0].sCP[0].sCPR[53].nDCStart =0;    	 sT[0].sCP[0].sCPR[53].nDCNum = 0;    sT[
 sT[0].sCP[0].sCPR[54].nDCStart =230;     sT[0].sCP[0].sCPR[54].nDCNum = 4;    sT[0].sCP[0].sCPR[54].nSCStart =234;    sT[0].sCP[0].sCPR[54].nAckStart =0;   sT[0].sCP[0].sCPR[54].nAckNum =0;   sT[0].sCP[0].sCPR[54].nSPOffsetCS =1001;  sT[0].sCP[0].sCPR[54].nSPOffsetLek =1002;
 sT[0].sCP[0].sCPR[55].nDCStart =235;     sT[0].sCP[0].sCPR[55].nDCNum = 4;    sT[0].sCP[0].sCPR[55].nSCStart =239;    sT[0].sCP[0].sCPR[55].nAckStart =0;   sT[0].sCP[0].sCPR[55].nAckNum =0;   sT[0].sCP[0].sCPR[55].nSPOffsetCS =1023;  sT[0].sCP[0].sCPR[55].nSPOffsetLek =1024;
 sT[0].sCP[0].sCPR[56].nDCStart =240;     sT[0].sCP[0].sCPR[56].nDCNum = 8;    sT[0].sCP[0].sCPR[56].nSCStart =248;    sT[0].sCP[0].sCPR[56].nAckStart =0;   sT[0].sCP[0].sCPR[56].nAckNum =0;   sT[0].sCP[0].sCPR[56].nSPOffsetCS =1092;  sT[0].sCP[0].sCPR[56].nSPOffsetLek =1093;
+sT[0].sCP[0].sCPR[57].nDCStart =249;     sT[0].sCP[0].sCPR[57].nDCNum = 4;    sT[0].sCP[0].sCPR[57].nSCStart =253;    sT[0].sCP[0].sCPR[57].nAckStart =0;	  sT[0].sCP[0].sCPR[57].nAckNum =0;   sT[0].sCP[0].sCPR[57].nSPOffsetCS =1110;  sT[0].sCP[0].sCPR[57].nSPOffsetLek =1111;
 
 
 
@@ -624,6 +625,15 @@ sT[0].sTI[55].nType = TYP_MOT;
   sT[0].sTAL[56].nIEC_DP_12BIT2		= 213;
 	sT[0].sTAL[56].nIEC_DP_2BIT_BK2	= 925;
   
+/* Székesfehérvár, Ételbár  ----------------------------------------------------------------*/
+sT[0].sTI[57].nType = TYP_MOT;
+
+	sT[0].sMOT[57].nIEC_SP				= 1094;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[57].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[57].nIEC_DP				= 214;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[57].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[57].nIEC_NM				= 248;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[57].nNMNum				= 6;		/* Analóg mérések száma*/
 
 
 
