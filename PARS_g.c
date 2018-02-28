@@ -172,6 +172,9 @@ ST[0].nSiteList[54]= 9017;  ST[0].nLinkList[54]	=RADIO7_1;	/* RADIO7_1	 	Móvár, 
 ST[0].nSiteList[55]= 9018;  ST[0].nLinkList[55]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Vásártér Gimnázium						  MVAR  */
 ST[0].nSiteList[56]= 9019;  ST[0].nLinkList[56]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, sóstói stadion				SZVAR  */
 ST[0].nSiteList[57]= 9020;  ST[0].nLinkList[57]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Ételbár        				SZVAR  */
+ST[0].nSiteList[58]= 9021;  ST[0].nLinkList[58]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Kazánház        				SZVAR  */
+ST[0].nSiteList[59]= 9022;  ST[0].nLinkList[59]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Magyar u.       				SZOM  */
+
 
 
 
@@ -272,7 +275,7 @@ ST[0].sRAD_K1[0].nIndx[10]=48;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 15; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 16; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -288,12 +291,13 @@ ST[0].sRAD_K2[0].nIndx[11]=46;
 ST[0].sRAD_K2[0].nIndx[12]=47;
 ST[0].sRAD_K2[0].nIndx[13]=54;
 ST[0].sRAD_K2[0].nIndx[14]=55;
+ST[0].sRAD_K2[0].nIndx[15]=59;
 
 
 
 
 /* K3 : SZVAR, ORNY, IG, MOR */
-ST[0].sRAD_K3[0].nRtuNumRad = 26; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 27; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -321,6 +325,7 @@ ST[0].sRAD_K3[0].nIndx[22]=41;
 ST[0].sRAD_K3[0].nIndx[23]=42;
 ST[0].sRAD_K3[0].nIndx[24]=56;
 ST[0].sRAD_K3[0].nIndx[25]=57;
+ST[0].sRAD_K3[0].nIndx[26]=58;
 
 
 /*RST[0].sLINK RTUk indexei*/

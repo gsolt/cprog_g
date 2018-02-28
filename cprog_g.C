@@ -1597,7 +1597,7 @@ if (pTAL->nIEC_DP > 0)
 			}
 			if (strTE[nI].nTalusAddr >= 936 && strTE[nI].nTalusAddr <= 939)
 			{			
-				nIEC_Offset = strTE[nI].nTalusAddr - 936  + pTAL->nIEC_DP_FSZ1;			
+				nIEC_Offset = strTE[nI].nTalusAddr - 936  + pTAL->nIEC_DP_FSZ1 + 4;  /* 2018.02.24. GZS */			
 			}
 		
 		/* DP tabla indexe, es offsete */
