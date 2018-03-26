@@ -3494,7 +3494,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 3;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 5;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3514,7 +3514,17 @@ TMOK_ID[2] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/*
 ReteszesRTUIndex[2][0] = 34;			/* Tata napelempark		 */															/**/
 ReteszesTMOK_RTUNum[2] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 																													
+/* 3. TMOK: 40-85 RTU: Kõszegdoroszló PV erõmû 							-----------------------*/								/**/
+TMOKAllasjelzesOffsetek[3] = 1253; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[3] =1253;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[3][0] = 60;			/* Kõszegdoroszló PV erõmû 		 */															/**/
+ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 																													
+/* 4. TMOK: 45-12 RTU: Kõszegdoroszló PV erõmû 							-----------------------*/								/**/
+TMOKAllasjelzesOffsetek[4] = 1254; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[4] =1254;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[4][0] = 60;			/* Kõszegdoroszló PV erõmû 		 */															/**/
+ReteszesTMOK_RTUNum[4] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 																													
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/

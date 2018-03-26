@@ -174,6 +174,7 @@ ST[0].nSiteList[56]= 9019;  ST[0].nLinkList[56]	=RADIO1_1;	/* RADIO1_1	 	Székesf
 ST[0].nSiteList[57]= 9020;  ST[0].nLinkList[57]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Ételbár        				SZVAR  */
 ST[0].nSiteList[58]= 9021;  ST[0].nLinkList[58]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Kazánház        				SZVAR  */
 ST[0].nSiteList[59]= 9022;  ST[0].nLinkList[59]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Magyar u.       				SZOM  */
+ST[0].nSiteList[60]= 9023;  ST[0].nLinkList[60]	=RADIO6_6;	/* RADIO6_6	 	Kõszegdoroszló, PV erõmû       				SZOM  */
 
 
 
@@ -275,7 +276,7 @@ ST[0].sRAD_K1[0].nIndx[10]=48;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 16; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 17; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -292,6 +293,7 @@ ST[0].sRAD_K2[0].nIndx[12]=47;
 ST[0].sRAD_K2[0].nIndx[13]=54;
 ST[0].sRAD_K2[0].nIndx[14]=55;
 ST[0].sRAD_K2[0].nIndx[15]=59;
+ST[0].sRAD_K2[0].nIndx[16]=60;
 
 
 
