@@ -627,7 +627,7 @@ sT[0].sTI[55].nType = TYP_MOT;
 	sT[0].sTAL[56].nIEC_DP_2BIT_BK1	= 913;
   
   sT[0].sTAL[56].nIEC_DP_12BIT2		= 213;
-	sT[0].sTAL[56].nIEC_DP_2BIT_BK2	= 926;
+	sT[0].sTAL[56].nIEC_DP_2BIT_BK2	= 925;
   
 /* Székesfehérvár, Ételbár  ----------------------------------------------------------------*/
 sT[0].sTI[57].nType = TYP_MOT;
