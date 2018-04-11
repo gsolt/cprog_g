@@ -140,6 +140,7 @@ sT[0].sCP[0].sCPR[57].nDCStart =249;     sT[0].sCP[0].sCPR[57].nDCNum = 4;    sT
 sT[0].sCP[0].sCPR[58].nDCStart =254;     sT[0].sCP[0].sCPR[58].nDCNum = 4;    sT[0].sCP[0].sCPR[58].nSCStart =258;    sT[0].sCP[0].sCPR[58].nAckStart =0;	  sT[0].sCP[0].sCPR[58].nAckNum =0;   sT[0].sCP[0].sCPR[58].nSPOffsetCS =1128;  sT[0].sCP[0].sCPR[58].nSPOffsetLek =1129;
 sT[0].sCP[0].sCPR[59].nDCStart =259;     sT[0].sCP[0].sCPR[59].nDCNum = 4;    sT[0].sCP[0].sCPR[59].nSCStart =263;    sT[0].sCP[0].sCPR[59].nAckStart =0;	  sT[0].sCP[0].sCPR[59].nAckNum =0;   sT[0].sCP[0].sCPR[59].nSPOffsetCS =1150;  sT[0].sCP[0].sCPR[59].nSPOffsetLek =1151;
 sT[0].sCP[0].sCPR[60].nDCStart =264;     sT[0].sCP[0].sCPR[60].nDCNum = 8;    sT[0].sCP[0].sCPR[60].nSCStart =272;    sT[0].sCP[0].sCPR[60].nAckStart =0;	  sT[0].sCP[0].sCPR[60].nAckNum =0;   sT[0].sCP[0].sCPR[60].nSPOffsetCS =1178;  sT[0].sCP[0].sCPR[60].nSPOffsetLek =1179;
+sT[0].sCP[0].sCPR[61].nDCStart =273;     sT[0].sCP[0].sCPR[61].nDCNum = 4;    sT[0].sCP[0].sCPR[61].nSCStart =277;    sT[0].sCP[0].sCPR[61].nAckStart =0;	  sT[0].sCP[0].sCPR[61].nAckNum =0;   sT[0].sCP[0].sCPR[61].nSPOffsetCS =1196;  sT[0].sCP[0].sCPR[61].nSPOffsetLek =1197;
 
 
 
@@ -665,9 +666,19 @@ sT[0].sTI[60].nType = TYP_MOT;
 	sT[0].sMOT[60].nIEC_SP				= 1152;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[60].nIEC_SP_NUM			= 26;		/* Egybites értékek száma*/
 	sT[0].sMOT[60].nIEC_DP				= 238;		/* Kétbites értékek IEC kezdõcíme*/
-	sT[0].sMOT[60].nIEC_DP_NUM			= 26;   		/* Két bites értékek száma*/
+	sT[0].sMOT[60].nIEC_DP_NUM			= 16;   		/* Két bites értékek száma*/
 	sT[0].sMOT[60].nIEC_NM				= 269;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[60].nNMNum				= 13;		/* Analóg mérések száma*/
+
+/* Kincsesbánya, PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[61].nType = TYP_MOT;
+
+	sT[0].sMOT[61].nIEC_SP				= 1180;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[61].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[61].nIEC_DP				= 254;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[61].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[61].nIEC_NM				= 282;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[61].nNMNum				= 11;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/
