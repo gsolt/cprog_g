@@ -1086,8 +1086,15 @@ if (pMOT->nIEC_SP_NUM > 0)
 	/*Terhelés szakaszolók állásjelzései*/
 	
 	nDPStart = 	pMOT->nIEC_DP;
-	/* DP tabla indexe, es offsete */
-	fnDPTblIndx(nDPStart,&nDPTblIndx,&nMoscadOffset);
+
+	nData = p_col_RxBuf[8];	
+  
+if (	nDPStart > 0)
+{
+	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 16; nI++)
+	{	
+  
+	fnDPTblIndx(nDPStart+nI,&nDPTblIndx,&nMoscadOffset);
 
 	/* 2 bites */
    	if (MOSCAD_get_table_info (nDPTblIndx,&table_DP)!=0 )
@@ -1097,21 +1104,13 @@ if (pMOT->nIEC_SP_NUM > 0)
         return;
    		}
 
-	p_col_DPH     = (short *)(table_DP.ColDataPtr[0]);			/* DPH -> CLOSE */
-	p_col_DPL     = (short *)(table_DP.ColDataPtr[1]);			/* DPL -> OPEN */
-	p_col_DP_CT   = (short *)(table_DP.ColDataPtr[5]); 		
-	p_col_DP_MS1  = (short *)(table_DP.ColDataPtr[2]);
-	p_col_DP_MS2  = (short *)(table_DP.ColDataPtr[3]);
-	p_col_DP_MIN  = (short *)(table_DP.ColDataPtr[4]);
-
-					
-		
-	nDPStart = 	pMOT->nIEC_DP;
-	nData = p_col_RxBuf[8];	
-if (	nDPStart > 0)
-{
-	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 16; nI++)
-	{	
+  	   p_col_DPH     = (short *)(table_DP.ColDataPtr[0]);			/* DPH -> CLOSE */
+	     p_col_DPL     = (short *)(table_DP.ColDataPtr[1]);			/* DPL -> OPEN */
+       p_col_DP_CT   = (short *)(table_DP.ColDataPtr[5]); 		
+       p_col_DP_MS1  = (short *)(table_DP.ColDataPtr[2]);
+	     p_col_DP_MS2  = (short *)(table_DP.ColDataPtr[3]);
+	     p_col_DP_MIN  = (short *)(table_DP.ColDataPtr[4]);
+  
 		if ( nI < 8 )
 		{
 			nData = p_col_RxBuf[8];	
