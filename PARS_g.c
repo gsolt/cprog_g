@@ -176,6 +176,9 @@ ST[0].nSiteList[58]= 9021;  ST[0].nLinkList[58]	=RADIO1_1;	/* RADIO1_1	 	Székesf
 ST[0].nSiteList[59]= 9022;  ST[0].nLinkList[59]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Magyar u.       				SZOM  */
 ST[0].nSiteList[60]= 9023;  ST[0].nLinkList[60]	=RADIO6_6;	/* RADIO6_6	 	Kõszegdoroszló, PV erõmû       				SZOM  */
 ST[0].nSiteList[61]= 9024;  ST[0].nLinkList[61]	=RADIO9_1;	/* RADIO6_6	 	Kincsesbánya, PV erõmû       				SZOM  */
+ST[0].nSiteList[62]= 9025;  ST[0].nLinkList[62]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Spar       				          IK  */
+ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Széchenyi III.       				          IK  */
+
 
 
 
@@ -262,7 +265,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL */
-ST[0].sRAD_K1[0].nRtuNumRad = 11; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 13; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -274,6 +277,8 @@ ST[0].sRAD_K1[0].nIndx[7]=23;
 ST[0].sRAD_K1[0].nIndx[8]=24; 
 ST[0].sRAD_K1[0].nIndx[9]=45; 
 ST[0].sRAD_K1[0].nIndx[10]=48; 
+ST[0].sRAD_K1[0].nIndx[11]=62; 
+ST[0].sRAD_K1[0].nIndx[12]=63; 
 
 
 /* K2 : SZOM, MOS, CSEP*/

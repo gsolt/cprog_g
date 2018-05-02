@@ -141,6 +141,8 @@ sT[0].sCP[0].sCPR[58].nDCStart =254;     sT[0].sCP[0].sCPR[58].nDCNum = 4;    sT
 sT[0].sCP[0].sCPR[59].nDCStart =259;     sT[0].sCP[0].sCPR[59].nDCNum = 4;    sT[0].sCP[0].sCPR[59].nSCStart =263;    sT[0].sCP[0].sCPR[59].nAckStart =0;	  sT[0].sCP[0].sCPR[59].nAckNum =0;   sT[0].sCP[0].sCPR[59].nSPOffsetCS =1150;  sT[0].sCP[0].sCPR[59].nSPOffsetLek =1151;
 sT[0].sCP[0].sCPR[60].nDCStart =264;     sT[0].sCP[0].sCPR[60].nDCNum = 8;    sT[0].sCP[0].sCPR[60].nSCStart =272;    sT[0].sCP[0].sCPR[60].nAckStart =0;	  sT[0].sCP[0].sCPR[60].nAckNum =0;   sT[0].sCP[0].sCPR[60].nSPOffsetCS =1178;  sT[0].sCP[0].sCPR[60].nSPOffsetLek =1179;
 sT[0].sCP[0].sCPR[61].nDCStart =273;     sT[0].sCP[0].sCPR[61].nDCNum = 4;    sT[0].sCP[0].sCPR[61].nSCStart =277;    sT[0].sCP[0].sCPR[61].nAckStart =0;	  sT[0].sCP[0].sCPR[61].nAckNum =0;   sT[0].sCP[0].sCPR[61].nSPOffsetCS =1196;  sT[0].sCP[0].sCPR[61].nSPOffsetLek =1197;
+sT[0].sCP[0].sCPR[62].nDCStart =278;     sT[0].sCP[0].sCPR[62].nDCNum = 4;    sT[0].sCP[0].sCPR[62].nSCStart =282;    sT[0].sCP[0].sCPR[62].nAckStart =0;	  sT[0].sCP[0].sCPR[62].nAckNum =0;   sT[0].sCP[0].sCPR[62].nSPOffsetCS =1214;  sT[0].sCP[0].sCPR[62].nSPOffsetLek =1215;
+sT[0].sCP[0].sCPR[63].nDCStart =283;     sT[0].sCP[0].sCPR[63].nDCNum = 4;    sT[0].sCP[0].sCPR[63].nSCStart =287;    sT[0].sCP[0].sCPR[63].nAckStart =0;	  sT[0].sCP[0].sCPR[63].nAckNum =0;   sT[0].sCP[0].sCPR[63].nSPOffsetCS =1232;  sT[0].sCP[0].sCPR[63].nSPOffsetLek =1233;
 
 
 
@@ -680,6 +682,25 @@ sT[0].sTI[61].nType = TYP_MOT;
 	sT[0].sMOT[61].nIEC_NM				= 282;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[61].nNMNum				= 11;		/* Analóg mérések száma*/
 
+/* Sárvár, Spar  ----------------------------------------------------------------*/
+sT[0].sTI[62].nType = TYP_MOT;
+
+	sT[0].sMOT[62].nIEC_SP				= 1198;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[62].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[62].nIEC_DP				= 262;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[62].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[62].nIEC_NM				= 293;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[62].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Sárvár, SZéchenyi III.  ----------------------------------------------------------------*/
+sT[0].sTI[63].nType = TYP_MOT;
+
+	sT[0].sMOT[63].nIEC_SP				= 1216;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[63].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[63].nIEC_DP				= 270;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[63].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[63].nIEC_NM				= 299;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[63].nNMNum				= 6;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 
