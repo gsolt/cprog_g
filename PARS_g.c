@@ -168,24 +168,24 @@ ST[0].nSiteList[52]=8990; 	ST[0].nLinkList[52]=RSLINK3;	/* Redundancia A							*
 
 ST[0].nSiteList[53]=580; 	  ST[0].nLinkList[53]=LINE2;			/* Komárom DAC							*/
 
-ST[0].nSiteList[54]= 9017;  ST[0].nLinkList[54]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Óvoda						              MVAR  */
-ST[0].nSiteList[55]= 9018;  ST[0].nLinkList[55]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Vásártér Gimnázium						  MVAR  */
+ST[0].nSiteList[54]= 9017;  ST[0].nLinkList[54]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Óvoda						              MVAR  */        /*OK*/
+ST[0].nSiteList[55]= 9018;  ST[0].nLinkList[55]	=RADIO7_1;	/* RADIO7_1	 	Móvár, Vásártér Gimnázium						  MVAR  */        /*OK*/
 ST[0].nSiteList[56]= 9019;  ST[0].nLinkList[56]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, sóstói stadion				SZVAR  */
-ST[0].nSiteList[57]= 9020;  ST[0].nLinkList[57]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Ételbár        				SZVAR  */
-ST[0].nSiteList[58]= 9021;  ST[0].nLinkList[58]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Kazánház        				SZVAR  */
-ST[0].nSiteList[59]= 9022;  ST[0].nLinkList[59]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Magyar u.       				SZOM  */
+ST[0].nSiteList[57]= 9020;  ST[0].nLinkList[57]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Ételbár        				SZVAR  */       /*OK*/
+ST[0].nSiteList[58]= 9021;  ST[0].nLinkList[58]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Kazánház        				SZVAR  */     /*OK */
+ST[0].nSiteList[59]= 9022;  ST[0].nLinkList[59]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Magyar u.       				SZOM  */          /*OK*/
 ST[0].nSiteList[60]= 9023;  ST[0].nLinkList[60]	=RADIO6_6;	/* RADIO6_6	 	Kõszegdoroszló, PV erõmû       				SZOM  */
 ST[0].nSiteList[61]= 9024;  ST[0].nLinkList[61]	=RADIO9_4;	/* RADIO6_6	 	Kincsesbánya, PV erõmû       				MOR  */
-ST[0].nSiteList[62]= 9025;  ST[0].nLinkList[62]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Spar       				          IK  */
-ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Széchenyi III.       				          IK  */
+ST[0].nSiteList[62]= 9025;  ST[0].nLinkList[62]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Spar       				          IK  */           /*NEM OK*/
+ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Széchenyi III.       				IK  */           /*OK*/
 
-ST[0].nSiteList[64]= 9027;  ST[0].nLinkList[64]	=RADIO5_2;	/* RADIO5_2	 	Tata, Bartók      				          TAT  */
-ST[0].nSiteList[65]= 9028;  ST[0].nLinkList[65]	=RADIO5_1;	/* RADIO5_2	 	Kisbér, Komáromi u      				    IGM  */
-ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_4;	/* RADIO9_4	 	Velence, Nautis      				        KÖF  */
-ST[0].nSiteList[67]= 9030;  ST[0].nLinkList[67]	=RADIO1_8;	/* RADIO1_8	 	Velence, ABC Wickenburg      				BAR  */
+ST[0].nSiteList[64]= 9027;  ST[0].nLinkList[64]	=RADIO5_2;	/* RADIO5_2	 	Tata, Bartók      				          TAT  */          /*OK*/
+ST[0].nSiteList[65]= 9028;  ST[0].nLinkList[65]	=RADIO5_1;	/* RADIO5_2	 	Kisbér, Komáromi u      				    IGM  */           /*OK*/
+ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_4;	/* RADIO9_4	 	Velence, Nautis      				        KÖF  */           /*NEM OK*/
+ST[0].nSiteList[67]= 9030;  ST[0].nLinkList[67]	=RADIO1_8;	/* RADIO1_8	 	Velence, ABC Wickenburg      				BAR  */           /*NEM OK*/
 
-ST[0].nSiteList[68]= 9031;  ST[0].nLinkList[68]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Alkotmány I.      				  IK  */
-ST[0].nSiteList[69]= 9032;  ST[0].nLinkList[69]	=RADIO6_3;	/* RADIO6_3	 	Kõszeg, Spar      				          SZOM  */
+ST[0].nSiteList[68]= 9031;  ST[0].nLinkList[68]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Alkotmány I.      				  IK  */             /* OK */
+ST[0].nSiteList[69]= 9032;  ST[0].nLinkList[69]	=RADIO6_3;	/* RADIO6_3	 	Kõszeg, Spar      				          SZOM  */            /* OK */
 
 
 
