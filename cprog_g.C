@@ -3495,7 +3495,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 6;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 7;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3533,13 +3533,21 @@ ReteszesRTUIndex[4][0] = 60;			/* Kõszegdoroszló PV erõmû 		 */															/*
 ReteszesTMOK_RTUNum[4] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 5. TMOK: 34-37 RTU: Kincsesbánya 03_100_11 PV erõmû 							-----------------------*/								/**/
+/* 5. TMOK: 34-37 RTU: Kincsesbánya 03_78
+ PV erõmû 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[5] = 350; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[5][0] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
-ReteszesRTUIndex[5][0] = 61;			/* Kincsesbánya 03_100_11 PV erõmû		 */															/**/
+ReteszesRTUIndex[5][0] = 61;			/* Kincsesbánya 03_78 PV erõmû		 */															/**/
 ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[5] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[5] = 5;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 6. TMOK: 34-62 RTU: Söréd PV erõmû 							-----------------------*/								/**/
+TMOKAllasjelzesOffsetek[6] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[6][0] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[6][0] = 19;			/* Söréd PV erõmû 		 */															/**/
+ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
  																													
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
