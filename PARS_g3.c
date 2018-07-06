@@ -153,6 +153,8 @@ sT[0].sCP[0].sCPR[68].nDCStart =308;     sT[0].sCP[0].sCPR[68].nDCNum = 4;    sT
 sT[0].sCP[0].sCPR[69].nDCStart =313;     sT[0].sCP[0].sCPR[69].nDCNum = 4;    sT[0].sCP[0].sCPR[69].nSCStart =317;    sT[0].sCP[0].sCPR[69].nAckStart =0;	  sT[0].sCP[0].sCPR[69].nAckNum =0;   sT[0].sCP[0].sCPR[69].nSPOffsetCS =1348;  sT[0].sCP[0].sCPR[69].nSPOffsetLek =1349;
 sT[0].sCP[0].sCPR[70].nDCStart =332;     sT[0].sCP[0].sCPR[70].nDCNum = 1;    sT[0].sCP[0].sCPR[70].nSCStart =333;    sT[0].sCP[0].sCPR[70].nAckStart =0;	  sT[0].sCP[0].sCPR[70].nAckNum =0;   sT[0].sCP[0].sCPR[70].nSPOffsetCS =1432;  sT[0].sCP[0].sCPR[70].nSPOffsetLek =1433;
 sT[0].sCP[0].sCPR[71].nDCStart =335;     sT[0].sCP[0].sCPR[71].nDCNum = 4;    sT[0].sCP[0].sCPR[71].nSCStart =339;    sT[0].sCP[0].sCPR[71].nAckStart =0;	  sT[0].sCP[0].sCPR[71].nAckNum =0;   sT[0].sCP[0].sCPR[71].nSPOffsetCS =1454;  sT[0].sCP[0].sCPR[71].nSPOffsetLek =1455;
+sT[0].sCP[0].sCPR[72].nDCStart =340;     sT[0].sCP[0].sCPR[72].nDCNum = 4;    sT[0].sCP[0].sCPR[72].nSCStart =344;    sT[0].sCP[0].sCPR[72].nAckStart =0;	  sT[0].sCP[0].sCPR[72].nAckNum =0;   sT[0].sCP[0].sCPR[72].nSPOffsetCS =1472;  sT[0].sCP[0].sCPR[72].nSPOffsetLek =1473;
+sT[0].sCP[0].sCPR[73].nDCStart =345;     sT[0].sCP[0].sCPR[73].nDCNum = 4;    sT[0].sCP[0].sCPR[73].nSCStart =349;    sT[0].sCP[0].sCPR[73].nAckStart =0;   sT[0].sCP[0].sCPR[73].nAckNum =0;   sT[0].sCP[0].sCPR[73].nSPOffsetCS =1509;  sT[0].sCP[0].sCPR[73].nSPOffsetLek =1510;
 
 
 
@@ -787,6 +789,37 @@ sT[0].sTI[71].nType = TYP_MOT;
 	sT[0].sMOT[71].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[71].nIEC_NM				= 369;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[71].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Kincsesbánya, 03-100 PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[72].nType = TYP_MOT;
+
+	sT[0].sMOT[72].nIEC_SP				= 1456;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[72].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[72].nIEC_DP				= 359;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[72].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[72].nIEC_NM				= 378;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[72].nNMNum				= 9;		/* Analóg mérések száma*/
+
+
+/* Mosonmagyaróvár 739-8 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[73].nType = TYP_TAL;
+  
+	sT[0].sTAL[73].nIEC_SP       		= 1474;
+	sT[0].sTAL[73].nIEC_OsszevontHiba	= 1506;
+	sT[0].sTAL[73].nIEC_MT_KommHiba	= 1507;
+	sT[0].sTAL[73].nKommStatusNum		= 2;	
+	sT[0].sTAL[73].nIEC_DP       		= 367;
+	sT[0].sTAL[73].nIEC_DP_FSZ1  		= 371;
+	sT[0].sTAL[73].nIEC_NM				= 387;
+	sT[0].sTAL[73].nNMNum		  		= 9;
+    
+ 	sT[0].sTAL[73].nIEC_DP_2BIT1 		= 375;
+	sT[0].sTAL[73].nIEC_DP_2BIT_KINT1	= 913;
+	sT[0].sTAL[73].nIEC_DP_2BIT_BENT1	= 912;
+
+  
+  sT[0].sTAL[73].nIEC_DP_12BIT2		= 376;
+	sT[0].sTAL[73].nIEC_DP_2BIT_BK2	= 920;
 
 } /* end fnSetDataPar()*/
 

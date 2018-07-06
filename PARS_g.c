@@ -180,7 +180,7 @@ ST[0].nSiteList[62]= 9025;  ST[0].nLinkList[62]	=RADIO4_1;	/* RADIO4_1	 	Sárvár,
 ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Széchenyi III.       				IK  */           /*OK*/
 
 ST[0].nSiteList[64]= 9027;  ST[0].nLinkList[64]	=RADIO5_2;	/* RADIO5_2	 	Tata, Bartók      				          TAT  */          /*OK*/
-ST[0].nSiteList[65]= 9028;  ST[0].nLinkList[65]	=RADIO5_1;	/* RADIO5_2	 	Kisbér, Komáromi u      				    IGM  */           /*OK*/
+ST[0].nSiteList[65]= 9028;  ST[0].nLinkList[65]	=RADIO5_1;	/* RADIO5_2	 	Kisbér, Komáromi u      				    IGM  */           /*OK, tesztelve */
 ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_4;	/* RADIO9_4	 	Velence, Nautis      				        KÖF  */           /* OK*/
 ST[0].nSiteList[67]= 9030;  ST[0].nLinkList[67]	=RADIO1_8;	/* RADIO1_8	 	Velence, ABC Wickenburg      				BAR  */           /* OK*/
 
@@ -190,6 +190,8 @@ ST[0].nSiteList[69]= 9032;  ST[0].nLinkList[69]	=RADIO6_3;	/* RADIO6_3	 	Kõszeg,
 ST[0].nSiteList[70]= 9035;  ST[0].nLinkList[70]	=RADIO9_4;	/* RADIO9_4	 	34-37						                    MOR  */
 ST[0].nSiteList[71]= 9036;  ST[0].nLinkList[71]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Szatmár I.      				  IK  */            
 
+ST[0].nSiteList[72]= 9037;  ST[0].nLinkList[72]	=RADIO9_4;	/* RADIO9_4	 	Kincsesbánya 03_100, PV erõmû       				MOR  */   /* tesztelve */
+ST[0].nSiteList[73]= 9038;  ST[0].nLinkList[73]	=RADIO7_1;	/* RADIO7_1	 	Móvár, 739-8 PV erõmû		              MVAR  */        /*tesztelve OK*/
 
 
 
@@ -296,7 +298,7 @@ ST[0].sRAD_K1[0].nIndx[14]=71;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 18; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 19; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -315,12 +317,13 @@ ST[0].sRAD_K2[0].nIndx[14]=55;
 ST[0].sRAD_K2[0].nIndx[15]=59;
 ST[0].sRAD_K2[0].nIndx[16]=60;
 ST[0].sRAD_K2[0].nIndx[17]=69;
+ST[0].sRAD_K2[0].nIndx[18]=73;
 
 
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 33; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 34; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -355,6 +358,7 @@ ST[0].sRAD_K3[0].nIndx[29]=65;
 ST[0].sRAD_K3[0].nIndx[30]=66;
 ST[0].sRAD_K3[0].nIndx[31]=67;
 ST[0].sRAD_K3[0].nIndx[32]=70;
+ST[0].sRAD_K3[0].nIndx[33]=72;
      
 
 /*RST[0].sLINK RTUk indexei*/
