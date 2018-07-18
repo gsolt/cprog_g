@@ -175,7 +175,7 @@ ST[0].nSiteList[57]= 9020;  ST[0].nLinkList[57]	=RADIO1_1;	/* RADIO1_1	 	Székesf
 ST[0].nSiteList[58]= 9021;  ST[0].nLinkList[58]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Kazánház        				SZVAR  */     /*OK */
 ST[0].nSiteList[59]= 9022;  ST[0].nLinkList[59]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Magyar u.       				SZOM  */          /*OK*/
 ST[0].nSiteList[60]= 9023;  ST[0].nLinkList[60]	=RADIO6_6;	/* RADIO6_6	 	Kõszegdoroszló, PV erõmû       				SZOM  */
-ST[0].nSiteList[61]= 9024;  ST[0].nLinkList[61]	=RADIO9_4;	/* RADIO6_6	 	Kincsesbánya 03_78, PV erõmû       				MOR  */
+ST[0].nSiteList[61]= 9024;  ST[0].nLinkList[61]	=RADIO9_4;	/* RADIO6_6	 	Kincsesbánya 03_78, PV erõmû       				MOR  */     /* Tesztelve */
 ST[0].nSiteList[62]= 9025;  ST[0].nLinkList[62]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Spar       				          IK  */           /*NEM OK*/
 ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Széchenyi III.       				IK  */           /*OK*/
 
@@ -192,6 +192,10 @@ ST[0].nSiteList[71]= 9036;  ST[0].nLinkList[71]	=RADIO4_1;	/* RADIO4_1	 	Sárvár,
 
 ST[0].nSiteList[72]= 9037;  ST[0].nLinkList[72]	=RADIO9_4;	/* RADIO9_4	 	Kincsesbánya 03_100, PV erõmû       				MOR  */   /* tesztelve */
 ST[0].nSiteList[73]= 9038;  ST[0].nLinkList[73]	=RADIO7_1;	/* RADIO7_1	 	Móvár, 739-8 PV erõmû		              MVAR  */        /*tesztelve OK*/
+
+ST[0].nSiteList[74]= 9039;  ST[0].nLinkList[74]	=RADIO1_8;	/* RADIO1_8	 	32607						                    BAR  */
+ST[0].nSiteList[75]= 9040;  ST[0].nLinkList[75]	=RADIO1_8;	/* RADIO1_8	 	32605						                    BAR  */
+ST[0].nSiteList[76]= 9041;  ST[0].nLinkList[76]	=RADIO1_8;	/* RADIO1_8	 	32609						                    BAR  */
 
 
 
@@ -323,7 +327,7 @@ ST[0].sRAD_K2[0].nIndx[18]=73;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 34; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 37; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -359,6 +363,9 @@ ST[0].sRAD_K3[0].nIndx[30]=66;
 ST[0].sRAD_K3[0].nIndx[31]=67;
 ST[0].sRAD_K3[0].nIndx[32]=70;
 ST[0].sRAD_K3[0].nIndx[33]=72;
+ST[0].sRAD_K3[0].nIndx[34]=74;
+ST[0].sRAD_K3[0].nIndx[35]=75;
+ST[0].sRAD_K3[0].nIndx[36]=76;
      
 
 /*RST[0].sLINK RTUk indexei*/
