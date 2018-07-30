@@ -3495,7 +3495,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 17;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 18;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3537,10 +3537,10 @@ nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartoz
  PV erõmû 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[5] = 350; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
-TMOK_ID[5][1] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+TMOK_ID[5][0] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[5][0] = 61;			/* Kincsesbánya 03_78 PV erõmû		 */															/**/
 TMOK_ID[5][1] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
-ReteszesRTUIndex[5][0] = 72;			/* Kincsesbánya 03_100 PV erõmû		 */															/**/
+ReteszesRTUIndex[5][1] = 72;			/* Kincsesbánya 03_100 PV erõmû		 */															/**/
 
 ReteszesTMOK_RTUNum[5] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[5] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
@@ -3639,6 +3639,14 @@ ReteszesRTUIndex[16][2] = 76;			/* 32608			 */															/**/
 ReteszesTMOK_RTUNum[16] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[16] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 17. TMOK: 71-28 A redundancia -> RTU: Ganna 044-2 PV erõmû
+ PV erõmû 							-----------------------*/								/**/
+TMOKAllasjelzesOffsetek[17] = 31; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[17][0] = 0;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[17][0] = 52;			/* A redundancia		 */															/**/
+ReteszesTMOK_RTUNum[17] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[17] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[17] = 6;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
  																													
 /**********************************************************************************************************************/
