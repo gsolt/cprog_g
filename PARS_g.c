@@ -193,10 +193,11 @@ ST[0].nSiteList[71]= 9036;  ST[0].nLinkList[71]	=RADIO4_1;	/* RADIO4_1	 	Sárvár,
 ST[0].nSiteList[72]= 9037;  ST[0].nLinkList[72]	=RADIO9_4;	/* RADIO9_4	 	Kincsesbánya 03_100, PV erõmû       				MOR  */   /* tesztelve */
 ST[0].nSiteList[73]= 9038;  ST[0].nLinkList[73]	=RADIO7_1;	/* RADIO7_1	 	Móvár, 739-8 PV erõmû		              MVAR  */        /*tesztelve OK*/
 
-ST[0].nSiteList[74]= 9039;  ST[0].nLinkList[74]	=RADIO1_8;	/* RADIO1_8	 	32607						                    BAR  */
-ST[0].nSiteList[75]= 9040;  ST[0].nLinkList[75]	=RADIO1_8;	/* RADIO1_8	 	32605						                    BAR  */
-ST[0].nSiteList[76]= 9041;  ST[0].nLinkList[76]	=RADIO1_8;	/* RADIO1_8	 	32609						                    BAR  */
+ST[0].nSiteList[74]= 9039;  ST[0].nLinkList[74]	=RADIO1_8;	/* RADIO1_8	 	32607						                    BAR  */     /* tesztelve */
+ST[0].nSiteList[75]= 9040;  ST[0].nLinkList[75]	=RADIO1_8;	/* RADIO1_8	 	32605						                    BAR  */     /* tesztelve */
+ST[0].nSiteList[76]= 9041;  ST[0].nLinkList[76]	=RADIO1_8;	/* RADIO1_8	 	32609						                    BAR  */     /* tesztelve */
 
+ST[0].nSiteList[77]= 9042;  ST[0].nLinkList[77]	=RADIO1_8;	/* RADIO1_8	 	30-94						                    BAR  */     /* tesztelve */
 
 
 
@@ -327,7 +328,7 @@ ST[0].sRAD_K2[0].nIndx[18]=73;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 37; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 38; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -366,6 +367,7 @@ ST[0].sRAD_K3[0].nIndx[33]=72;
 ST[0].sRAD_K3[0].nIndx[34]=74;
 ST[0].sRAD_K3[0].nIndx[35]=75;
 ST[0].sRAD_K3[0].nIndx[36]=76;
+ST[0].sRAD_K3[0].nIndx[37]=77;
      
 
 /*RST[0].sLINK RTUk indexei*/

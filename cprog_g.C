@@ -3606,7 +3606,7 @@ ReteszesRTUIndex[13][1] = 21;			/* Dunakiliti II.			 */															/**/
 ReteszesTMOK_RTUNum[13] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[13] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
  																													
-/* 14. TMOK: 32-14 RTU: 32607, 32608, 32609								-----------------------*/								/**/
+/* 14. TMOK: 32-14 RTU: 32607, 32608, 32609								----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[14] = 1263; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[14][0] =1263;						/* TMOK azonosítója a táviratban = DP offset */								/**/			
 TMOK_ID[14][1] =1263;						/* TMOK azonosítója a táviratban = DP offset */								/**/
@@ -3617,7 +3617,7 @@ ReteszesRTUIndex[14][2] = 76;			/* 32608			 */															/**/
 ReteszesTMOK_RTUNum[14] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[14] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 15. TMOK: 32-61 RTU: 32607, 32608, 32609								-----------------------*/								/**/
+/* 15. TMOK: 32-61 RTU: 32607, 32608, 32609								----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[15] = 1264; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[15][0] =1264;						/* TMOK azonosítója a táviratban = DP offset */								/**/			
 TMOK_ID[15][1] =1264;						/* TMOK azonosítója a táviratban = DP offset */								/**/
@@ -3628,7 +3628,7 @@ ReteszesRTUIndex[15][2] = 76;			/* 32608			 */															/**/
 ReteszesTMOK_RTUNum[15] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[15] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 16. TMOK: 32-65 RTU: 32607, 32608, 32609								-----------------------*/								/**/
+/* 16. TMOK: 32-65 RTU: 32607, 32608, 32609								----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[16] = 1265; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[16][0] =1265;						/* TMOK azonosítója a táviratban = DP offset */								/**/			
 TMOK_ID[16][1] =1265;						/* TMOK azonosítója a táviratban = DP offset */								/**/
@@ -3639,8 +3639,7 @@ ReteszesRTUIndex[16][2] = 76;			/* 32608			 */															/**/
 ReteszesTMOK_RTUNum[16] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[16] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 17. TMOK: 71-28 A redundancia -> RTU: Ganna 044-2 PV erõmû
- PV erõmû 							-----------------------*/								/**/
+/* 17. TMOK: 71-28 A redundancia -> RTU: Ganna 044-2 PV erõmû PV erõmû 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[17] = 31; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[17][0] = 0;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[17][0] = 52;			/* A redundancia		 */															/**/
