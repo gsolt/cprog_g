@@ -3495,7 +3495,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 18;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 20;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3647,6 +3647,19 @@ ReteszesTMOK_RTUNum[17] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnás
 nReteszPar[17] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[17] = 6;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
+/* 18. TMOK: 70-34 RTU: Celldömölk 2912/17 PV erõmû			- Tesztelve					-----------------------*/								/**/
+TMOKAllasjelzesOffsetek[18] = 1266; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[18][0] =1266;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[18][0] = 78;			/* Celldömölk 2912/17 PV erõmû				 */															/**/
+ReteszesTMOK_RTUNum[18] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[18] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 19. TMOK: 41-33 RTU: Celldömölk 2912/17 PV erõmû				- Tesztelve				-----------------------*/								/**/
+TMOKAllasjelzesOffsetek[19] = 1267; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[19][0] =1267;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[19][0] = 78;			/* Celldömölk 2912/17 PV erõmû				 */															/**/
+ReteszesTMOK_RTUNum[19] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[19] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
  																													
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
