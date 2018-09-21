@@ -199,6 +199,7 @@ ST[0].nSiteList[76]= 9041;  ST[0].nLinkList[76]	=RADIO1_8;	/* RADIO1_8	 	32609		
 
 ST[0].nSiteList[77]= 9042;  ST[0].nLinkList[77]	=RADIO1_8;	/* RADIO1_8	 	30-94						                    BAR  */     /* tesztelve */
 ST[0].nSiteList[78]= 9043;  ST[0].nLinkList[78]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 2912/17 PV erõmû         CELL  */     /* tesztelve */
+ST[0].nSiteList[79]= 9044;  ST[0].nLinkList[79]	=RADIO5_2;	/* RADIO5_2	 	Tata, Kristály                      TAT  */     /* tesztelve */
 
 
 
@@ -284,8 +285,8 @@ short			*p_col_SCAct;*/
 
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
-/* K1 : ZEG, IK, CELL */
-ST[0].sRAD_K1[0].nRtuNumRad = 16; /*63*/
+/* K1 : ZEG, IK, CELL, TAT */
+ST[0].sRAD_K1[0].nRtuNumRad = 17; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -302,6 +303,7 @@ ST[0].sRAD_K1[0].nIndx[12]=63;
 ST[0].sRAD_K1[0].nIndx[13]=68; 
 ST[0].sRAD_K1[0].nIndx[14]=71; 
 ST[0].sRAD_K1[0].nIndx[15]=78; 
+ST[0].sRAD_K1[0].nIndx[16]=79; 
 
 
 /* K2 : SZOM, MOS, CSEP*/
