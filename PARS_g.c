@@ -200,6 +200,8 @@ ST[0].nSiteList[76]= 9041;  ST[0].nLinkList[76]	=RADIO1_8;	/* RADIO1_8	 	32609		
 ST[0].nSiteList[77]= 9042;  ST[0].nLinkList[77]	=RADIO1_8;	/* RADIO1_8	 	30-94						                    BAR  */     /* tesztelve */
 ST[0].nSiteList[78]= 9043;  ST[0].nLinkList[78]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 2912/17 PV erõmû         CELL  */     /* tesztelve */
 ST[0].nSiteList[79]= 9044;  ST[0].nLinkList[79]	=RADIO5_2;	/* RADIO5_2	 	Tata, Kristály                      TAT  */     /* tesztelve */
+ST[0].nSiteList[80]= 9045;  ST[0].nLinkList[80]	=RADIO6_1;	/* RADIO6_1	 	Kenéz, 062-9 PV erõmû               SZOM  */     /* tesztelve */
+ST[0].nSiteList[81]= 9046;  ST[0].nLinkList[81]	=RADIO3_6;	/* RADIO3_6	 	Oroszlány, 4700-9 PV erõmû           ORNY  */     /* tesztelve */
 
 
 
@@ -307,7 +309,7 @@ ST[0].sRAD_K1[0].nIndx[16]=79;
 
 
 /* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 19; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 20; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -327,12 +329,13 @@ ST[0].sRAD_K2[0].nIndx[15]=59;
 ST[0].sRAD_K2[0].nIndx[16]=60;
 ST[0].sRAD_K2[0].nIndx[17]=69;
 ST[0].sRAD_K2[0].nIndx[18]=73;
+ST[0].sRAD_K2[0].nIndx[19]=80;
 
 
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 38; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 39; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -372,6 +375,7 @@ ST[0].sRAD_K3[0].nIndx[34]=74;
 ST[0].sRAD_K3[0].nIndx[35]=75;
 ST[0].sRAD_K3[0].nIndx[36]=76;
 ST[0].sRAD_K3[0].nIndx[37]=77;
+ST[0].sRAD_K3[0].nIndx[38]=81;
      
 
 /*RST[0].sLINK RTUk indexei*/
