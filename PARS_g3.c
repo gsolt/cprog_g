@@ -163,6 +163,9 @@ sT[0].sCP[0].sCPR[78].nDCStart =362;     sT[0].sCP[0].sCPR[78].nDCNum = 4;    sT
 sT[0].sCP[0].sCPR[79].nDCStart =367;     sT[0].sCP[0].sCPR[79].nDCNum = 4;    sT[0].sCP[0].sCPR[79].nSCStart =371;    sT[0].sCP[0].sCPR[79].nAckStart =0;	  sT[0].sCP[0].sCPR[79].nAckNum =0;   sT[0].sCP[0].sCPR[79].nSPOffsetCS =1613;  sT[0].sCP[0].sCPR[79].nSPOffsetLek =1614;
 sT[0].sCP[0].sCPR[80].nDCStart =372;     sT[0].sCP[0].sCPR[80].nDCNum = 4;    sT[0].sCP[0].sCPR[80].nSCStart =376;    sT[0].sCP[0].sCPR[80].nAckStart =0;	  sT[0].sCP[0].sCPR[80].nAckNum =0;   sT[0].sCP[0].sCPR[80].nSPOffsetCS =1631;  sT[0].sCP[0].sCPR[80].nSPOffsetLek =1632;
 sT[0].sCP[0].sCPR[81].nDCStart =377;     sT[0].sCP[0].sCPR[81].nDCNum = 4;    sT[0].sCP[0].sCPR[81].nSCStart =381;    sT[0].sCP[0].sCPR[81].nAckStart =0;	  sT[0].sCP[0].sCPR[81].nAckNum =0;   sT[0].sCP[0].sCPR[81].nSPOffsetCS =1649;  sT[0].sCP[0].sCPR[81].nSPOffsetLek =1650;
+sT[0].sCP[0].sCPR[82].nDCStart =382;     sT[0].sCP[0].sCPR[82].nDCNum = 4;    sT[0].sCP[0].sCPR[82].nSCStart =386;    sT[0].sCP[0].sCPR[82].nAckStart =0;	  sT[0].sCP[0].sCPR[82].nAckNum =0;   sT[0].sCP[0].sCPR[82].nSPOffsetCS =1667;  sT[0].sCP[0].sCPR[82].nSPOffsetLek =1668;
+sT[0].sCP[0].sCPR[83].nDCStart =387;     sT[0].sCP[0].sCPR[83].nDCNum = 4;    sT[0].sCP[0].sCPR[83].nSCStart =391;    sT[0].sCP[0].sCPR[83].nAckStart =0;	  sT[0].sCP[0].sCPR[83].nAckNum =0;   sT[0].sCP[0].sCPR[83].nSPOffsetCS =1706;  sT[0].sCP[0].sCPR[83].nSPOffsetLek =1707;
+sT[0].sCP[0].sCPR[84].nDCStart =392;     sT[0].sCP[0].sCPR[84].nDCNum = 4;    sT[0].sCP[0].sCPR[84].nSCStart =396;    sT[0].sCP[0].sCPR[84].nAckStart =0;	  sT[0].sCP[0].sCPR[84].nAckNum =0;   sT[0].sCP[0].sCPR[84].nSPOffsetCS =1724;  sT[0].sCP[0].sCPR[84].nSPOffsetLek =1725;
 
 
 
@@ -494,7 +497,9 @@ sT[0].sTI[36].nType = TYP_TMOK;
 
 	sT[0].sMOT[36].nIEC_SP				= 766;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[36].nIEC_DP				= 116;		/* Kétbites értékek IEC kezdõcíme*/
-	sT[0].sMOT[36].nIEC_NM				= 166;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[36].nIEC_NM				= 448;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[36].nNMNum      			= 4;
+
 
 /* 80-87  -----------------------------------------------------------*/	
 sT[0].sTI[37].nType = TYP_TMOK;
@@ -901,6 +906,41 @@ sT[0].sTI[81].nType = TYP_MOT;
 	sT[0].sMOT[81].nIEC_NM				= 439;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[81].nNMNum				= 9;		/* Analóg mérések száma*/
 
+/* Szombathely Claudius ----------------------------------------------------------------*/
+sT[0].sTI[82].nType = TYP_MOT;
+
+	sT[0].sMOT[82].nIEC_SP				= 1651;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[82].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[82].nIEC_DP				= 413;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[82].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[82].nIEC_NM				= 452;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[82].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Jánosháza, 033_3 PV erõmû ----------------------------------------------------------------*/
+  sT[0].sTI[83].nType = TYP_TAL;
+  
+	sT[0].sTAL[83].nIEC_SP       		= 1669;
+	sT[0].sTAL[83].nIEC_OsszevontHiba	= 1701;
+	sT[0].sTAL[83].nIEC_MT_KommHiba	= 1702;
+	sT[0].sTAL[83].nKommStatusNum		= 2;	
+	sT[0].sTAL[83].nIEC_DP       		= 421;
+	sT[0].sTAL[83].nIEC_DP_FSZ1  		= 425;
+	sT[0].sTAL[83].nIEC_NM				= 458;
+	sT[0].sTAL[83].nNMNum		  		= 9;
+  
+  sT[0].sTAL[83].nSP_EXTRA_OFFSET		= 1704;
+	sT[0].sTAL[83].nSP_EXTRA_NUM		= 2;
+    
+
+/* Tatabánya Unio ltp. ----------------------------------------------------------------*/
+sT[0].sTI[84].nType = TYP_MOT;
+
+	sT[0].sMOT[84].nIEC_SP				= 1708;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[84].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[84].nIEC_DP				= 429;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[84].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[84].nIEC_NM				= 467;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[84].nNMNum				= 6;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 

@@ -202,6 +202,9 @@ ST[0].nSiteList[78]= 9043;  ST[0].nLinkList[78]	=RADIO4_2;	/* RADIO4_2	 	Celldöm
 ST[0].nSiteList[79]= 9044;  ST[0].nLinkList[79]	=RADIO5_2;	/* RADIO5_2	 	Tata, Kristály                      TAT  */     /* tesztelve */
 ST[0].nSiteList[80]= 9045;  ST[0].nLinkList[80]	=RADIO6_1;	/* RADIO6_1	 	Kenéz, 062-9 PV erõmû               SZOM  */     /* tesztelve */
 ST[0].nSiteList[81]= 9046;  ST[0].nLinkList[81]	=RADIO3_6;	/* RADIO3_6	 	Oroszlány, 4700-9 PV erõmû           ORNY  */     /* tesztelve */
+ST[0].nSiteList[82]= 9049;  ST[0].nLinkList[82]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Claudius                SZÖL  */     /* tesztelve */
+ST[0].nSiteList[83]= 9047;  ST[0].nLinkList[83]	=RADIO4_2;	/* RADIO4_2	 	Jánosháza, 033_3 PV erõmû            CELL  */     /*  */
+ST[0].nSiteList[84]= 9048;  ST[0].nLinkList[84]	=RADIO3_7;	/* RADIO3_7	 	Tatabánya Unió ltp.                  GALL  */     /*  */
 
 
 
@@ -287,8 +290,8 @@ short			*p_col_SCAct;*/
 
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
-/* K1 : ZEG, IK, CELL, TAT */
-ST[0].sRAD_K1[0].nRtuNumRad = 17; /*63*/
+/* K1 : ZEG, IK, CELL, TAT, SZÖL */
+ST[0].sRAD_K1[0].nRtuNumRad = 19; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -306,10 +309,12 @@ ST[0].sRAD_K1[0].nIndx[13]=68;
 ST[0].sRAD_K1[0].nIndx[14]=71; 
 ST[0].sRAD_K1[0].nIndx[15]=78; 
 ST[0].sRAD_K1[0].nIndx[16]=79; 
+ST[0].sRAD_K1[0].nIndx[17]=82; 
+ST[0].sRAD_K1[0].nIndx[18]=83; 
 
 
-/* K2 : SZOM, MOS, CSEP*/
-ST[0].sRAD_K2[0].nRtuNumRad = 20; /*76*/
+/* K2 : SZOM, MOS, CSEP, GALL*/
+ST[0].sRAD_K2[0].nRtuNumRad = 21; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -330,6 +335,7 @@ ST[0].sRAD_K2[0].nIndx[16]=60;
 ST[0].sRAD_K2[0].nIndx[17]=69;
 ST[0].sRAD_K2[0].nIndx[18]=73;
 ST[0].sRAD_K2[0].nIndx[19]=80;
+ST[0].sRAD_K2[0].nIndx[20]=84;
 
 
 
