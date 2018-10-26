@@ -203,8 +203,11 @@ ST[0].nSiteList[79]= 9044;  ST[0].nLinkList[79]	=RADIO5_2;	/* RADIO5_2	 	Tata, K
 ST[0].nSiteList[80]= 9045;  ST[0].nLinkList[80]	=RADIO6_1;	/* RADIO6_1	 	Kenéz, 062-9 PV erõmû               SZOM  */     /* tesztelve */
 ST[0].nSiteList[81]= 9046;  ST[0].nLinkList[81]	=RADIO3_6;	/* RADIO3_6	 	Oroszlány, 4700-9 PV erõmû           ORNY  */     /* tesztelve */
 ST[0].nSiteList[82]= 9049;  ST[0].nLinkList[82]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Claudius                SZÖL  */     /* tesztelve */
-ST[0].nSiteList[83]= 9047;  ST[0].nLinkList[83]	=RADIO4_2;	/* RADIO4_2	 	Jánosháza, 033_3 PV erõmû            CELL  */     /*  */
-ST[0].nSiteList[84]= 9048;  ST[0].nLinkList[84]	=RADIO3_7;	/* RADIO3_7	 	Tatabánya Unió ltp.                  GALL  */     /*  */
+ST[0].nSiteList[83]= 9047;  ST[0].nLinkList[83]	=RADIO4_2;	/* RADIO4_2	 	Jánosháza, 033_3 PV erõmû            CELL  */     /*  tesztelve */
+ST[0].nSiteList[84]= 9048;  ST[0].nLinkList[84]	=RADIO3_7;	/* RADIO3_7	 	Tatabánya Unió ltp.                  GALL  */     /* tesztelve */
+ST[0].nSiteList[85]= 9050;  ST[0].nLinkList[85]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 03/15 PV                   ZEG  */     /*  */
+ST[0].nSiteList[86]= 9051;  ST[0].nLinkList[86]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 05/1 PV                   ZEG  */     /*  */
+ST[0].nSiteList[87]= 9052;  ST[0].nLinkList[87]	=RADIO9_4;	/* RADIO9_4	 	Bodajk, 0207/10 PV                   MOR  */     /*  */
 
 
 
@@ -291,7 +294,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL */
-ST[0].sRAD_K1[0].nRtuNumRad = 19; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 21; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -311,6 +314,8 @@ ST[0].sRAD_K1[0].nIndx[15]=78;
 ST[0].sRAD_K1[0].nIndx[16]=79; 
 ST[0].sRAD_K1[0].nIndx[17]=82; 
 ST[0].sRAD_K1[0].nIndx[18]=83; 
+ST[0].sRAD_K1[0].nIndx[19]=85; 
+ST[0].sRAD_K1[0].nIndx[20]=86; 
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
@@ -341,7 +346,7 @@ ST[0].sRAD_K2[0].nIndx[20]=84;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 39; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 40; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -382,6 +387,7 @@ ST[0].sRAD_K3[0].nIndx[35]=75;
 ST[0].sRAD_K3[0].nIndx[36]=76;
 ST[0].sRAD_K3[0].nIndx[37]=77;
 ST[0].sRAD_K3[0].nIndx[38]=81;
+ST[0].sRAD_K3[0].nIndx[39]=87;
      
 
 /*RST[0].sLINK RTUk indexei*/
