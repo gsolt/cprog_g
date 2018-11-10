@@ -181,7 +181,7 @@ ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár,
 
 ST[0].nSiteList[64]= 9027;  ST[0].nLinkList[64]	=RADIO5_2;	/* RADIO5_2	 	Tata, Bartók      				          TAT  */          /*OK*/
 ST[0].nSiteList[65]= 9028;  ST[0].nLinkList[65]	=RADIO5_1;	/* RADIO5_2	 	Kisbér, Komáromi u      				    IGM  */           /*OK, tesztelve */
-ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_4;	/* RADIO9_4	 	Velence, Nautis      				        KÖF  */           /* OK*/
+ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_1;	/* RADIO9_1	 	Velence, Nautis      				        KÖF  */           /* OK*/
 ST[0].nSiteList[67]= 9030;  ST[0].nLinkList[67]	=RADIO1_8;	/* RADIO1_8	 	Velence, ABC Wickenburg      				BAR  */           /* OK*/
 
 ST[0].nSiteList[68]= 9031;  ST[0].nLinkList[68]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Alkotmány I.      				  IK  */             /* OK */
