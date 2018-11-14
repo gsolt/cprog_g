@@ -181,7 +181,7 @@ ST[0].nSiteList[63]= 9026;  ST[0].nLinkList[63]	=RADIO4_1;	/* RADIO4_1	 	Sárvár,
 
 ST[0].nSiteList[64]= 9027;  ST[0].nLinkList[64]	=RADIO5_2;	/* RADIO5_2	 	Tata, Bartók      				          TAT  */          /*OK*/
 ST[0].nSiteList[65]= 9028;  ST[0].nLinkList[65]	=RADIO5_1;	/* RADIO5_2	 	Kisbér, Komáromi u      				    IGM  */           /*OK, tesztelve */
-ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_1;	/* RADIO9_1	 	Velence, Nautis      				        KÖF  */           /* OK*/
+ST[0].nSiteList[66]= 9029;  ST[0].nLinkList[66]	=RADIO9_1;	/* RADIO9_1	 	Velence, Nautis      				        KÖF  */           /* OK, Tesztelve */
 ST[0].nSiteList[67]= 9030;  ST[0].nLinkList[67]	=RADIO1_8;	/* RADIO1_8	 	Velence, ABC Wickenburg      				BAR  */           /* OK*/
 
 ST[0].nSiteList[68]= 9031;  ST[0].nLinkList[68]	=RADIO4_1;	/* RADIO4_1	 	Sárvár, Alkotmány I.      				  IK  */             /* OK */
@@ -205,9 +205,10 @@ ST[0].nSiteList[81]= 9046;  ST[0].nLinkList[81]	=RADIO3_6;	/* RADIO3_6	 	Oroszlá
 ST[0].nSiteList[82]= 9049;  ST[0].nLinkList[82]	=RADIO6_6;	/* RADIO6_6	 	Szombathely, Claudius                SZÖL  */     /* tesztelve */
 ST[0].nSiteList[83]= 9047;  ST[0].nLinkList[83]	=RADIO4_2;	/* RADIO4_2	 	Jánosháza, 033_3 PV erõmû            CELL  */     /*  tesztelve */
 ST[0].nSiteList[84]= 9048;  ST[0].nLinkList[84]	=RADIO3_7;	/* RADIO3_7	 	Tatabánya Unió ltp.                  GALL  */     /* tesztelve */
-ST[0].nSiteList[85]= 9050;  ST[0].nLinkList[85]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 03/15 PV                   ZEG  */     /*  */
-ST[0].nSiteList[86]= 9051;  ST[0].nLinkList[86]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 05/1 PV                   ZEG  */     /*  */
-ST[0].nSiteList[87]= 9052;  ST[0].nLinkList[87]	=RADIO9_4;	/* RADIO9_4	 	Bodajk, 0207/10 PV                   MOR  */     /*  */
+ST[0].nSiteList[85]= 9050;  ST[0].nLinkList[85]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 03/15 PV                   ZEG  */     /* tesztelve */
+ST[0].nSiteList[86]= 9051;  ST[0].nLinkList[86]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 05/1 PV                   ZEG  */     /* tesztelve */
+ST[0].nSiteList[87]= 9052;  ST[0].nLinkList[87]	=RADIO9_4;	/* RADIO9_4	 	Bodajk, 0207/10 PV                   MOR  */     /* tesztelve */
+ST[0].nSiteList[88]= 9053;  ST[0].nLinkList[88]	=RADIO1_1;	/* RADIO1_1	 	32-96                               SZVAR  */     /* tesztelve */
 
 
 
@@ -346,7 +347,7 @@ ST[0].sRAD_K2[0].nIndx[20]=84;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 40; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 41; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -388,6 +389,7 @@ ST[0].sRAD_K3[0].nIndx[36]=76;
 ST[0].sRAD_K3[0].nIndx[37]=77;
 ST[0].sRAD_K3[0].nIndx[38]=81;
 ST[0].sRAD_K3[0].nIndx[39]=87;
+ST[0].sRAD_K3[0].nIndx[40]=88;
      
 
 /*RST[0].sLINK RTUk indexei*/
