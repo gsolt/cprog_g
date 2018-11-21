@@ -3694,11 +3694,17 @@ ReteszesRTUIndex[23][0] = 81;			/* Oroszlány 4700-9 PV erõmû		 */															
 ReteszesTMOK_RTUNum[23] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[23] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 24. TMOK: 90-18   RTU: Jánosháza 033/3 PV erõmû 							----------------------- tesztelve */								/**/
+/* 24. TMOK: 90-18   RTU: Jánosháza 033/3 PV erõmû, A redundancia-> H: Zalameggyes 62 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[24] = 125; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[24][0] = 125;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[24][0] = 83;			/* Jánosháza 033/3 PV erõmû		 */															/**/
-ReteszesTMOK_RTUNum[24] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[24][1] = 6;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[24][1] = 52;			/* A redundancia		 */															/**/
+
+
+ReteszesTMOK_RTUNum[24] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[24] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[24] = 8;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
