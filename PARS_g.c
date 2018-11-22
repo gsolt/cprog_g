@@ -208,7 +208,11 @@ ST[0].nSiteList[84]= 9048;  ST[0].nLinkList[84]	=RADIO3_7;	/* RADIO3_7	 	Tatabán
 ST[0].nSiteList[85]= 9050;  ST[0].nLinkList[85]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 03/15 PV                   ZEG  */     /* tesztelve */
 ST[0].nSiteList[86]= 9051;  ST[0].nLinkList[86]	=RADIO2_8;	/* RADIO2_8	 	Gyõrvár, 05/1 PV                   ZEG  */     /* tesztelve */
 ST[0].nSiteList[87]= 9052;  ST[0].nLinkList[87]	=RADIO9_4;	/* RADIO9_4	 	Bodajk, 0207/10 PV                   MOR  */     /* tesztelve */
-ST[0].nSiteList[88]= 9053;  ST[0].nLinkList[88]	=RADIO1_1;	/* RADIO1_1	 	32-96                               SZVAR  */     /* tesztelve */
+ST[0].nSiteList[88]= 9053;  ST[0].nLinkList[88]	=RADIO1_1;	/* RADIO1_1	 	36601                               SZVAR  */     /* tesztelve */
+ST[0].nSiteList[89]= 9054;  ST[0].nLinkList[89]	=RADIO5_3;	/* RADIO5_3	 	Annavölgy 0276/15 PV                IGM  */     /* Tesztelve */
+ST[0].nSiteList[90]= 9055;  ST[0].nLinkList[90]	=RADIO1_1;	/* RADIO1_1	 	Székesfehérvár, Albacomp             SZVAR  */     /* Tesztelve */
+ST[0].nSiteList[91]= 9056;  ST[0].nLinkList[91]	=RADIO3_9;	/* RADIO3_9	 	Tatabánya, Közm. háza                TAT  */     /*  */
+ST[0].nSiteList[92]= 9057;  ST[0].nLinkList[92]	=RADIO2_6;	/* RADIO2_6	 	Zalaegerszeg Olai bisztró                ZAL  */     /*  */
 
 
 
@@ -295,7 +299,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL */
-ST[0].sRAD_K1[0].nRtuNumRad = 21; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 23; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -317,6 +321,8 @@ ST[0].sRAD_K1[0].nIndx[17]=82;
 ST[0].sRAD_K1[0].nIndx[18]=83; 
 ST[0].sRAD_K1[0].nIndx[19]=85; 
 ST[0].sRAD_K1[0].nIndx[20]=86; 
+ST[0].sRAD_K1[0].nIndx[21]=91; 
+ST[0].sRAD_K1[0].nIndx[22]=92; 
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
@@ -347,7 +353,7 @@ ST[0].sRAD_K2[0].nIndx[20]=84;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 41; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 43; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -390,6 +396,8 @@ ST[0].sRAD_K3[0].nIndx[37]=77;
 ST[0].sRAD_K3[0].nIndx[38]=81;
 ST[0].sRAD_K3[0].nIndx[39]=87;
 ST[0].sRAD_K3[0].nIndx[40]=88;
+ST[0].sRAD_K3[0].nIndx[41]=89;
+ST[0].sRAD_K3[0].nIndx[42]=90;
      
 
 /*RST[0].sLINK RTUk indexei*/
