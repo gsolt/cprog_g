@@ -214,6 +214,8 @@ ST[0].nSiteList[90]= 9055;  ST[0].nLinkList[90]	=RADIO1_1;	/* RADIO1_1	 	Székesf
 ST[0].nSiteList[91]= 9056;  ST[0].nLinkList[91]	=RADIO3_9;	/* RADIO3_9	 	Tatabánya, Közm. háza                TAT  */     /*  */
 ST[0].nSiteList[92]= 9057;  ST[0].nLinkList[92]	=RADIO2_6;	/* RADIO2_6	 	Zalaegerszeg Olai bisztró                ZAL  */     /*  */
 
+ST[0].nSiteList[93]= 9058;  ST[0].nLinkList[93]	=RADIO1_1;	/* RADIO1_1	 	Tác 0346/1-1                       SZVAR  */     /*  */
+ST[0].nSiteList[94]= 9059;  ST[0].nLinkList[94]	=RADIO1_1;	/* RADIO1_1	 	Tác 0346/1-2                       SZVAR  */     /*  */
 
 
 
@@ -353,7 +355,7 @@ ST[0].sRAD_K2[0].nIndx[20]=84;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 43; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 45; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -398,6 +400,8 @@ ST[0].sRAD_K3[0].nIndx[39]=87;
 ST[0].sRAD_K3[0].nIndx[40]=88;
 ST[0].sRAD_K3[0].nIndx[41]=89;
 ST[0].sRAD_K3[0].nIndx[42]=90;
+ST[0].sRAD_K3[0].nIndx[43]=93;
+ST[0].sRAD_K3[0].nIndx[44]=94;
      
 
 /*RST[0].sLINK RTUk indexei*/

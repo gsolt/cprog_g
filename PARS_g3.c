@@ -175,6 +175,9 @@ sT[0].sCP[0].sCPR[90].nDCStart =420;     sT[0].sCP[0].sCPR[90].nDCNum = 4;    sT
 sT[0].sCP[0].sCPR[91].nDCStart =425;     sT[0].sCP[0].sCPR[91].nDCNum = 4;    sT[0].sCP[0].sCPR[91].nSCStart =429;    sT[0].sCP[0].sCPR[91].nAckStart =0;	  sT[0].sCP[0].sCPR[91].nAckNum =0;   sT[0].sCP[0].sCPR[91].nSPOffsetCS =1866;  sT[0].sCP[0].sCPR[91].nSPOffsetLek =1867;
 sT[0].sCP[0].sCPR[92].nDCStart =430;     sT[0].sCP[0].sCPR[92].nDCNum = 4;    sT[0].sCP[0].sCPR[92].nSCStart =434;    sT[0].sCP[0].sCPR[92].nAckStart =0;	  sT[0].sCP[0].sCPR[92].nAckNum =0;   sT[0].sCP[0].sCPR[92].nSPOffsetCS =1884;  sT[0].sCP[0].sCPR[92].nSPOffsetLek =1885;
 
+sT[0].sCP[0].sCPR[93].nDCStart =435;     sT[0].sCP[0].sCPR[93].nDCNum = 4;    sT[0].sCP[0].sCPR[93].nSCStart =439;    sT[0].sCP[0].sCPR[93].nAckStart =0;	  sT[0].sCP[0].sCPR[93].nAckNum =0;   sT[0].sCP[0].sCPR[93].nSPOffsetCS =1902;  sT[0].sCP[0].sCPR[93].nSPOffsetLek =1903;
+sT[0].sCP[0].sCPR[94].nDCStart =440;     sT[0].sCP[0].sCPR[94].nDCNum = 4;    sT[0].sCP[0].sCPR[94].nSCStart =444;    sT[0].sCP[0].sCPR[94].nAckStart =0;	  sT[0].sCP[0].sCPR[94].nAckNum =0;   sT[0].sCP[0].sCPR[94].nSPOffsetCS =1920;  sT[0].sCP[0].sCPR[94].nSPOffsetLek =1921;
+
 
 /* TMOK jelszámok inicializálása ciklusban */	
 for (nI = 0;nI<	MAX_RTU;nI++)
@@ -1028,6 +1031,26 @@ sT[0].sTI[92].nType = TYP_MOT;
 	sT[0].sMOT[92].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[92].nIEC_NM				= 525;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[92].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Tác 0346/1-1 PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[93].nType = TYP_MOT;
+
+	sT[0].sMOT[93].nIEC_SP				= 1886;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[93].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[93].nIEC_DP				= 500;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[93].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[93].nIEC_NM				= 531;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[93].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Tác 0346/1-2 PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[94].nType = TYP_MOT;
+
+	sT[0].sMOT[94].nIEC_SP				= 1904;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[94].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[94].nIEC_DP				= 508;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[94].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[94].nIEC_NM				= 540;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[94].nNMNum				= 9;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/
