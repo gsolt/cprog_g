@@ -800,39 +800,53 @@ void tx_command(void)
    		   	nTxBuf[4] = 0;
    		   	nTxBuf[5] = 0;
    		   	nTxBuf[6] = 0;
-    		nTxBuf[7] = 0;
+    		  nTxBuf[7] = 0;
    		   	nTxBuf[8] = 0;    		   	
    		   	nTxBuf[9] = 0;    		   	
    		   	nTxBuf[10] = 0;    		   	
    		   	nTxBuf[11] = 0;    		   	
    		   	nTxBuf[12] = 0;    		   	
    		   	nTxBuf[13] = 0;    		   	
-    		   	
-    		
-   		   	
+   		   	nTxBuf[14] = 0;    		   	
+   		   	nTxBuf[15] = 0;    		   	
+   		   	nTxBuf[16] = 0;    		   	
+   		   	nTxBuf[17] = 0;    		   	
+   		   	nTxBuf[18] = 0;    		   	
+   		   	nTxBuf[19] = 0;    		   	
+   		   	nTxBuf[20] = 0;    		   	
+    		   	  		   	
  		   	MOSCAD_sprintf(message,"Parancs aktiv,nI: %d, Value: %d, nJ: %d",nI,p_col_DCAct[nJ-nOffset],nJ );
-   			MOSCAD_error(message ); 
- 
+   			MOSCAD_error(message );  
    		   	
 			/* Tavirat elkuldese */
-			
-			
+			if ( nI!=95 )
+			{			
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
 	 		  	if (MOSCAD_TxFrm(nI, tx_buffer, COMMAND_LENGTH*2) !=0 )
  			  	{
 					MOSCAD_sprintf(message,"Could not send parancs ,nI: %d",nI);
    				 	MOSCAD_error(message ); 				
-   				}
-     		    
- 
- 
- 
-    			
+   				}     			
 		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
+			}
+			else if ( nI==95 ) /* Almásfüzitõ 012 PV erõmû */
+			{			
+				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
+   		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
+	 		  	if (MOSCAD_TxFrm(nI, tx_buffer, 21*2) !=0 )
+ 			  	{
+					MOSCAD_sprintf(message,"Could not send parancs ,nI: %d",nI);
+   				 	MOSCAD_error(message ); 				
+   				}     			
+		   		/* Mindenkeppen visszanullaz */
+   				p_col_DCAct[nJ-nOffset] = 0;
+			}
+      
 			
-			
+      
+      
 			nTemp = value_CComX(nI);
 			setvalue_CComX(nI,nTemp+1);
 			
@@ -1039,7 +1053,7 @@ if (pMOT->nNMNum > 0)
 /* Egybites jelzések feldolgozása ----------------------------------------------------------------------------------------*/
 if (pMOT->nIEC_SP_NUM > 0)
 {
-	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<32; nI++)
+	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<64; nI++)
 	{
 		if (nI<16)
 		{
@@ -1051,7 +1065,19 @@ if (pMOT->nIEC_SP_NUM > 0)
 			nData = p_col_RxBuf[1];
 			nVal = (nData << (nI-16)) & 0x8000;
 		}
-		
+		else if (nI>=32 && nI<48)
+		{
+			nData = p_col_RxBuf[2];
+			nVal = (nData << (nI-32)) & 0x8000;
+		}
+		else if (nI>=48 && nI<64)
+		{
+			nData = p_col_RxBuf[3];
+			nVal = (nData << (nI-48)) & 0x8000;
+		}
+    
+    
+    		
 		nIEC_Offset = pMOT->nIEC_SP + nI;
 				
 		if (nSynchronized == 0)
@@ -1091,7 +1117,7 @@ if (pMOT->nIEC_SP_NUM > 0)
   
 if (	nDPStart > 0)
 {
-	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 16; nI++)
+	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 40; nI++)
 	{	
   
 	fnDPTblIndx(nDPStart+nI,&nDPTblIndx,&nMoscadOffset);
@@ -1123,6 +1149,26 @@ if (	nDPStart > 0)
 			nValH = (nData << (nI-8)*2 ) & 0x8000;	
 			nValL = (nData << ((nI-8)*2+1)) & 0x8000;								
 		}
+		else if (nI >= 16 && nI <24)
+		{
+			nData = p_col_RxBuf[10];	
+			nValH = (nData << (nI-16)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-16)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 24 && nI <32)
+		{
+			nData = p_col_RxBuf[11];	
+			nValH = (nData << (nI-24)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-24)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 32 && nI <40)
+		{
+			nData = p_col_RxBuf[12];	
+			nValH = (nData << (nI-32)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-32)*2+1)) & 0x8000;								
+		}
+    
+
 		
  				if (nValH > 0)
 					{
@@ -3495,7 +3541,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 33;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 40;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3507,9 +3553,14 @@ nReteszPar[0] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartoz
 																													/**/
 /* 1. TMOK: 81-31 RTU: Tata napelempark 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[1] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[1][0] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[1][0] = 34;			/* Tata napelempark		 */															/**/
-ReteszesTMOK_RTUNum[1] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[1][1] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[1][1] = 96;			/* Tata Moowa		 */															/**/
+
+ReteszesTMOK_RTUNum[1] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[1] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													
 /* 2. TMOK: 81-60 RTU: Tata napelempark 							-----------------------*/								/**/
@@ -3773,6 +3824,55 @@ ReteszesRTUIndex[32][1] =  94;			/* Tét 0346/1-2 PV	 */															/**/
 
 ReteszesTMOK_RTUNum[32] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[32] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 33. TMOK: 85-50 A front end ->   RTU: Almásfüzitõ 012 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[33] = 1280; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[33][0] = 1280;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[33][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
+ReteszesTMOK_RTUNum[33] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[33] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 34. TMOK: 85-03 C front end ->   RTU: Almásfüzitõ 012 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[34] = 1281; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[34][0] = 1281;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[34][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
+ReteszesTMOK_RTUNum[34] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[34] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 35. TMOK: 85-83 E front end ->   RTU: Almásfüzitõ 012 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[35] = 1282; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[35][0] = 1282;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[35][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
+ReteszesTMOK_RTUNum[35] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[35] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 36. TMOK: 85-01 E front end ->   RTU: Almásfüzitõ 012 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[36] = 1283; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[36][0] = 1283;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[36][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
+ReteszesTMOK_RTUNum[36] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[36] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 37. TMOK: 85-00 E front end ->   RTU: Almásfüzitõ 012 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[37] = 1284; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[37][0] = 1284;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[37][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
+ReteszesTMOK_RTUNum[37] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[37] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 38. TMOK: Szõy, Dunalys E front end ->   RTU: Almásfüzitõ 012 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[38] = 1285; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[38][0] = 1285;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[38][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
+ReteszesTMOK_RTUNum[38] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[38] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 38. TMOK: 81-50 A front end ->   RTU: Tata Moowa PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[39] = 1286; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[39][0] = 1286;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[39][0] =  96;			/* Tats Moowa PV	 */															/**/
+ReteszesTMOK_RTUNum[39] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[39] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
             																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
