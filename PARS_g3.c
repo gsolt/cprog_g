@@ -177,6 +177,9 @@ sT[0].sCP[0].sCPR[92].nDCStart =430;     sT[0].sCP[0].sCPR[92].nDCNum = 4;    sT
 
 sT[0].sCP[0].sCPR[93].nDCStart =435;     sT[0].sCP[0].sCPR[93].nDCNum = 4;    sT[0].sCP[0].sCPR[93].nSCStart =439;    sT[0].sCP[0].sCPR[93].nAckStart =0;	  sT[0].sCP[0].sCPR[93].nAckNum =0;   sT[0].sCP[0].sCPR[93].nSPOffsetCS =1902;  sT[0].sCP[0].sCPR[93].nSPOffsetLek =1903;
 sT[0].sCP[0].sCPR[94].nDCStart =440;     sT[0].sCP[0].sCPR[94].nDCNum = 4;    sT[0].sCP[0].sCPR[94].nSCStart =444;    sT[0].sCP[0].sCPR[94].nAckStart =0;	  sT[0].sCP[0].sCPR[94].nAckNum =0;   sT[0].sCP[0].sCPR[94].nSPOffsetCS =1920;  sT[0].sCP[0].sCPR[94].nSPOffsetLek =1921;
+sT[0].sCP[0].sCPR[95].nDCStart =445;     sT[0].sCP[0].sCPR[95].nDCNum =10;    sT[0].sCP[0].sCPR[95].nSCStart =455;    sT[0].sCP[0].sCPR[95].nAckStart =0;	  sT[0].sCP[0].sCPR[95].nAckNum =0;   sT[0].sCP[0].sCPR[95].nSPOffsetCS =1986;  sT[0].sCP[0].sCPR[95].nSPOffsetLek =1987;
+sT[0].sCP[0].sCPR[96].nDCStart =456;     sT[0].sCP[0].sCPR[96].nDCNum = 4;    sT[0].sCP[0].sCPR[96].nSCStart =460;    sT[0].sCP[0].sCPR[96].nAckStart =0;	  sT[0].sCP[0].sCPR[96].nAckNum =0;   sT[0].sCP[0].sCPR[96].nSPOffsetCS =2004;  sT[0].sCP[0].sCPR[96].nSPOffsetLek =2005;
+sT[0].sCP[0].sCPR[97].nDCStart =461;     sT[0].sCP[0].sCPR[97].nDCNum = 8;    sT[0].sCP[0].sCPR[97].nSCStart =469;    sT[0].sCP[0].sCPR[97].nAckStart =0;	  sT[0].sCP[0].sCPR[97].nAckNum =0;   sT[0].sCP[0].sCPR[97].nSPOffsetCS =2073;  sT[0].sCP[0].sCPR[97].nSPOffsetLek =2074;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -1051,6 +1054,42 @@ sT[0].sTI[94].nType = TYP_MOT;
 	sT[0].sMOT[94].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[94].nIEC_NM				= 540;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[94].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Almásfüztitõ PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[95].nType = TYP_MOT;
+
+	sT[0].sMOT[95].nIEC_SP				= 1922;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[95].nIEC_SP_NUM			= 64;		/* Egybites értékek száma*/
+	sT[0].sMOT[95].nIEC_DP				= 516;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[95].nIEC_DP_NUM			=40;   		/* Két bites értékek száma*/
+	sT[0].sMOT[95].nIEC_NM				= 549;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[95].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Tata, Moowa PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[96].nType = TYP_MOT;
+
+	sT[0].sMOT[96].nIEC_SP				= 1988;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[96].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[96].nIEC_DP				= 556;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[96].nIEC_DP_NUM			=4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[96].nIEC_NM				= 558;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[96].nNMNum				= 5;		/* Analóg mérések száma*/
+
+  /* Komárom, CTP TALUS 8 csatornas !!! ----------------------------------------------*/
+  sT[0].sTI[97].nType = TYP_TAL;
+  
+	sT[0].sTAL[97].nIEC_SP       		= 2006;
+	sT[0].sTAL[97].nIEC_OsszevontHiba	= 2070;
+	sT[0].sTAL[97].nIEC_MT_KommHiba	= 2071;
+	sT[0].sTAL[97].nKommStatusNum		= 2;
+	sT[0].sTAL[97].nLeagNum			= 8;
+
+	sT[0].sTAL[97].nIEC_DP       		= 560;
+	sT[0].sTAL[97].nIEC_DP_FSZ1  		= 568;
+	sT[0].sTAL[97].nIEC_NM				= 563;
+	sT[0].sTAL[97].nNMNum		  		= 8;
+    
+
 
 
 } /* end fnSetDataPar()*/
