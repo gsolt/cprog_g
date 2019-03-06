@@ -181,6 +181,8 @@ sT[0].sCP[0].sCPR[95].nDCStart =445;     sT[0].sCP[0].sCPR[95].nDCNum =10;    sT
 sT[0].sCP[0].sCPR[96].nDCStart =456;     sT[0].sCP[0].sCPR[96].nDCNum = 4;    sT[0].sCP[0].sCPR[96].nSCStart =460;    sT[0].sCP[0].sCPR[96].nAckStart =0;	  sT[0].sCP[0].sCPR[96].nAckNum =0;   sT[0].sCP[0].sCPR[96].nSPOffsetCS =2004;  sT[0].sCP[0].sCPR[96].nSPOffsetLek =2005;
 sT[0].sCP[0].sCPR[97].nDCStart =461;     sT[0].sCP[0].sCPR[97].nDCNum = 8;    sT[0].sCP[0].sCPR[97].nSCStart =469;    sT[0].sCP[0].sCPR[97].nAckStart =0;	  sT[0].sCP[0].sCPR[97].nAckNum =0;   sT[0].sCP[0].sCPR[97].nSPOffsetCS =2073;  sT[0].sCP[0].sCPR[97].nSPOffsetLek =2074;
 
+sT[0].sCP[0].sCPR[98].nDCStart =470;     sT[0].sCP[0].sCPR[98].nDCNum = 4;    sT[0].sCP[0].sCPR[98].nSCStart =474;    sT[0].sCP[0].sCPR[98].nAckStart =0;	  sT[0].sCP[0].sCPR[98].nAckNum =0;   sT[0].sCP[0].sCPR[98].nSPOffsetCS =2097;  sT[0].sCP[0].sCPR[98].nSPOffsetLek =2098;
+
 
 /* TMOK jelszámok inicializálása ciklusban */	
 for (nI = 0;nI<	MAX_RTU;nI++)
@@ -1089,6 +1091,15 @@ sT[0].sTI[96].nType = TYP_MOT;
 	sT[0].sTAL[97].nIEC_NM				= 563;
 	sT[0].sTAL[97].nNMNum		  		= 8;
     
+/* Zalaegerszeg, 0779/ PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[98].nType = TYP_MOT;
+
+	sT[0].sMOT[98].nIEC_SP				= 2075;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[98].nIEC_SP_NUM			= 22;		/* Egybites értékek száma*/
+	sT[0].sMOT[98].nIEC_DP				= 576;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[98].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[98].nIEC_NM				= 571;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[98].nNMNum				= 9;		/* Analóg mérések száma*/
 
 
 

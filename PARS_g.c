@@ -220,6 +220,7 @@ ST[0].nSiteList[95]= 9061;  ST[0].nLinkList[95]	=RADIO5_2;	/* RADIO5_2	  Almásfü
 ST[0].nSiteList[96]= 9060;  ST[0].nLinkList[96]	=RADIO5_2;	/* RADIO5_2	  Tata, Moowa                        GALL  */     /*  */
 ST[0].nSiteList[97]= 9062;  ST[0].nLinkList[97]	=RADIO5_1;	/* RADIO5_1	  Komárom, CTP                        IGM  */     /*  */
 
+ST[0].nSiteList[98]= 9063;  ST[0].nLinkList[98]	=RADIO2_6;	/* RADIO2_6	  Zalaegerszeg, 0779/                 ZEG  */     /*  */
 
 
 
@@ -304,7 +305,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL */
-ST[0].sRAD_K1[0].nRtuNumRad = 23; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 24; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -328,6 +329,7 @@ ST[0].sRAD_K1[0].nIndx[19]=85;
 ST[0].sRAD_K1[0].nIndx[20]=86; 
 ST[0].sRAD_K1[0].nIndx[21]=91; 
 ST[0].sRAD_K1[0].nIndx[22]=92; 
+ST[0].sRAD_K1[0].nIndx[23]=98; 
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
