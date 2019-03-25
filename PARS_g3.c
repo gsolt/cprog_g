@@ -182,6 +182,7 @@ sT[0].sCP[0].sCPR[96].nDCStart =456;     sT[0].sCP[0].sCPR[96].nDCNum = 4;    sT
 sT[0].sCP[0].sCPR[97].nDCStart =461;     sT[0].sCP[0].sCPR[97].nDCNum = 8;    sT[0].sCP[0].sCPR[97].nSCStart =469;    sT[0].sCP[0].sCPR[97].nAckStart =0;	  sT[0].sCP[0].sCPR[97].nAckNum =0;   sT[0].sCP[0].sCPR[97].nSPOffsetCS =2073;  sT[0].sCP[0].sCPR[97].nSPOffsetLek =2074;
 
 sT[0].sCP[0].sCPR[98].nDCStart =470;     sT[0].sCP[0].sCPR[98].nDCNum = 4;    sT[0].sCP[0].sCPR[98].nSCStart =474;    sT[0].sCP[0].sCPR[98].nAckStart =0;	  sT[0].sCP[0].sCPR[98].nAckNum =0;   sT[0].sCP[0].sCPR[98].nSPOffsetCS =2097;  sT[0].sCP[0].sCPR[98].nSPOffsetLek =2098;
+sT[0].sCP[0].sCPR[99].nDCStart =475;     sT[0].sCP[0].sCPR[99].nDCNum = 4;    sT[0].sCP[0].sCPR[99].nSCStart =479;    sT[0].sCP[0].sCPR[99].nAckStart =0;	  sT[0].sCP[0].sCPR[99].nAckNum =0;   sT[0].sCP[0].sCPR[99].nSPOffsetCS =2115;  sT[0].sCP[0].sCPR[99].nSPOffsetLek =2116;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -1101,6 +1102,15 @@ sT[0].sTI[98].nType = TYP_MOT;
 	sT[0].sMOT[98].nIEC_NM				= 571;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[98].nNMNum				= 9;		/* Analóg mérések száma*/
 
+/* Komárom 1782/233 PV erõmû ----------------------------------------------------------------*/
+sT[0].sTI[99].nType = TYP_MOT;
+
+	sT[0].sMOT[99].nIEC_SP				= 2099;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[99].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[99].nIEC_DP				= 584;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[99].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[99].nIEC_NM				= 580;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[99].nNMNum				= 9;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/

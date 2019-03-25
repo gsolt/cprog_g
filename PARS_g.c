@@ -222,6 +222,7 @@ ST[0].nSiteList[97]= 9062;  ST[0].nLinkList[97]	=RADIO5_1;	/* RADIO5_1	  Komárom
 
 ST[0].nSiteList[98]= 9063;  ST[0].nLinkList[98]	=RADIO2_6;	/* RADIO2_6	  Zalaegerszeg, 0779/                 ZEG  */     /*  */
 
+ST[0].nSiteList[99]= 9064;  ST[0].nLinkList[99]	=RADIO5_6;	/* RADIO5_6	  Komárom, 1782/233                     KOM  */     /*  */
 
 
 
@@ -360,8 +361,8 @@ ST[0].sRAD_K2[0].nIndx[21]=96;
 
 
 
-/* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT */
-ST[0].sRAD_K3[0].nRtuNumRad = 47; /*55*/
+/* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
+ST[0].sRAD_K3[0].nRtuNumRad = 48; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -410,6 +411,7 @@ ST[0].sRAD_K3[0].nIndx[43]=93;
 ST[0].sRAD_K3[0].nIndx[44]=94;
 ST[0].sRAD_K3[0].nIndx[45]=95;
 ST[0].sRAD_K3[0].nIndx[46]=97;
+ST[0].sRAD_K3[0].nIndx[47]=100;
      
 
 /*RST[0].sLINK RTUk indexei*/
