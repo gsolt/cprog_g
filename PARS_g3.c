@@ -183,6 +183,8 @@ sT[0].sCP[0].sCPR[97].nDCStart =461;     sT[0].sCP[0].sCPR[97].nDCNum = 8;    sT
 
 sT[0].sCP[0].sCPR[98].nDCStart =470;     sT[0].sCP[0].sCPR[98].nDCNum = 4;    sT[0].sCP[0].sCPR[98].nSCStart =474;    sT[0].sCP[0].sCPR[98].nAckStart =0;	  sT[0].sCP[0].sCPR[98].nAckNum =0;   sT[0].sCP[0].sCPR[98].nSPOffsetCS =2097;  sT[0].sCP[0].sCPR[98].nSPOffsetLek =2098;
 sT[0].sCP[0].sCPR[99].nDCStart =475;     sT[0].sCP[0].sCPR[99].nDCNum = 4;    sT[0].sCP[0].sCPR[99].nSCStart =479;    sT[0].sCP[0].sCPR[99].nAckStart =0;	  sT[0].sCP[0].sCPR[99].nAckNum =0;   sT[0].sCP[0].sCPR[99].nSPOffsetCS =2115;  sT[0].sCP[0].sCPR[99].nSPOffsetLek =2116;
+sT[0].sCP[0].sCPR[100].nDCStart=480;     sT[0].sCP[0].sCPR[100].nDCNum= 4;    sT[0].sCP[0].sCPR[100].nSCStart=484;    sT[0].sCP[0].sCPR[100].nAckStart=0;	  sT[0].sCP[0].sCPR[100].nAckNum=0;   sT[0].sCP[0].sCPR[100].nSPOffsetCS=2133;  sT[0].sCP[0].sCPR[100].nSPOffsetLek=2134;
+sT[0].sCP[0].sCPR[101].nDCStart=485;     sT[0].sCP[0].sCPR[101].nDCNum= 4;    sT[0].sCP[0].sCPR[101].nSCStart=489;    sT[0].sCP[0].sCPR[101].nAckStart=0;	  sT[0].sCP[0].sCPR[101].nAckNum=0;   sT[0].sCP[0].sCPR[101].nSPOffsetCS=2155;  sT[0].sCP[0].sCPR[101].nSPOffsetLek=2156;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -1111,6 +1113,29 @@ sT[0].sTI[99].nType = TYP_MOT;
 	sT[0].sMOT[99].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[99].nIEC_NM				= 580;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[99].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Tata, LIDL PV  ----------------------------------------------------------------*/
+sT[0].sTI[100].nType = TYP_MOT;
+
+	sT[0].sMOT[100].nIEC_SP				= 2117;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[100].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[100].nIEC_DP				= 592;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[100].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[100].nIEC_NM				= 589;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[100].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Tata, Köjál ----------------------------------------------------------------*/
+sT[0].sTI[101].nType = TYP_MOT;
+
+	sT[0].sMOT[101].nIEC_SP				= 2135;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[101].nIEC_SP_NUM			= 20;		/* Egybites értékek száma*/
+	sT[0].sMOT[101].nIEC_DP				= 600;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[101].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[101].nIEC_NM				= 595;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[101].nNMNum				= 9;		/* Analóg mérések száma*/
+
+
+
 
 
 } /* end fnSetDataPar()*/

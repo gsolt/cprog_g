@@ -224,6 +224,8 @@ ST[0].nSiteList[98]= 9063;  ST[0].nLinkList[98]	=RADIO2_6;	/* RADIO2_6	  Zalaege
 
 ST[0].nSiteList[99]= 9064;  ST[0].nLinkList[99]	=RADIO5_6;	/* RADIO5_6	  Komárom, 1782/233                     KOM  */     /*  */
 
+ST[0].nSiteList[100]= 9065;  ST[0].nLinkList[100]	=RADIO3_7;	/* RADIO3_7	  Tatabánya, LIDL                     TAT  */     /*  */
+ST[0].nSiteList[101]= 9066;  ST[0].nLinkList[101]	=RADIO3_7;	/* RADIO3_7	  Tatabánya, Köjál                     TAT  */     /*  */
 
 
 
@@ -306,7 +308,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL */
-ST[0].sRAD_K1[0].nRtuNumRad = 24; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 26; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -330,7 +332,10 @@ ST[0].sRAD_K1[0].nIndx[19]=85;
 ST[0].sRAD_K1[0].nIndx[20]=86; 
 ST[0].sRAD_K1[0].nIndx[21]=91; 
 ST[0].sRAD_K1[0].nIndx[22]=92; 
-ST[0].sRAD_K1[0].nIndx[23]=98; 
+ST[0].sRAD_K1[0].nIndx[23]=98;
+ST[0].sRAD_K1[0].nIndx[24]=100;
+ST[0].sRAD_K1[0].nIndx[25]=101;
+ 
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
