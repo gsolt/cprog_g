@@ -226,7 +226,8 @@ ST[0].nSiteList[99]= 9064;  ST[0].nLinkList[99]	=RADIO5_6;	/* RADIO5_6	  Komárom
 
 ST[0].nSiteList[100]= 9065;  ST[0].nLinkList[100]	=RADIO3_7;	/* RADIO3_7	  Tatabánya, LIDL                     TAT  */     /*  */
 ST[0].nSiteList[101]= 9066;  ST[0].nLinkList[101]	=RADIO3_7;	/* RADIO3_7	  Tatabánya, Köjál                     TAT  */     /*  */
-
+ST[0].nSiteList[102]= 9067;  ST[0].nLinkList[102]	=RADIO6_1;	/* RADIO6_1	  Gyöngyösfalu PV                     SZOM  */     /*  */
+                                                           
 
 
 
@@ -339,7 +340,7 @@ ST[0].sRAD_K1[0].nIndx[25]=101;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 22; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 23; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -362,6 +363,7 @@ ST[0].sRAD_K2[0].nIndx[18]=73;
 ST[0].sRAD_K2[0].nIndx[19]=80;
 ST[0].sRAD_K2[0].nIndx[20]=84;
 ST[0].sRAD_K2[0].nIndx[21]=96;
+ST[0].sRAD_K2[0].nIndx[22]=102;
 
 
 
