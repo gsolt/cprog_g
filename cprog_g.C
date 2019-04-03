@@ -3541,7 +3541,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 46;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 48;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3938,12 +3938,26 @@ ReteszesRTUIndex[44][0] =  102;			/* Gyöngyösfalu 968/967 PV	 */															/
 ReteszesTMOK_RTUNum[44] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[44] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 44. TMOK: 45-11 C front end ->   RTU: Gyöngyösfalu 968/967 PV 							----------------------- tesztelve */								/**/
+/* 45. TMOK: 45-11 C front end ->   RTU: Gyöngyösfalu 968/967 PV 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[45] = 1290; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[45][0] = 1290;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[45][0] =  102;			/* Gyöngyösfalu 968/967 PV	 */															/**/
 ReteszesTMOK_RTUNum[45] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[45] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 46. TMOK: 92-03 C front end ->   RTU: Nova 2037/2 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[46] = 1291; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[46][0] = 1291;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[46][0] =  103;			/* Nova 2037/2 PV	 */															/**/
+ReteszesTMOK_RTUNum[46] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[46] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 47. TMOK: 92-59 A front end ->   RTU: Nova 2037/2 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[47] = 1292; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[47][0] = 1292;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[47][0] =  103;			/* Nova 2037/2 PV	 */															/**/
+ReteszesTMOK_RTUNum[47] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[47] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
              																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
