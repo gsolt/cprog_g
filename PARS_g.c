@@ -228,7 +228,8 @@ ST[0].nSiteList[100]= 9065;  ST[0].nLinkList[100]	=RADIO3_7;	/* RADIO3_7	  Tatab
 ST[0].nSiteList[101]= 9066;  ST[0].nLinkList[101]	=RADIO3_7;	/* RADIO3_7	  Tatabánya, Köjál                     TAT  */     /*  */
 ST[0].nSiteList[102]= 9067;  ST[0].nLinkList[102]	=RADIO6_1;	/* RADIO6_1	  Gyöngyösfalu PV                     SZOM  */     /*  */
                                                            
-
+ST[0].nSiteList[103]= 9067;  ST[0].nLinkList[103]	=RADIO2_7;	/* RADIO2_7	  Nova 2037/2 PV                     SZOM  */     /*  */
+ 
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -309,7 +310,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL */
-ST[0].sRAD_K1[0].nRtuNumRad = 26; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 27; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -336,6 +337,7 @@ ST[0].sRAD_K1[0].nIndx[22]=92;
 ST[0].sRAD_K1[0].nIndx[23]=98;
 ST[0].sRAD_K1[0].nIndx[24]=100;
 ST[0].sRAD_K1[0].nIndx[25]=101;
+ST[0].sRAD_K1[0].nIndx[26]=103;
  
 
 
