@@ -228,7 +228,7 @@ ST[0].nSiteList[100]= 9065;  ST[0].nLinkList[100]	=RADIO3_7;	/* RADIO3_7	  Tatab
 ST[0].nSiteList[101]= 9066;  ST[0].nLinkList[101]	=RADIO3_7;	/* RADIO3_7	  Tatabánya, Köjál                     TAT  */     /*  */
 ST[0].nSiteList[102]= 9067;  ST[0].nLinkList[102]	=RADIO6_1;	/* RADIO6_1	  Gyöngyösfalu PV                     SZOM  */     /*  */
                                                            
-ST[0].nSiteList[103]= 9067;  ST[0].nLinkList[103]	=RADIO2_7;	/* RADIO2_7	  Nova 2037/2 PV                     SZOM  */     /*  */
+ST[0].nSiteList[103]= 9068;  ST[0].nLinkList[103]	=RADIO2_7;	/* RADIO2_7	  Nova 2037/2 PV                     SZOM  */     /*  */
  
 
 
