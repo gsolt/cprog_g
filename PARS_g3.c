@@ -187,6 +187,7 @@ sT[0].sCP[0].sCPR[100].nDCStart=480;     sT[0].sCP[0].sCPR[100].nDCNum= 4;    sT
 sT[0].sCP[0].sCPR[101].nDCStart=485;     sT[0].sCP[0].sCPR[101].nDCNum= 4;    sT[0].sCP[0].sCPR[101].nSCStart=489;    sT[0].sCP[0].sCPR[101].nAckStart=0;	  sT[0].sCP[0].sCPR[101].nAckNum=0;   sT[0].sCP[0].sCPR[101].nSPOffsetCS=2155;  sT[0].sCP[0].sCPR[101].nSPOffsetLek=2156;
 sT[0].sCP[0].sCPR[102].nDCStart=490;     sT[0].sCP[0].sCPR[102].nDCNum= 8;    sT[0].sCP[0].sCPR[102].nSCStart=498;    sT[0].sCP[0].sCPR[102].nAckStart=0;	  sT[0].sCP[0].sCPR[102].nAckNum=0;   sT[0].sCP[0].sCPR[102].nSPOffsetCS=2183;  sT[0].sCP[0].sCPR[102].nSPOffsetLek=2184; 
 sT[0].sCP[0].sCPR[103].nDCStart=499;     sT[0].sCP[0].sCPR[103].nDCNum= 4;    sT[0].sCP[0].sCPR[103].nSCStart=503;    sT[0].sCP[0].sCPR[103].nAckStart=0;	  sT[0].sCP[0].sCPR[103].nAckNum=0;   sT[0].sCP[0].sCPR[103].nSPOffsetCS=2201;  sT[0].sCP[0].sCPR[103].nSPOffsetLek=2202; 
+sT[0].sCP[0].sCPR[104].nDCStart=504;     sT[0].sCP[0].sCPR[104].nDCNum= 8;    sT[0].sCP[0].sCPR[104].nSCStart=512;    sT[0].sCP[0].sCPR[104].nAckStart=0;	  sT[0].sCP[0].sCPR[104].nAckNum=0;   sT[0].sCP[0].sCPR[104].nSPOffsetCS=2270;  sT[0].sCP[0].sCPR[104].nSPOffsetLek=2271;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -1157,6 +1158,20 @@ sT[0].sTI[103].nType = TYP_MOT;
 	sT[0].sMOT[103].nIEC_NM				= 622;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[103].nNMNum				= 9;		/* Analóg mérések száma*/
 
+  /* Lenti 0236 PV erõmû,  TALUS 8 csatornas !!! ----------------------------------------------*/
+  sT[0].sTI[104].nType = TYP_TAL;
+  
+	sT[0].sTAL[104].nIEC_SP       		= 2203;
+	sT[0].sTAL[104].nIEC_OsszevontHiba	= 2267;
+	sT[0].sTAL[104].nIEC_MT_KommHiba	= 2268;
+	sT[0].sTAL[104].nKommStatusNum		= 2;
+	sT[0].sTAL[104].nLeagNum			= 8;
+
+	sT[0].sTAL[104].nIEC_DP       		= 632;
+	sT[0].sTAL[104].nIEC_DP_FSZ1  		= 640;
+	sT[0].sTAL[104].nIEC_NM				= 631;
+	sT[0].sTAL[104].nNMNum		  		= 18;
+    
 
 
 } /* end fnSetDataPar()*/
