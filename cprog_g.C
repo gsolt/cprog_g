@@ -3500,7 +3500,7 @@ elküldi a szintén paraméterként megadott RTU-knak (szintén indexel megadva)
 /****************************************************************************/
 void fnRetesz(void)
 {
-#define  			RETESZ_TMOK_NUM		50	
+#define  			RETESZ_TMOK_NUM		70	
 #define  			RETESZ_RTU_NUM		10	
 #define  			TX_LENGTH			3	
 
@@ -3541,7 +3541,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 48;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 50;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3616,11 +3616,16 @@ ReteszesRTUIndex[6][0] = 19;			/* Söréd PV erõmû 		 */															/**/
 ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 7. TMOK: 30-57 RTU: Kincsesbánya 03_100 PV erõmû				- Tesztelve				-----------------------*/								/**/
+/* 7. TMOK: 30-57 RTU: Kincsesbánya 03_100 PV erõmû, Videoton 3523/34				- Tesztelve				-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[7] = 1257; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[7][0] =1257;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[7][0] = 72;			/* Kincsesbánya 03_100 PV erõmû			 */															/**/
-ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[7][1] =1257;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[7][1] = 105;			/* Videoton 3523/34 PV erõmû			 */															/**/
+
+ReteszesTMOK_RTUNum[7] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[7] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 8. TMOK: 34-26 RTU: Kincsesbánya 03_100 PV erõmû					- Tesztelve			-----------------------*/								/**/
@@ -3958,6 +3963,20 @@ TMOK_ID[47][0] = 1292;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[47][0] =  103;			/* Nova 2037/2 PV	 */															/**/
 ReteszesTMOK_RTUNum[47] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[47] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 48. TMOK: 32-88 C front end ->   RTU: Videoton 3523/34 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[48] = 1293; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[48][0] = 1293;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[48][0] =  105;			/* Videoton 3523/34 PV	 */															/**/
+ReteszesTMOK_RTUNum[48] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[48] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 49. TMOK: 32-91 C front end ->   RTU: Videoton 3523/34 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[49] = 1294; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[49][0] = 1294;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[49][0] =  105;			/* Videoton 3523/34 PV	 */															/**/
+ReteszesTMOK_RTUNum[49] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[49] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
              																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
