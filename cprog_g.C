@@ -3541,7 +3541,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 50;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 53;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -3977,7 +3977,30 @@ TMOK_ID[49][0] = 1294;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[49][0] =  105;			/* Videoton 3523/34 PV	 */															/**/
 ReteszesTMOK_RTUNum[49] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[49] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
-             																								
+
+/* 50. TMOK: 34-18 C front end ->   RTU: Csókakõ 070/2 MVM OVIT PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[50] = 1295; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[50][0] = 1295;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[50][0] =  108;			/* Csókakö 070/2 MVM OVIT PV	 */															/**/
+ReteszesTMOK_RTUNum[50] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[50] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 51. TMOK: 31-81 G front end ->   RTU: Csókakõ 070/2 MVM OVIT PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[51] = 657; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[51][0] = 657;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[51][0] =  108;			/* Csókakö 070/2 MVM OVIT PV	 */															/**/
+ReteszesTMOK_RTUNum[51] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[51] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[51] = 10;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 52. TMOK: 34-82 G front end ->   RTU: Csókakõ 070/2 MVM OVIT PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[52] = 658; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[52][0] = 658;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[52][0] =  108;			/* Csókakö 070/2 MVM OVIT PV	 */															/**/
+ReteszesTMOK_RTUNum[52] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[52] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[52] = 11;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+              																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
