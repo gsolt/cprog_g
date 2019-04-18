@@ -230,6 +230,10 @@ ST[0].nSiteList[102]= 9067;  ST[0].nLinkList[102]	=RADIO6_1;	/* RADIO6_1	  Gyöng
                                                            
 ST[0].nSiteList[103]= 9068;  ST[0].nLinkList[103]	=RADIO2_7;	/* RADIO2_7	  Nova 2037/2 PV                     SZOM  */     /*  */
 ST[0].nSiteList[104]= 9069;  ST[0].nLinkList[104]	=RADIO8_5;	/* RADIO8_5	  Lenti 0236 PV                     LEN  */     /*  */
+ST[0].nSiteList[105]= 9070;  ST[0].nLinkList[105]	=RADIO9_1;	/* RADIO9_1	  Videoton 3523/34 PV                     KOF  */     /*  */
+ST[0].nSiteList[106]= 9071;  ST[0].nLinkList[106]	=RADIO9_4;	/* RADIO9_4	 	31-81                               MOR  */     /* tesztelve */
+ST[0].nSiteList[107]= 9072;  ST[0].nLinkList[107]	=RADIO9_4;	/* RADIO9_4	 	34-82                               MOR  */     /* tesztelve */
+ST[0].nSiteList[108]= 9073;  ST[0].nLinkList[108]	=RADIO9_4;	/* RADIO9_4	 	Csókakõ 070/2 PV erõmû              MOR  */     /* tesztelve */
  
 
 
@@ -373,7 +377,7 @@ ST[0].sRAD_K2[0].nIndx[22]=102;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 48; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 52; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -423,6 +427,10 @@ ST[0].sRAD_K3[0].nIndx[44]=94;
 ST[0].sRAD_K3[0].nIndx[45]=95;
 ST[0].sRAD_K3[0].nIndx[46]=97;
 ST[0].sRAD_K3[0].nIndx[47]=100;
+ST[0].sRAD_K3[0].nIndx[48]=105;
+ST[0].sRAD_K3[0].nIndx[49]=106;
+ST[0].sRAD_K3[0].nIndx[50]=107;
+ST[0].sRAD_K3[0].nIndx[51]=108;
      
 
 /*RST[0].sLINK RTUk indexei*/
