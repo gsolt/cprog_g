@@ -234,6 +234,7 @@ ST[0].nSiteList[105]= 9070;  ST[0].nLinkList[105]	=RADIO9_1;	/* RADIO9_1	  Video
 ST[0].nSiteList[106]= 9071;  ST[0].nLinkList[106]	=RADIO9_4;	/* RADIO9_4	 	31-81                               MOR  */     /* tesztelve */
 ST[0].nSiteList[107]= 9072;  ST[0].nLinkList[107]	=RADIO9_4;	/* RADIO9_4	 	34-82                               MOR  */     /* tesztelve */
 ST[0].nSiteList[108]= 9073;  ST[0].nLinkList[108]	=RADIO9_4;	/* RADIO9_4	 	Csókakõ 070/2 PV erõmû              MOR  */     /* tesztelve */
+ST[0].nSiteList[109]= 9074;  ST[0].nLinkList[109]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 173/28 PV erõmû          CELL  */     /* tesztelve */
  
 
 
@@ -315,7 +316,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 28; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 29; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -344,6 +345,7 @@ ST[0].sRAD_K1[0].nIndx[24]=100;
 ST[0].sRAD_K1[0].nIndx[25]=101;
 ST[0].sRAD_K1[0].nIndx[26]=103;
 ST[0].sRAD_K1[0].nIndx[27]=104;
+ST[0].sRAD_K1[0].nIndx[28]=105;
  
 
 
