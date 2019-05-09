@@ -2234,7 +2234,7 @@ for (nJ=1; nJ<nLeagNum/2+1; nJ++)
 			p_col_DPL     = (short *)(table_DP.ColDataPtr[1]);			/* DPL -> OPEN */
 			p_col_DP_CT   = (short *)(table_DP.ColDataPtr[5]); 						
 
-		
+	
 			if (nI<4)
 			{
 				nData = nRxBuf[1];
@@ -2243,18 +2243,42 @@ for (nJ=1; nJ<nLeagNum/2+1; nJ++)
 			{
 				nData = nRxBuf[3];
 			}
-		
-		
-			if (    ((nData >> (8+nI)) & 1) == 1      )
-			{
+/*---------------*/			
+		  if (nI<4)
+      {
+      
+			 if (    ((nData >> (8+nI)) & 1) == 1      )
+			 {
  				p_col_DPH[nDPStart+nI-nMOSCAD_OffsetDP] = 1;
 	 			p_col_DPL[nDPStart+nI-nMOSCAD_OffsetDP] = 0;
-			}
-			else
-			{
+			 }
+			 else
+			 {
  				p_col_DPH[nDPStart+nI-nMOSCAD_OffsetDP] = 0;
 	 			p_col_DPL[nDPStart+nI-nMOSCAD_OffsetDP] = 1;
-			}
+			 }
+      
+      } /* end if nI<4 */
+/*--------------------------*/      
+/*---------------*/			
+		  if (nI>=4 && nI<8)
+      {
+      
+			 if (    ((nData >> (8+nI-4)) & 1) == 1      )
+			 {
+ 				p_col_DPH[nDPStart+nI-nMOSCAD_OffsetDP] = 1;
+	 			p_col_DPL[nDPStart+nI-nMOSCAD_OffsetDP] = 0;
+			 }
+			 else
+			 {
+ 				p_col_DPH[nDPStart+nI-nMOSCAD_OffsetDP] = 0;
+	 			p_col_DPL[nDPStart+nI-nMOSCAD_OffsetDP] = 1;
+			 }
+      
+      } /* end if nI<4 */
+/*--------------------------*/      
+
+
 			
 			p_col_DP_CT[nDPStart+nI-nMOSCAD_OffsetDP]= 0;	
 		}/*end for*/
