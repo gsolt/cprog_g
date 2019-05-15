@@ -193,6 +193,10 @@ sT[0].sCP[0].sCPR[106].nDCStart=518;     sT[0].sCP[0].sCPR[106].nDCNum= 1;    sT
 sT[0].sCP[0].sCPR[107].nDCStart=521;     sT[0].sCP[0].sCPR[107].nDCNum= 1;    sT[0].sCP[0].sCPR[107].nSCStart=522;    sT[0].sCP[0].sCPR[107].nAckStart=0;	  sT[0].sCP[0].sCPR[107].nAckNum=0;   sT[0].sCP[0].sCPR[107].nSPOffsetCS=2320;  sT[0].sCP[0].sCPR[107].nSPOffsetLek=2321;
 sT[0].sCP[0].sCPR[108].nDCStart=524;     sT[0].sCP[0].sCPR[108].nDCNum= 4;    sT[0].sCP[0].sCPR[108].nSCStart=528;    sT[0].sCP[0].sCPR[108].nAckStart=0;	  sT[0].sCP[0].sCPR[108].nAckNum=0;   sT[0].sCP[0].sCPR[108].nSPOffsetCS=2338;  sT[0].sCP[0].sCPR[108].nSPOffsetLek=2339;
 sT[0].sCP[0].sCPR[109].nDCStart=529;     sT[0].sCP[0].sCPR[109].nDCNum= 4;    sT[0].sCP[0].sCPR[109].nSCStart=533;    sT[0].sCP[0].sCPR[109].nAckStart=0;	  sT[0].sCP[0].sCPR[109].nAckNum=0;   sT[0].sCP[0].sCPR[109].nSPOffsetCS=2356;  sT[0].sCP[0].sCPR[109].nSPOffsetLek=2357;
+sT[0].sCP[0].sCPR[110].nDCStart=534;     sT[0].sCP[0].sCPR[110].nDCNum= 4;    sT[0].sCP[0].sCPR[110].nSCStart=538;    sT[0].sCP[0].sCPR[110].nAckStart=0;	  sT[0].sCP[0].sCPR[110].nAckNum=0;   sT[0].sCP[0].sCPR[110].nSPOffsetCS=2374;  sT[0].sCP[0].sCPR[110].nSPOffsetLek=2375;
+sT[0].sCP[0].sCPR[111].nDCStart=539;     sT[0].sCP[0].sCPR[111].nDCNum= 4;    sT[0].sCP[0].sCPR[111].nSCStart=543;    sT[0].sCP[0].sCPR[111].nAckStart=0;	  sT[0].sCP[0].sCPR[111].nAckNum=0;   sT[0].sCP[0].sCPR[111].nSPOffsetCS=2392;  sT[0].sCP[0].sCPR[111].nSPOffsetLek=2393;
+sT[0].sCP[0].sCPR[112].nDCStart=544;     sT[0].sCP[0].sCPR[112].nDCNum= 4;    sT[0].sCP[0].sCPR[112].nSCStart=548;    sT[0].sCP[0].sCPR[112].nAckStart=0;	  sT[0].sCP[0].sCPR[112].nAckNum=0;   sT[0].sCP[0].sCPR[112].nSPOffsetCS=2410;  sT[0].sCP[0].sCPR[112].nSPOffsetLek=2411;
+sT[0].sCP[0].sCPR[113].nDCStart=549;     sT[0].sCP[0].sCPR[113].nDCNum= 8;    sT[0].sCP[0].sCPR[113].nSCStart=557;    sT[0].sCP[0].sCPR[113].nAckStart=0;	  sT[0].sCP[0].sCPR[113].nAckNum=0;   sT[0].sCP[0].sCPR[113].nSPOffsetCS=2438;  sT[0].sCP[0].sCPR[113].nSPOffsetLek=2439;
 
 
 
@@ -1224,6 +1228,45 @@ sT[0].sTI[109].nType = TYP_MOT;
 	sT[0].sMOT[109].nIEC_NM				= 675;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[109].nNMNum				= 9;		/* Analóg mérések száma*/
 
+/* Kõszeg 0117 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[110].nType = TYP_MOT;
+
+	sT[0].sMOT[110].nIEC_SP				= 2358;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[110].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[110].nIEC_DP				= 675;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[110].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[110].nIEC_NM				= 684;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[110].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Kisbér 0129 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[111].nType = TYP_MOT;
+
+	sT[0].sMOT[111].nIEC_SP				= 2376;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[111].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[111].nIEC_DP				= 683;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[111].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[111].nIEC_NM				= 693;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[111].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Kisbér Iskola utca  ----------------------------------------------------------------*/
+sT[0].sTI[112].nType = TYP_MOT;
+
+	sT[0].sMOT[112].nIEC_SP				= 2394;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[112].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[112].nIEC_DP				= 691;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[112].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[112].nIEC_NM				= 702;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[112].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Ács 0421/17 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[113].nType = TYP_MOT;
+
+	sT[0].sMOT[113].nIEC_SP				= 2412;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[113].nIEC_SP_NUM			= 26;		/* Egybites értékek száma*/
+	sT[0].sMOT[113].nIEC_DP				= 699;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[113].nIEC_DP_NUM			=16;   		/* Két bites értékek száma*/
+	sT[0].sMOT[113].nIEC_NM				= 708;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[113].nNMNum				= 18;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 

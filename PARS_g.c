@@ -235,6 +235,10 @@ ST[0].nSiteList[106]= 9071;  ST[0].nLinkList[106]	=RADIO9_4;	/* RADIO9_4	 	31-81
 ST[0].nSiteList[107]= 9072;  ST[0].nLinkList[107]	=RADIO9_4;	/* RADIO9_4	 	34-82                               MOR  */     /* tesztelve */
 ST[0].nSiteList[108]= 9073;  ST[0].nLinkList[108]	=RADIO9_4;	/* RADIO9_4	 	Csókakõ 070/2 PV erõmû              MOR  */     /* tesztelve */
 ST[0].nSiteList[109]= 9074;  ST[0].nLinkList[109]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 173/28 PV erõmû          CELL  */     /* tesztelve */
+ST[0].nSiteList[110]= 9075;  ST[0].nLinkList[110]	=RADIO6_6;	/* RADIO6_6	  Kõszeg 0117 PV erõmû                SZOL  */     /* tesztelve */
+ST[0].nSiteList[111]= 9076;  ST[0].nLinkList[111]	=RADIO5_1;	/* RADIO5_1	  Kisbér 0129 PV erõmû                IGM  */     /* tesztelve */
+ST[0].nSiteList[112]= 9077;  ST[0].nLinkList[112]	=RADIO5_1;	/* RADIO5_1	  Kisbér Iskola utca                   IGM  */     /* tesztelve */
+ST[0].nSiteList[113]=10075;  ST[0].nLinkList[113]	=RADIO5_1;	/* RADIO5_1	  Ács 0242/17                          IGM  */     /* tesztelve */
  
 
 
@@ -316,7 +320,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 29; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 30; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -346,6 +350,7 @@ ST[0].sRAD_K1[0].nIndx[25]=101;
 ST[0].sRAD_K1[0].nIndx[26]=103;
 ST[0].sRAD_K1[0].nIndx[27]=104;
 ST[0].sRAD_K1[0].nIndx[28]=105;
+ST[0].sRAD_K1[0].nIndx[29]=109;
  
 
 
@@ -379,7 +384,7 @@ ST[0].sRAD_K2[0].nIndx[22]=102;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 52; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 57; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -433,6 +438,11 @@ ST[0].sRAD_K3[0].nIndx[48]=105;
 ST[0].sRAD_K3[0].nIndx[49]=106;
 ST[0].sRAD_K3[0].nIndx[50]=107;
 ST[0].sRAD_K3[0].nIndx[51]=108;
+ST[0].sRAD_K3[0].nIndx[52]=110;
+ST[0].sRAD_K3[0].nIndx[53]=99;
+ST[0].sRAD_K3[0].nIndx[54]=111;
+ST[0].sRAD_K3[0].nIndx[55]=112;
+ST[0].sRAD_K3[0].nIndx[56]=113;
      
 
 /*RST[0].sLINK RTUk indexei*/
