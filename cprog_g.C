@@ -3551,6 +3551,7 @@ char				message[500];
 int					nDPTblIndx;
 int					nOffset;
 unsigned short		nTxBuf[80];
+int     DP1,DP2;          /*  */
 
 
 short				*p_col_DCAct; 
@@ -3565,7 +3566,7 @@ int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs offsete,
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 54;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 59;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -4036,6 +4037,53 @@ TMOK_ID[53][0] = 1296;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[53][0] =  109;			/* Celldömölk 1873/28 PV	 */															/**/
 ReteszesTMOK_RTUNum[53] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[53] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 54. TMOK: 41-87 A front end ->   RTU: Kõszeg 0117 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[54] = 1297; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[54][0] = 1297;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[54][0] =  110;			/* Kõszeg 0117 PV	 */															/**/
+ReteszesTMOK_RTUNum[54] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[54] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 55. TMOK: 86-57 E front end ->   RTU: Kisbér 0129 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[55] = 1298; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[55][0] = 1298;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[55][0] =  111;			/* Kisbér 0129 PV	 */															/**/
+ReteszesTMOK_RTUNum[55] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[55] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 56. TMOK: 86-38 E front end ->   RTU: Kisbér 0129 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[56] = 1299; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[56][0] = 1299;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[56][0] =  111;			/* Kisbér 0129 PV	 */															/**/
+ReteszesTMOK_RTUNum[56] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[56] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 57. TMOK:10-24 B front end ->   RTU: Ács 0421/17 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[57] = 1300; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[57][0] = 1300;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[57][0] =  113;			/* Ács 0421/17 PV	 */															/**/
+ReteszesTMOK_RTUNum[57] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[57] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 58. TMOK:Kisbér Iskola u. G front end ->   RTU: Kisbér 0129 PV 							----------------------- tesztelve */								/**/
+DP1 = fnReadDPData(691, 0, 0, 0, 0);
+DP2 = fnReadDPData(692, 0, 0, 0, 0);
+
+if (DP1==2 && DP2==2)
+  {
+  fnWriteDPData(1301, 2, 0, 0, 0, 0);  
+  }
+else
+  {
+  fnWriteDPData(1301, 1, 0, 0, 0, 0);  
+  }
+
+TMOKAllasjelzesOffsetek[58] = 1301; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[58][0] = 1301;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[58][0] =  111;			/* Kisbér 0129 PV	 */															/**/
+ReteszesTMOK_RTUNum[58] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[58] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
