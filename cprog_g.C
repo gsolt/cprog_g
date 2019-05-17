@@ -4038,7 +4038,7 @@ ReteszesRTUIndex[53][0] =  109;			/* Celldömölk 1873/28 PV	 */															/**
 ReteszesTMOK_RTUNum[53] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[53] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 54. TMOK: 41-87 A front end ->   RTU: Kõszeg 0117 PV 							----------------------- tesztelve */								/**/
+/* 54. TMOK: 41-78 A front end ->   RTU: Kõszeg 0117 PV 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[54] = 1297; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[54][0] = 1297;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[54][0] =  110;			/* Kõszeg 0117 PV	 */															/**/
