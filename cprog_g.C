@@ -4371,7 +4371,7 @@ if (nOffset <1500)
   nIndex=10000;
   
   /* Megkeresi az offsethez tartozó tömbindexet*/
-  for (i=0;i<ReteszesTMOKNum;i++)
+  for (i=0;i<ReteszesTMOKNum && i<RETESZ_TMOK_NUM ;i++)
     {
     if (TMOKAllasjelzesOffsetek[i]==nOffset)
       {
