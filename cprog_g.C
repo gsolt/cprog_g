@@ -4383,6 +4383,9 @@ if (nOffset <1500)
   if (nIndex<ReteszesTMOKNum)
     {
     nReteszAllapot = ReteszAllapotok[nIndex];
+   	MOSCAD_sprintf(message,"Reteszes TMOK indexe: nIndex: %d",nIndex);
+   	MOSCAD_message(message ); 				
+
     }
   /* Ha nem */      
   else
