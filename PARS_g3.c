@@ -370,6 +370,8 @@ sT[0].sTI[19].nType = TYP_TAL;
 		sT[0].sTAL[19].nIEC_NM				= 65;
 		sT[0].sTAL[19].nNMNum		  		= 11;
 		sT[0].sTAL[19].nKommStatusNum		= 2;
+   	sT[0].sTAL[19].nSP_EXTRA_OFFSET		= 2440;
+    sT[0].sTAL[19].nSP_EXTRA_NUM		= 2;
 
 /* Dunakiliti I., naperõmû -----------------------------------------------------------*/
 sT[0].sTI[20].nType = TYP_TAL;
