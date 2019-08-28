@@ -241,6 +241,7 @@ ST[0].nSiteList[112]= 9077;  ST[0].nLinkList[112]	=RADIO5_1;	/* RADIO5_1	  Kisbé
 ST[0].nSiteList[113]=10075;  ST[0].nLinkList[113]	=RADIO5_1;	/* RADIO5_1	  Ács 0242/17                          RAK  */     /* tesztelve */
 ST[0].nSiteList[114]=590; 	 ST[0].nLinkList[114]=LINE2;			/* Rákhegy DAC							*/
 ST[0].nSiteList[115]= 9078;  ST[0].nLinkList[115]	=RADIO1_5;	/* RADIO1_5	 	30-19                               SZVAR  */     /* tesztelve */
+ST[0].nSiteList[116]= 9079;  ST[0].nLinkList[116]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 0355/18                  CELL  */     /* tesztelve */
  
 
 
@@ -322,7 +323,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 30; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 31; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -353,6 +354,7 @@ ST[0].sRAD_K1[0].nIndx[26]=103;
 ST[0].sRAD_K1[0].nIndx[27]=104;
 ST[0].sRAD_K1[0].nIndx[28]=105;
 ST[0].sRAD_K1[0].nIndx[29]=109;
+ST[0].sRAD_K1[0].nIndx[30]=116;
  
 
 
