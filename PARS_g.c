@@ -240,6 +240,7 @@ ST[0].nSiteList[111]= 9076;  ST[0].nLinkList[111]	=RADIO5_1;	/* RADIO5_1	  Kisbé
 ST[0].nSiteList[112]= 9077;  ST[0].nLinkList[112]	=RADIO5_1;	/* RADIO5_1	  Kisbér Iskola utca                   IGM  */     /* tesztelve */
 ST[0].nSiteList[113]=10075;  ST[0].nLinkList[113]	=RADIO5_1;	/* RADIO5_1	  Ács 0242/17                          RAK  */     /* tesztelve */
 ST[0].nSiteList[114]=590; 	 ST[0].nLinkList[114]=LINE2;			/* Rákhegy DAC							*/
+ST[0].nSiteList[115]= 9078;  ST[0].nLinkList[115]	=RADIO1_5;	/* RADIO1_5	 	30-19                               SZVAR  */     /* tesztelve */
  
 
 
@@ -385,7 +386,7 @@ ST[0].sRAD_K2[0].nIndx[22]=102;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 57; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 58; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -444,6 +445,7 @@ ST[0].sRAD_K3[0].nIndx[53]=99;
 ST[0].sRAD_K3[0].nIndx[54]=111;
 ST[0].sRAD_K3[0].nIndx[55]=112;
 ST[0].sRAD_K3[0].nIndx[56]=113;
+ST[0].sRAD_K3[0].nIndx[57]=115;
      
 
 /*RST[0].sLINK RTUk indexei*/
