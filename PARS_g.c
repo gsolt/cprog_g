@@ -242,6 +242,7 @@ ST[0].nSiteList[113]=10075;  ST[0].nLinkList[113]	=RADIO5_1;	/* RADIO5_1	  Ács 0
 ST[0].nSiteList[114]=590; 	 ST[0].nLinkList[114]=LINE2;			/* Rákhegy DAC							*/
 ST[0].nSiteList[115]= 9078;  ST[0].nLinkList[115]	=RADIO1_5;	/* RADIO1_5	 	30-19                               SZVAR  */     /* tesztelve */
 ST[0].nSiteList[116]= 9079;  ST[0].nLinkList[116]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 0355/18                  CELL  */     /* tesztelve */
+ST[0].nSiteList[117]= 9080;  ST[0].nLinkList[117]	=RADIO3_7;	/* RADIO3_7	 	Környe 0337/9                       GALL  */     /* tesztelve */
  
 
 
@@ -359,7 +360,7 @@ ST[0].sRAD_K1[0].nIndx[30]=116;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 23; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 24; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -383,6 +384,7 @@ ST[0].sRAD_K2[0].nIndx[19]=80;
 ST[0].sRAD_K2[0].nIndx[20]=84;
 ST[0].sRAD_K2[0].nIndx[21]=96;
 ST[0].sRAD_K2[0].nIndx[22]=102;
+ST[0].sRAD_K2[0].nIndx[23]=117;
 
 
 
