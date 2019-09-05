@@ -243,6 +243,7 @@ ST[0].nSiteList[114]=590; 	 ST[0].nLinkList[114]=LINE2;			/* Rákhegy DAC							*
 ST[0].nSiteList[115]= 9078;  ST[0].nLinkList[115]	=RADIO1_5;	/* RADIO1_5	 	30-19                               SZVAR  */     /* tesztelve */
 ST[0].nSiteList[116]= 9079;  ST[0].nLinkList[116]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 0355/18                  CELL  */     /* tesztelve */
 ST[0].nSiteList[117]= 9080;  ST[0].nLinkList[117]	=RADIO3_7;	/* RADIO3_7	 	Környe 0337/9                       GALL  */     /* tesztelve */
+ST[0].nSiteList[118]= 9081;  ST[0].nLinkList[118]	=RADIO3_6;	/* RADIO3_6	 	82-01                               ORNY  */     /* tesztelve */
  
 
 
@@ -390,7 +391,7 @@ ST[0].sRAD_K2[0].nIndx[23]=117;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 58; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 59; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -450,6 +451,7 @@ ST[0].sRAD_K3[0].nIndx[54]=111;
 ST[0].sRAD_K3[0].nIndx[55]=112;
 ST[0].sRAD_K3[0].nIndx[56]=113;
 ST[0].sRAD_K3[0].nIndx[57]=115;
+ST[0].sRAD_K3[0].nIndx[58]=118;
      
 
 /*RST[0].sLINK RTUk indexei*/
