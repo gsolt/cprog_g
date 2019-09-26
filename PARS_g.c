@@ -245,6 +245,7 @@ ST[0].nSiteList[116]= 9079;  ST[0].nLinkList[116]	=RADIO4_2;	/* RADIO4_2	 	Celld
 ST[0].nSiteList[117]= 9080;  ST[0].nLinkList[117]	=RADIO3_7;	/* RADIO3_7	 	Környe 0337/9                       GALL  */     /* tesztelve */
 ST[0].nSiteList[118]= 9081;  ST[0].nLinkList[118]	=RADIO3_6;	/* RADIO3_6	 	82-01                               ORNY  */     /* tesztelve */
 ST[0].nSiteList[119]= 9082;  ST[0].nLinkList[119]	=RADIO2_6;	/* RADIO2_6	 	Zalaegerszeg vasház                 ZEG  */     /* tesztelve */
+ST[0].nSiteList[120]= 9083;  ST[0].nLinkList[120]	=RADIO3_6;	/* RADIO3_6	 	Kömlõd 099/14,16,17                 ORNY  */     /* tesztelve */
  
 
 
@@ -393,7 +394,7 @@ ST[0].sRAD_K2[0].nIndx[23]=117;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 59; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 60; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -454,6 +455,7 @@ ST[0].sRAD_K3[0].nIndx[55]=112;
 ST[0].sRAD_K3[0].nIndx[56]=113;
 ST[0].sRAD_K3[0].nIndx[57]=115;
 ST[0].sRAD_K3[0].nIndx[58]=118;
+ST[0].sRAD_K3[0].nIndx[59]=120;
      
 
 /*RST[0].sLINK RTUk indexei*/
