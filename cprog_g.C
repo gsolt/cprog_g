@@ -4108,7 +4108,7 @@ ReteszesRTUIndex[60][0] =  120;			/*  Kömlõd 099/14,16,17 PV	 */															/
 ReteszesTMOK_RTUNum[60] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[60] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 61. TMOK: 34-82 G front end ->   RTU: Környe 0337/9 PV 							----------------------- tesztelve */								/**/
+/* 61. TMOK: 82-01 G front end ->   RTU: Környe 0337/9 PV 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[61] = 740; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[61][0] = 740;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[61][0] =  117;			/* Környe 0337/9 PV	 */															/**/
