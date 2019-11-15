@@ -207,6 +207,8 @@ sT[0].sCP[0].sCPR[120].nDCStart=584;     sT[0].sCP[0].sCPR[120].nDCNum= 8;    sT
 sT[0].sCP[0].sCPR[121].nDCStart=593;     sT[0].sCP[0].sCPR[121].nDCNum= 8;    sT[0].sCP[0].sCPR[121].nSCStart=601;    sT[0].sCP[0].sCPR[121].nAckStart=0;	  sT[0].sCP[0].sCPR[121].nAckNum=0;   sT[0].sCP[0].sCPR[121].nSPOffsetCS=2618;  sT[0].sCP[0].sCPR[121].nSPOffsetLek=2619;
 sT[0].sCP[0].sCPR[122].nDCStart=602;     sT[0].sCP[0].sCPR[122].nDCNum= 4;    sT[0].sCP[0].sCPR[122].nSCStart=606;    sT[0].sCP[0].sCPR[122].nAckStart=0;	  sT[0].sCP[0].sCPR[122].nAckNum=0;   sT[0].sCP[0].sCPR[122].nSPOffsetCS=2636;  sT[0].sCP[0].sCPR[122].nSPOffsetLek=2637;
 sT[0].sCP[0].sCPR[123].nDCStart=607;     sT[0].sCP[0].sCPR[123].nDCNum= 4;    sT[0].sCP[0].sCPR[123].nSCStart=611;    sT[0].sCP[0].sCPR[123].nAckStart=0;	  sT[0].sCP[0].sCPR[123].nAckNum=0;   sT[0].sCP[0].sCPR[123].nSPOffsetCS=2654;  sT[0].sCP[0].sCPR[123].nSPOffsetLek=2655;
+sT[0].sCP[0].sCPR[124].nDCStart=612;     sT[0].sCP[0].sCPR[124].nDCNum= 4;    sT[0].sCP[0].sCPR[124].nSCStart=616;    sT[0].sCP[0].sCPR[124].nAckStart=0;	  sT[0].sCP[0].sCPR[124].nAckNum=0;   sT[0].sCP[0].sCPR[124].nSPOffsetCS=2693;  sT[0].sCP[0].sCPR[124].nSPOffsetLek=2694;
+sT[0].sCP[0].sCPR[125].nDCStart=617;     sT[0].sCP[0].sCPR[125].nDCNum= 4;    sT[0].sCP[0].sCPR[125].nSCStart=621;    sT[0].sCP[0].sCPR[125].nAckStart=0;	  sT[0].sCP[0].sCPR[125].nAckNum=0;   sT[0].sCP[0].sCPR[125].nSPOffsetCS=2732;  sT[0].sCP[0].sCPR[125].nSPOffsetLek=2733;
 
 
 
@@ -1379,6 +1381,36 @@ sT[0].sTI[123].nType = TYP_MOT;
 	sT[0].sMOT[123].nIEC_DP_NUM			=8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[123].nIEC_NM				= 802;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[123].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Polgárdi 0155/12 PV erõmû ----------------------------------------------------------------*/
+  sT[0].sTI[124].nType = TYP_TAL;
+  
+	sT[0].sTAL[124].nIEC_SP       		= 2656;
+	sT[0].sTAL[124].nIEC_OsszevontHiba	= 2688;
+	sT[0].sTAL[124].nIEC_MT_KommHiba	= 2689;
+	sT[0].sTAL[124].nKommStatusNum		= 2;	
+	sT[0].sTAL[124].nIEC_DP       		= 798;
+	sT[0].sTAL[124].nIEC_DP_FSZ1  		= 802;
+	sT[0].sTAL[124].nIEC_NM				= 811;
+	sT[0].sTAL[124].nNMNum		  		= 9;
+  
+  sT[0].sTAL[124].nSP_EXTRA_OFFSET		= 2691;
+	sT[0].sTAL[124].nSP_EXTRA_NUM		= 2;
+
+/* Polgárdi 0155/11 PV erõmû ----------------------------------------------------------------*/
+  sT[0].sTI[125].nType = TYP_TAL;
+  
+	sT[0].sTAL[125].nIEC_SP       		= 2695;
+	sT[0].sTAL[125].nIEC_OsszevontHiba	= 2727;
+	sT[0].sTAL[125].nIEC_MT_KommHiba	= 2728;
+	sT[0].sTAL[125].nKommStatusNum		= 2;	
+	sT[0].sTAL[125].nIEC_DP       		= 806;
+	sT[0].sTAL[125].nIEC_DP_FSZ1  		= 810;
+	sT[0].sTAL[125].nIEC_NM				= 820;
+	sT[0].sTAL[125].nNMNum		  		= 9;
+  
+  sT[0].sTAL[125].nSP_EXTRA_OFFSET		= 2730;
+	sT[0].sTAL[125].nSP_EXTRA_NUM		= 2;
 
 
 } /* end fnSetDataPar()*/

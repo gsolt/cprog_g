@@ -249,6 +249,8 @@ ST[0].nSiteList[120]= 9083;  ST[0].nLinkList[120]	=RADIO3_6;	/* RADIO3_6	 	Kömlõ
 ST[0].nSiteList[121]= 9084;  ST[0].nLinkList[121]	=RADIO4_2;	/* RADIO4_2	 	Vönöck 064/25                       CELL  */     /* tesztelve */
 ST[0].nSiteList[122]= 9087;  ST[0].nLinkList[122]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/2                       ZEG  */     /* tesztelve */
 ST[0].nSiteList[123]= 9088;  ST[0].nLinkList[123]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/1_2                       ZEG  */     /* tesztelve */
+ST[0].nSiteList[124]= 9085;  ST[0].nLinkList[124]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/12                    SZVAR  */     /* tesztelve */
+ST[0].nSiteList[125]= 9086;  ST[0].nLinkList[125]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/11                    SZVAR  */     /* tesztelve */
 
  
 
@@ -401,7 +403,7 @@ ST[0].sRAD_K2[0].nIndx[23]=117;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 60; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 62; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -463,6 +465,8 @@ ST[0].sRAD_K3[0].nIndx[56]=113;
 ST[0].sRAD_K3[0].nIndx[57]=115;
 ST[0].sRAD_K3[0].nIndx[58]=118;
 ST[0].sRAD_K3[0].nIndx[59]=120;
+ST[0].sRAD_K3[0].nIndx[60]=124;
+ST[0].sRAD_K3[0].nIndx[61]=125;
      
 
 /*RST[0].sLINK RTUk indexei*/
