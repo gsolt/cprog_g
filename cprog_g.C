@@ -3568,6 +3568,7 @@ ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
 ReteszesTMOKNum = 73;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -4218,7 +4219,7 @@ ReteszesRTUIndex[71][1] =  125;			/*  Polgárdi 0155/11 PV erõmû		 */												
 ReteszesTMOK_RTUNum[71] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[71] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
-/* 72. TMOK: 30-19 G front end ->   RTU: Polgárdi 0155/12,11 PV és szél 							----------------------- tesztelve */								/**/
+/* 72. TMOK: 30-19 G front end ->   RTU: Polgárdi 0155/12,11 PV 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[72] = 715; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[72][0] = 715;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
