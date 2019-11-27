@@ -209,6 +209,9 @@ sT[0].sCP[0].sCPR[122].nDCStart=602;     sT[0].sCP[0].sCPR[122].nDCNum= 4;    sT
 sT[0].sCP[0].sCPR[123].nDCStart=607;     sT[0].sCP[0].sCPR[123].nDCNum= 4;    sT[0].sCP[0].sCPR[123].nSCStart=611;    sT[0].sCP[0].sCPR[123].nAckStart=0;	  sT[0].sCP[0].sCPR[123].nAckNum=0;   sT[0].sCP[0].sCPR[123].nSPOffsetCS=2654;  sT[0].sCP[0].sCPR[123].nSPOffsetLek=2655;
 sT[0].sCP[0].sCPR[124].nDCStart=612;     sT[0].sCP[0].sCPR[124].nDCNum= 4;    sT[0].sCP[0].sCPR[124].nSCStart=616;    sT[0].sCP[0].sCPR[124].nAckStart=0;	  sT[0].sCP[0].sCPR[124].nAckNum=0;   sT[0].sCP[0].sCPR[124].nSPOffsetCS=2693;  sT[0].sCP[0].sCPR[124].nSPOffsetLek=2694;
 sT[0].sCP[0].sCPR[125].nDCStart=617;     sT[0].sCP[0].sCPR[125].nDCNum= 4;    sT[0].sCP[0].sCPR[125].nSCStart=621;    sT[0].sCP[0].sCPR[125].nAckStart=0;	  sT[0].sCP[0].sCPR[125].nAckNum=0;   sT[0].sCP[0].sCPR[125].nSPOffsetCS=2732;  sT[0].sCP[0].sCPR[125].nSPOffsetLek=2733;
+sT[0].sCP[0].sCPR[126].nDCStart=622;     sT[0].sCP[0].sCPR[126].nDCNum= 4;    sT[0].sCP[0].sCPR[126].nSCStart=626;    sT[0].sCP[0].sCPR[126].nAckStart=0;	  sT[0].sCP[0].sCPR[126].nAckNum=0;   sT[0].sCP[0].sCPR[126].nSPOffsetCS=2771;  sT[0].sCP[0].sCPR[126].nSPOffsetLek=2772;
+sT[0].sCP[0].sCPR[127].nDCStart=627;     sT[0].sCP[0].sCPR[127].nDCNum= 4;    sT[0].sCP[0].sCPR[127].nSCStart=631;    sT[0].sCP[0].sCPR[127].nAckStart=0;	  sT[0].sCP[0].sCPR[127].nAckNum=0;   sT[0].sCP[0].sCPR[127].nSPOffsetCS=2810;  sT[0].sCP[0].sCPR[127].nSPOffsetLek=2811;
+sT[0].sCP[0].sCPR[128].nDCStart=632;     sT[0].sCP[0].sCPR[128].nDCNum= 1;    sT[0].sCP[0].sCPR[128].nSCStart=633;    sT[0].sCP[0].sCPR[128].nAckStart=0;	  sT[0].sCP[0].sCPR[128].nAckNum=0;   sT[0].sCP[0].sCPR[128].nSPOffsetCS=2826;  sT[0].sCP[0].sCPR[128].nSPOffsetLek=2827;
 
 
 
@@ -1412,6 +1415,43 @@ sT[0].sTI[123].nType = TYP_MOT;
   sT[0].sTAL[125].nSP_EXTRA_OFFSET		= 2730;
 	sT[0].sTAL[125].nSP_EXTRA_NUM		= 2;
 
+  /* Zalaegerszeg 0773/1_2_1 PV erõmû ----------------------------------------------------------------*/
+  sT[0].sTI[126].nType = TYP_TAL;
+  
+	sT[0].sTAL[126].nIEC_SP       		= 2734;
+	sT[0].sTAL[126].nIEC_OsszevontHiba	= 2766;
+	sT[0].sTAL[126].nIEC_MT_KommHiba	= 2767;
+	sT[0].sTAL[126].nKommStatusNum		= 2;	
+	sT[0].sTAL[126].nIEC_DP       		= 814;
+	sT[0].sTAL[126].nIEC_DP_FSZ1  		= 818;
+	sT[0].sTAL[126].nIEC_NM				= 829;
+	sT[0].sTAL[126].nNMNum		  		= 9;
+  
+  sT[0].sTAL[126].nSP_EXTRA_OFFSET		= 2769;
+	sT[0].sTAL[126].nSP_EXTRA_NUM		= 2;
+
+  /* Zalaegerszeg 0773/1_2_2 PV erõmû ----------------------------------------------------------------*/
+  sT[0].sTI[127].nType = TYP_TAL;
+  
+	sT[0].sTAL[127].nIEC_SP       		= 2773;
+	sT[0].sTAL[127].nIEC_OsszevontHiba	= 2805;
+	sT[0].sTAL[127].nIEC_MT_KommHiba	= 2806;
+	sT[0].sTAL[127].nKommStatusNum		= 2;	
+	sT[0].sTAL[127].nIEC_DP       		= 822;
+	sT[0].sTAL[127].nIEC_DP_FSZ1  		= 826;
+	sT[0].sTAL[127].nIEC_NM				= 838;
+	sT[0].sTAL[127].nNMNum		  		= 9;
+  
+  sT[0].sTAL[127].nSP_EXTRA_OFFSET		= 2808;
+	sT[0].sTAL[127].nSP_EXTRA_NUM		= 2;
+
+  /* 49777  -----------------------------------------------------------*/	
+  sT[0].sTI[128].nType = TYP_TMOK;
+
+	sT[0].sMOT[128].nIEC_SP				= 2812;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[128].nIEC_DP				= 830;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[128].nIEC_NM				= 847;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[128].nNMNum      	= 4;
 
 } /* end fnSetDataPar()*/
 

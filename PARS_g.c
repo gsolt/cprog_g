@@ -251,6 +251,9 @@ ST[0].nSiteList[122]= 9087;  ST[0].nLinkList[122]	=RADIO2_7;	/* RADIO2_7	 	Pakod
 ST[0].nSiteList[123]= 9088;  ST[0].nLinkList[123]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/1_2                       ZEG  */     /* tesztelve */
 ST[0].nSiteList[124]= 9085;  ST[0].nLinkList[124]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/12                    SZVAR  */     /* tesztelve */
 ST[0].nSiteList[125]= 9086;  ST[0].nLinkList[125]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/11                    SZVAR  */     /* tesztelve */
+ST[0].nSiteList[126]= 9089;  ST[0].nLinkList[126]	=RADIO6_6;	/* RADIO6_6	 	Zalaegerszeg 077/1_2_1              SZOL  */     /* tesztelve */
+ST[0].nSiteList[127]= 9090;  ST[0].nLinkList[127]	=RADIO6_6;	/* RADIO6_6	 	Zalaegerszeg 077/1_2_2              SZOL  */     /* tesztelve */
+ST[0].nSiteList[128]= 9091;  ST[0].nLinkList[128]	=RADIO6_6;	/* RADIO6_6	 	49777                               SZOL  */     /* tesztelve */
 
  
 
@@ -333,7 +336,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 35; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 38; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -369,6 +372,9 @@ ST[0].sRAD_K1[0].nIndx[31]=119;
 ST[0].sRAD_K1[0].nIndx[32]=121;
 ST[0].sRAD_K1[0].nIndx[33]=122;
 ST[0].sRAD_K1[0].nIndx[34]=123;
+ST[0].sRAD_K1[0].nIndx[35]=126;
+ST[0].sRAD_K1[0].nIndx[36]=127;
+ST[0].sRAD_K1[0].nIndx[37]=128;
  
 
 
