@@ -3567,7 +3567,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 73;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 76;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
@@ -4231,6 +4231,43 @@ ReteszesRTUIndex[72][1] =  125;			/* Polgárdi 0155/11 PV és szél  */												
 ReteszesTMOK_RTUNum[72] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[72] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[72] = 13;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 73. TMOK: 40-60 E front end ->   RTU: Zalaegerszeg 0773/1_2_1, Zalaegerszeg 0773/1_2_2  PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[73] = 1313; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[73][0] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][0] =  126;			/* Zalaegerszeg 0773/1_2_1 */															/**/
+
+TMOK_ID[73][1] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][1] =  127;			/* Zalaegerszeg 0773/1_2_2  */															/**/
+
+ReteszesTMOK_RTUNum[73] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[73] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 74. TMOK: 40-98 C front end ->   RTU: Zalaegerszeg 0773/1_2_1, Zalaegerszeg 0773/1_2_2  PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[74] = 1314; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[74][0] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[74][0] =  126;			/* Zalaegerszeg 0773/1_2_1 */															/**/
+
+TMOK_ID[74][1] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[74][1] =  127;			/* Zalaegerszeg 0773/1_2_2  */															/**/
+
+ReteszesTMOK_RTUNum[74] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[74] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 75. TMOK: 49777 G front end ->   RTU:  Zalaegerszeg 0773/1_2_1, Zalaegerszeg 0773/1_2_2  PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[75] = 830; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[75][0] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[75][0] =  126;			/* Zalaegerszeg 0773/1_2_1  */															/**/
+
+TMOK_ID[75][1] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[75][1] =  127;			/* Zalaegerszeg 0773/1_2_2 */															/**/
+
+ReteszesTMOK_RTUNum[75] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[75] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[75] = 17;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
