@@ -255,6 +255,9 @@ ST[0].nSiteList[126]= 9089;  ST[0].nLinkList[126]	=RADIO6_6;	/* RADIO6_6	 	Zalae
 ST[0].nSiteList[127]= 9090;  ST[0].nLinkList[127]	=RADIO6_6;	/* RADIO6_6	 	Zalaegerszeg 077/1_2_2              SZOL  */     /* tesztelve */
 ST[0].nSiteList[128]= 9091;  ST[0].nLinkList[128]	=RADIO6_6;	/* RADIO6_6	 	49777                               SZOL  */     /* tesztelve */
 ST[0].nSiteList[129]=10111;  ST[0].nLinkList[129]	=RADIO5_3;	/* RADIO5_3	 	Nagyhideghegy ISM                   IGM  */     /* tesztelve */
+ST[0].nSiteList[130]= 5228;  ST[0].nLinkList[130]	=RADIO5_9;	/* RADIO5_9	 	21-63                               IGM  */     /* tesztelve */
+ST[0].nSiteList[131]= 6095;  ST[0].nLinkList[131]	=RADIO5_9;	/* RADIO5_9	 	21-82                               IGM  */     /* tesztelve */
+ST[0].nSiteList[132]= 9093;  ST[0].nLinkList[132]	=RADIO6_1;	/* RADIO6_1	 	Szombathely Markusovszky kórház     SZOM  */     /* tesztelve */
 
  
 
@@ -380,7 +383,7 @@ ST[0].sRAD_K1[0].nIndx[37]=128;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 24; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 25; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -405,12 +408,13 @@ ST[0].sRAD_K2[0].nIndx[20]=84;
 ST[0].sRAD_K2[0].nIndx[21]=96;
 ST[0].sRAD_K2[0].nIndx[22]=102;
 ST[0].sRAD_K2[0].nIndx[23]=117;
+ST[0].sRAD_K2[0].nIndx[24]=132;
 
 
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 63; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 65; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -475,6 +479,8 @@ ST[0].sRAD_K3[0].nIndx[59]=120;
 ST[0].sRAD_K3[0].nIndx[60]=124;
 ST[0].sRAD_K3[0].nIndx[61]=125;
 ST[0].sRAD_K3[0].nIndx[62]=129;
+ST[0].sRAD_K3[0].nIndx[63]=130;
+ST[0].sRAD_K3[0].nIndx[64]=131;
      
 
 /*RST[0].sLINK RTUk indexei*/
