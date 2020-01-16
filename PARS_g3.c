@@ -1419,7 +1419,7 @@ sT[0].sTI[123].nType = TYP_MOT;
   sT[0].sTAL[125].nSP_EXTRA_OFFSET		= 2730;
 	sT[0].sTAL[125].nSP_EXTRA_NUM		= 2;
 
-  /* Zalaegerszeg 0773/1_2_1 PV erõmû ----------------------------------------------------------------*/
+  /* Szombathely 0773/1_2_1 PV erõmû ----------------------------------------------------------------*/
   sT[0].sTI[126].nType = TYP_TAL;
   
 	sT[0].sTAL[126].nIEC_SP       		= 2734;
@@ -1434,7 +1434,7 @@ sT[0].sTI[123].nType = TYP_MOT;
   sT[0].sTAL[126].nSP_EXTRA_OFFSET		= 2769;
 	sT[0].sTAL[126].nSP_EXTRA_NUM		= 2;
 
-  /* Zalaegerszeg 0773/1_2_2 PV erõmû ----------------------------------------------------------------*/
+  /* Szombathely 0773/1_2_2 PV erõmû ----------------------------------------------------------------*/
   sT[0].sTI[127].nType = TYP_TAL;
   
 	sT[0].sTAL[127].nIEC_SP       		= 2773;
