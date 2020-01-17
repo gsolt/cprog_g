@@ -258,6 +258,10 @@ ST[0].nSiteList[129]=10111;  ST[0].nLinkList[129]	=RADIO5_3;	/* RADIO5_3	 	Nagyh
 ST[0].nSiteList[130]= 5228;  ST[0].nLinkList[130]	=RADIO5_9;	/* RADIO5_9	 	21-63                               IGM  */     /* tesztelve */
 ST[0].nSiteList[131]= 6095;  ST[0].nLinkList[131]	=RADIO5_9;	/* RADIO5_9	 	21-82                               IGM  */     /* tesztelve */
 ST[0].nSiteList[132]= 9093;  ST[0].nLinkList[132]	=RADIO6_6;	/* RADIO6_1	 	Szombathely Markusovszky kórház     SZOM  */     /* tesztelve */
+ST[0].nSiteList[133]= 9094;  ST[0].nLinkList[133]	=RADIO6_6;	/* RADIO6_6	 	Szombathely 077/1_2_3              SZOL  */     /* tesztelve */
+ST[0].nSiteList[134]= 9095;  ST[0].nLinkList[134]	=RADIO6_6;	/* RADIO6_6	 	Szombathely 077/1_2_4              SZOL  */     /* tesztelve */
+ST[0].nSiteList[135]= 9096;  ST[0].nLinkList[135]	=RADIO6_6;	/* RADIO6_6	 	Szombathely 077/1_2_5              SZOL  */     /* tesztelve */
+ST[0].nSiteList[136]= 9097;  ST[0].nLinkList[136]	=RADIO6_6;	/* RADIO6_6	 	Szombathely 077/1_2_6              SZOL  */     /* tesztelve */
 
  
 
@@ -340,7 +344,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 38; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 42; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -379,6 +383,10 @@ ST[0].sRAD_K1[0].nIndx[34]=123;
 ST[0].sRAD_K1[0].nIndx[35]=126;
 ST[0].sRAD_K1[0].nIndx[36]=127;
 ST[0].sRAD_K1[0].nIndx[37]=128;
+ST[0].sRAD_K1[0].nIndx[38]=133;
+ST[0].sRAD_K1[0].nIndx[39]=134;
+ST[0].sRAD_K1[0].nIndx[40]=135;
+ST[0].sRAD_K1[0].nIndx[41]=136;
  
 
 
