@@ -4241,7 +4241,19 @@ ReteszesRTUIndex[73][0] =  126;			/* Szombathely 0773/1_2_1 */															/**
 TMOK_ID[73][1] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[73][1] =  127;			/* Szombathely 0773/1_2_2  */															/**/
 
-ReteszesTMOK_RTUNum[73] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+TMOK_ID[73][2] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][2] =  133;			/* Szombathely 0773/1_2_3  */															/**/
+
+TMOK_ID[73][3] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][3] =  134;			/* Szombathely 0773/1_2_4  */															/**/
+
+TMOK_ID[73][4] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][4] =  135;			/* Szombathely 0773/1_2_5  */															/**/
+
+TMOK_ID[73][5] = 1313;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][5] =  136;			/* Szombathely 0773/1_2_6  */															/**/
+
+ReteszesTMOK_RTUNum[73] = 6;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[73] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 74. TMOK: 40-98 C front end ->   RTU: Szombathely 0773/1_2_1, Szombathely 0773/1_2_2  PV 							----------------------- tesztelve */								/**/
@@ -4253,7 +4265,20 @@ ReteszesRTUIndex[74][0] =  126;			/* Szombathely 0773/1_2_1 */															/**
 TMOK_ID[74][1] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[74][1] =  127;			/* Szombathely 0773/1_2_2  */															/**/
 
-ReteszesTMOK_RTUNum[74] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+TMOK_ID[74][2] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[74][2] =  133;			/* Szombathely 0773/1_2_3  */															/**/
+
+TMOK_ID[74][3] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[74][3] =  134;			/* Szombathely 0773/1_2_4  */															/**/
+
+TMOK_ID[74][4] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[74][4] =  135;			/* Szombathely 0773/1_2_5  */															/**/
+
+TMOK_ID[74][5] = 1314;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[74][5] =  136;			/* Szombathely 0773/1_2_6  */															/**/
+
+
+ReteszesTMOK_RTUNum[74] = 6;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[74] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 75. TMOK: 49777 G front end ->   RTU:  Szombathely 0773/1_2_1, Szombathely 0773/1_2_2  PV 							----------------------- tesztelve */								/**/
@@ -4265,7 +4290,20 @@ ReteszesRTUIndex[75][0] =  126;			/* Szombathely 0773/1_2_1  */															/*
 TMOK_ID[75][1] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[75][1] =  127;			/* Szombathely 0773/1_2_2 */															/**/
 
-ReteszesTMOK_RTUNum[75] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+TMOK_ID[75][2] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[75][2] =  133;			/* Szombathely 0773/1_2_3  */															/**/
+
+TMOK_ID[75][3] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[75][3] =  134;			/* Szombathely 0773/1_2_4  */															/**/
+
+TMOK_ID[75][4] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[75][4] =  135;			/* Szombathely 0773/1_2_5  */															/**/
+
+TMOK_ID[75][5] = 830;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[75][5] =  136;			/* Szombathely 0773/1_2_6  */															/**/
+
+
+ReteszesTMOK_RTUNum[75] = 6;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[75] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[75] = 17;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
               																								
