@@ -220,6 +220,7 @@ sT[0].sCP[0].sCPR[133].nDCStart=647;     sT[0].sCP[0].sCPR[133].nDCNum= 4;    sT
 sT[0].sCP[0].sCPR[134].nDCStart=652;     sT[0].sCP[0].sCPR[134].nDCNum= 4;    sT[0].sCP[0].sCPR[134].nSCStart=656;    sT[0].sCP[0].sCPR[134].nAckStart=0;	  sT[0].sCP[0].sCPR[134].nAckNum=0;   sT[0].sCP[0].sCPR[134].nSPOffsetCS=2980;  sT[0].sCP[0].sCPR[134].nSPOffsetLek=2981;
 sT[0].sCP[0].sCPR[135].nDCStart=657;     sT[0].sCP[0].sCPR[135].nDCNum= 4;    sT[0].sCP[0].sCPR[135].nSCStart=661;    sT[0].sCP[0].sCPR[135].nAckStart=0;	  sT[0].sCP[0].sCPR[135].nAckNum=0;   sT[0].sCP[0].sCPR[135].nSPOffsetCS=3019;  sT[0].sCP[0].sCPR[135].nSPOffsetLek=3020;
 sT[0].sCP[0].sCPR[136].nDCStart=662;     sT[0].sCP[0].sCPR[136].nDCNum= 4;    sT[0].sCP[0].sCPR[136].nSCStart=666;    sT[0].sCP[0].sCPR[136].nAckStart=0;	  sT[0].sCP[0].sCPR[136].nAckNum=0;   sT[0].sCP[0].sCPR[136].nSPOffsetCS=3058;  sT[0].sCP[0].sCPR[136].nSPOffsetLek=3059;
+sT[0].sCP[0].sCPR[137].nDCStart=667;     sT[0].sCP[0].sCPR[137].nDCNum= 4;    sT[0].sCP[0].sCPR[137].nSCStart=671;    sT[0].sCP[0].sCPR[137].nAckStart=0;	  sT[0].sCP[0].sCPR[137].nAckNum=0;   sT[0].sCP[0].sCPR[137].nSPOffsetCS=3095;  sT[0].sCP[0].sCPR[137].nSPOffsetLek=3096;
 
 
 
@@ -1558,6 +1559,30 @@ sT[0].sTI[132].nType = TYP_TAL;
   
   sT[0].sTAL[136].nSP_EXTRA_OFFSET		=3056;
 	sT[0].sTAL[136].nSP_EXTRA_NUM		= 2;
+
+  /* Székesfehérvár Arconic -----------------------------------------------------------*/
+    sT[0].sTI[137].nType = TYP_TAL;
+
+		sT[0].sTAL[137].nIEC_SP       		= 3060;
+		sT[0].sTAL[137].nIEC_OsszevontHiba	= 3092;
+		sT[0].sTAL[137].nIEC_MT_KommHiba		= 3093;
+		sT[0].sTAL[137].nIEC_DP       		= 874;
+		sT[0].sTAL[137].nIEC_DP_FSZ1  		= 878;
+		sT[0].sTAL[137].nIEC_NM				= 897;
+		sT[0].sTAL[137].nNMNum		  		= 4;
+		sT[0].sTAL[137].nKommStatusNum		= 2;
+		
+		sT[0].sTAL[137].nIEC_DP_12BIT1		= 882;
+		sT[0].sTAL[137].nIEC_DP_2BIT_BK1		= 912;
+
+		sT[0].sTAL[137].nIEC_DP_12BIT2		= 883;
+		sT[0].sTAL[137].nIEC_DP_2BIT_BK2		= 920;
+
+ 		sT[0].sTAL[137].nIEC_DP_12BIT3		= 884;
+		sT[0].sTAL[137].nIEC_DP_2BIT_BK3		= 913;
+
+ 		sT[0].sTAL[137].nIEC_DP_12BIT4		= 885;
+		sT[0].sTAL[137].nIEC_DP_2BIT_BK4		= 925;
 
 } /* end fnSetDataPar()*/
 
