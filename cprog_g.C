@@ -3567,7 +3567,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 76;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 79;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
@@ -4306,6 +4306,27 @@ ReteszesRTUIndex[75][5] =  136;			/* Szombathely 0773/1_2_6  */															/*
 ReteszesTMOK_RTUNum[75] = 6;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
 nReteszPar[75] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[75] = 17;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 76. TMOK: 11-55 D front end ->   RTU: Bársonyos 0240/2 PV erõmû							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[76] = 1315; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[76][0] = 1315;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[76][0] =  138;			/*  Bársonyos 0240/2 PV erõmû		 */															/**/
+ReteszesTMOK_RTUNum[76] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[76] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 77. TMOK: 86-95 B front end ->   RTU: Bársonyos 0240/2 PV erõmû							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[77] = 1316; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[77][0] = 1316;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[77][0] =  138;			/*  Bársonyos 0240/2 PV erõmû		 */															/**/
+ReteszesTMOK_RTUNum[77] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[77] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 78. TMOK: 86-95 B front end ->   RTU: Bársonyos 0240/2 PV erõmû							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[78] = 1317; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[78][0] = 1317;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[78][0] =  138;			/*  Bársonyos 0240/2 PV erõmû		 */															/**/
+ReteszesTMOK_RTUNum[78] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[78] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
