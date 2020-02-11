@@ -837,7 +837,7 @@ void tx_command(void)
    			MOSCAD_error(message );  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=95 )
+			if ( nI!=95 && nI!=139 && nI!=140)
 			{			
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -849,7 +849,7 @@ void tx_command(void)
 		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
 			}
-			else if ( nI==95 ) /* Almásfüzitõ 012 PV erõmû */
+			else if ( nI==95 || nI==139 || nI==140) /* Almásfüzitõ 012 PV erõmû */
 			{			
 				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -3578,7 +3578,7 @@ ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
 nReteszPar[0] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 																													/**/
-/* 1. TMOK: 81-31 RTU: Tata napelempark 							-----------------------*/								/**/
+/* 1. TMOK: 81-31 RTU: Tata napelempark, Tata Moowa, Tata 460/223,224,226,230,231 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[1] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[1][0] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
@@ -3587,7 +3587,10 @@ ReteszesRTUIndex[1][0] = 34;			/* Tata napelempark		 */															/**/
 TMOK_ID[1][1] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[1][1] = 96;			/* Tata Moowa		 */															/**/
 
-ReteszesTMOK_RTUNum[1] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[1][2] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[1][2] = 140;			/* Tata 460/223,224,226,230,231		 */															/**/
+
+ReteszesTMOK_RTUNum[1] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[1] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													
 /* 2. TMOK: 81-60 RTU: Tata napelempark 							-----------------------*/								/**/
@@ -3934,11 +3937,16 @@ ReteszesRTUIndex[38][0] =  95;			/* Almásfüzitõ 012 PV	 */															/**/
 ReteszesTMOK_RTUNum[38] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[38] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 39. TMOK: 81-50 A front end ->   RTU: Tata Moowa PV 							----------------------- tesztelve */								/**/
-TMOKAllasjelzesOffsetek[39] = 1286; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+/* 39. TMOK: 81-50 A front end ->   RTU: Tata Moowa PV, Tata 460/225,232,233 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[39] = 1286; 		/* Az állásjelzés offsete a DP adatbázisban */		
+						/**/
 TMOK_ID[39][0] = 1286;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[39][0] =  96;			/* Tats Moowa PV	 */															/**/
-ReteszesTMOK_RTUNum[39] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+                              
+TMOK_ID[39][1] = 1286;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[39][1] =  139;			/* Tata 460/225,232,233	 */															/**/
+
+ReteszesTMOK_RTUNum[39] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[39] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 40. TMOK: 91-70 A front end ->   RTU: Zalaegerszeg 0779/ PV 							----------------------- tesztelve */								/**/
