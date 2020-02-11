@@ -723,7 +723,7 @@ nMoscadHours = mdt.hours;
  		    	
  			}
 			
-			else if (nType == TYP_MOT &&  buff_len == 42 * 2)
+			else if ( (nType == TYP_MOT &&  buff_len == 42 * 2) || (nType == TYP_MOT &&  buff_len == 48 * 2))
  			{
 
  				MOT_DATA(&sMOT[site_inx],rx_buffer);
