@@ -1059,7 +1059,7 @@ if (pMOT->nNMNum > 0)
 {
 	nNMStart = pMOT->nIEC_NM;
 	
-	for (nI=0; nI < pMOT->nNMNum && nI<20; nI++)
+	for (nI=0; nI < pMOT->nNMNum && nI<43; nI++)
 	{
 		fnWriteNM( nNMStart+nI,p_col_RxBuf[20+nI]);			
 	
