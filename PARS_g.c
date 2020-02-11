@@ -264,6 +264,8 @@ ST[0].nSiteList[135]= 9096;  ST[0].nLinkList[135]	=RADIO6_6;	/* RADIO6_6	 	Szhel
 ST[0].nSiteList[136]= 9097;  ST[0].nLinkList[136]	=RADIO6_6;	/* RADIO6_6	 	Szhely Bácskai Energia I.  077/1_2_6              SZOL  */     /* tesztelve */
 ST[0].nSiteList[137]= 9098;  ST[0].nLinkList[137]	=RADIO9_1;	/* RADIO9_1	 	Székesfehérvár, Arconic            KOF  */     /* tesztelve */
 ST[0].nSiteList[138]= 9092;  ST[0].nLinkList[138]	=RADIO5_1;	/* RADIO5_1	 	Bársonyos 0240/2                   IGM  */     /* tesztelve */
+ST[0].nSiteList[139]= 9099;  ST[0].nLinkList[139]	=RADIO5_2;	/* RADIO5_2	 	Tata 460/225,232,233               TAT  */     /* tesztelve */
+ST[0].nSiteList[140]= 9100;  ST[0].nLinkList[140]	=RADIO5_2;	/* RADIO5_2	 	Tata 460/223,224,226,230,231               TAT  */     /* tesztelve */
 
  
 
@@ -424,7 +426,7 @@ ST[0].sRAD_K2[0].nIndx[24]=132;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 67; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 70; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -493,6 +495,8 @@ ST[0].sRAD_K3[0].nIndx[63]=130;
 ST[0].sRAD_K3[0].nIndx[64]=131;
 ST[0].sRAD_K3[0].nIndx[65]=137;
 ST[0].sRAD_K3[0].nIndx[66]=138;
+ST[0].sRAD_K3[0].nIndx[67]=139;
+ST[0].sRAD_K3[0].nIndx[68]=140;
      
 
 /*RST[0].sLINK RTUk indexei*/
