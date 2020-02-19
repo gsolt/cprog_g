@@ -266,6 +266,8 @@ ST[0].nSiteList[137]= 9098;  ST[0].nLinkList[137]	=RADIO9_1;	/* RADIO9_1	 	Széke
 ST[0].nSiteList[138]= 9092;  ST[0].nLinkList[138]	=RADIO5_1;	/* RADIO5_1	 	Bársonyos 0240/2                   IGM  */     /* tesztelve */
 ST[0].nSiteList[139]= 9099;  ST[0].nLinkList[139]	=RADIO5_2;	/* RADIO5_2	 	Tata 460/225,232,233               TAT  */     /* tesztelve */
 ST[0].nSiteList[140]= 9100;  ST[0].nLinkList[140]	=RADIO5_2;	/* RADIO5_2	 	Tata 460/223,224,226,230,231               TAT  */     /* tesztelve */
+ST[0].nSiteList[141]= 9101;  ST[0].nLinkList[141]	=RADIO4_1;	/* RADIO4_1	 	Sótony 089/14                       IK  */     /* tesztelve */
+ST[0].nSiteList[142]= 9102;  ST[0].nLinkList[142]	=RADIO4_1;	/* RADIO4_1	 	Sótony 089/15                       IK  */     /* tesztelve */
 
  
 
@@ -348,7 +350,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 42; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 44; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -391,6 +393,8 @@ ST[0].sRAD_K1[0].nIndx[38]=133;
 ST[0].sRAD_K1[0].nIndx[39]=134;
 ST[0].sRAD_K1[0].nIndx[40]=135;
 ST[0].sRAD_K1[0].nIndx[41]=136;
+ST[0].sRAD_K1[0].nIndx[42]=141;
+ST[0].sRAD_K1[0].nIndx[43]=142;
  
 
 
