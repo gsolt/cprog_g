@@ -3567,14 +3567,22 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 79;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 80;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
-/* 0. TMOK: 90-90 RTU: TMOK 48642 							-----------------------*/								/**/
+/* 0. TMOK: 90-90 RTU: TMOK 48642, Sótony 089/14 089/15							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[0][0] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[0][0] = 48;			/* 48642		 */															/**/
-ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[0][1] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[0][1] = 141;			/* Sótony 089/14		 */															/**/
+
+TMOK_ID[0][2] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[0][2] = 142;			/* Sótony 089/15		 */															/**/
+
+ReteszesTMOK_RTUNum[0] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[0] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 																													/**/
@@ -3819,15 +3827,22 @@ ReteszesTMOK_RTUNum[24] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnás
 nReteszPar[24] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[24] = 8;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 25. TMOK: 42-12 A redundancia ->   RTU: Gyõrvár 03/15, 05/1 PV erõmû 							----------------------- tesztelve */								/**/
+/* 25. TMOK: 42-12 A redundancia ->   RTU: Gyõrvár 03/15, 05/1 PV erõmû , Sótony 089/14 /15							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[25] = 1271; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[25][0] = 1271;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[25][0] =  85;			/* Gyõrvár 03/15	 */															/**/
+
 TMOK_ID[25][1] = 1271;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[25][1] =  86;			/* Gyõrvár 00/1	 */															/**/
 
-ReteszesTMOK_RTUNum[25] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[25][2] =1271;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[25][2] = 141;			/* Sótony 089/14		 */															/**/
+
+TMOK_ID[25][3] =1271;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[25][3] = 142;			/* Sótony 089/14		 */															/**/
+
+ReteszesTMOK_RTUNum[25] = 4;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[25] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 26. TMOK: 42-16 A front end ->   RTU: Gyõrvár 03/15, Zalaegerszeg 0779/ PV erõmû 							----------------------- tesztelve */								/**/
@@ -4335,6 +4350,18 @@ TMOK_ID[78][0] = 1317;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[78][0] =  138;			/*  Bársonyos 0240/2 PV erõmû		 */															/**/
 ReteszesTMOK_RTUNum[78] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[78] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 79. TMOK: 42-01 F front end ->   RTU: Sótony 089/14 /15 PV erõmû							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[79] = 1318; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[79][0] = 1318;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[79][0] =  141;			/*  Sótony 089/14 PV erõmû		 */															/**/
+
+TMOK_ID[79][1] = 1318;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[79][1] =  142;			/*  Sótony 089/15 PV erõmû		 */															/**/
+
+ReteszesTMOK_RTUNum[79] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[79] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
