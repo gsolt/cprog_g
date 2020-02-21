@@ -268,6 +268,7 @@ ST[0].nSiteList[139]= 9099;  ST[0].nLinkList[139]	=RADIO5_2;	/* RADIO5_2	 	Tata 
 ST[0].nSiteList[140]= 9100;  ST[0].nLinkList[140]	=RADIO5_2;	/* RADIO5_2	 	Tata 460/223,224,226,230,231               TAT  */     /* tesztelve */
 ST[0].nSiteList[141]= 9101;  ST[0].nLinkList[141]	=RADIO4_1;	/* RADIO4_1	 	Sótony 089/14                       IK  */     /* tesztelve */
 ST[0].nSiteList[142]= 9102;  ST[0].nLinkList[142]	=RADIO4_1;	/* RADIO4_1	 	Sótony 089/15                       IK  */     /* tesztelve */
+ST[0].nSiteList[143]= 6187;  ST[0].nLinkList[143]	=RADIO7_1;	/* RADIO7_1	 	15-07                               MOV  */     /* tesztelve */
 
  
 
@@ -399,7 +400,7 @@ ST[0].sRAD_K1[0].nIndx[43]=142;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 25; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 26; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -425,6 +426,7 @@ ST[0].sRAD_K2[0].nIndx[21]=96;
 ST[0].sRAD_K2[0].nIndx[22]=102;
 ST[0].sRAD_K2[0].nIndx[23]=117;
 ST[0].sRAD_K2[0].nIndx[24]=132;
+ST[0].sRAD_K2[0].nIndx[25]=143;
 
 
 
