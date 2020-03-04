@@ -837,7 +837,7 @@ void tx_command(void)
    			MOSCAD_error(message );  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=95 && nI!=139 && nI!=140)
+			if ( nI!=95 && nI!=139 && nI!=140 && nI!=144 && nI!=145 && nI!=146 && nI!=147)
 			{			
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -849,7 +849,7 @@ void tx_command(void)
 		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
 			}
-			else if ( nI==95 || nI==139 || nI==140) /* Almásfüzitõ 012 PV erõmû */
+			else if ( nI==95 || nI==139 || nI==140 || nI==144 || nI==145 || nI==146 || nI==147) /* Almásfüzitõ 012 PV erõmû */
 			{			
 				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];

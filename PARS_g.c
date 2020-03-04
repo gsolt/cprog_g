@@ -269,6 +269,10 @@ ST[0].nSiteList[140]= 9100;  ST[0].nLinkList[140]	=RADIO5_2;	/* RADIO5_2	 	Tata 
 ST[0].nSiteList[141]= 9101;  ST[0].nLinkList[141]	=RADIO4_1;	/* RADIO4_1	 	Sótony 089/14                       IK  */     /* tesztelve */
 ST[0].nSiteList[142]= 9102;  ST[0].nLinkList[142]	=RADIO4_1;	/* RADIO4_1	 	Sótony 089/15                       IK  */     /* tesztelve */
 ST[0].nSiteList[143]= 6187;  ST[0].nLinkList[143]	=RADIO7_1;	/* RADIO7_1	 	15-07                               MOV  */     /* tesztelve */
+ST[0].nSiteList[144]= 9103;  ST[0].nLinkList[144]	=RADIO2_7;	/* RADIO2_7	 	Bocfölde KÁ1                        ZEG  */     /* tesztelve */
+ST[0].nSiteList[145]= 9104;  ST[0].nLinkList[145]	=RADIO2_7;	/* RADIO2_7	 	Bocfölde KÁ2                        ZEG  */     /* tesztelve */
+ST[0].nSiteList[146]= 9105;  ST[0].nLinkList[146]	=RADIO2_7;	/* RADIO2_7	 	Bocfölde KÁ3                        ZEG  */     /* tesztelve */
+ST[0].nSiteList[147]= 9106;  ST[0].nLinkList[147]	=RADIO2_7;	/* RADIO2_7	 	Bocfölde KÁ4                        ZEG  */     /* tesztelve */
 
  
 
@@ -351,7 +355,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 44; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 48; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -396,6 +400,10 @@ ST[0].sRAD_K1[0].nIndx[40]=135;
 ST[0].sRAD_K1[0].nIndx[41]=136;
 ST[0].sRAD_K1[0].nIndx[42]=141;
 ST[0].sRAD_K1[0].nIndx[43]=142;
+ST[0].sRAD_K1[0].nIndx[44]=144;
+ST[0].sRAD_K1[0].nIndx[45]=145;
+ST[0].sRAD_K1[0].nIndx[46]=146;
+ST[0].sRAD_K1[0].nIndx[47]=147;
  
 
 
