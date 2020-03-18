@@ -247,8 +247,8 @@ ST[0].nSiteList[118]= 9081;  ST[0].nLinkList[118]	=RADIO3_6;	/* RADIO3_6	 	82-01
 ST[0].nSiteList[119]= 9082;  ST[0].nLinkList[119]	=RADIO2_6;	/* RADIO2_6	 	Zalaegerszeg vasház                 ZEG  */     /* tesztelve */
 ST[0].nSiteList[120]= 9083;  ST[0].nLinkList[120]	=RADIO3_6;	/* RADIO3_6	 	Kömlõd 099/14,16,17                 ORNY  */     /* tesztelve */
 ST[0].nSiteList[121]= 9084;  ST[0].nLinkList[121]	=RADIO4_2;	/* RADIO4_2	 	Vönöck 064/25                       CELL  */     /* tesztelve */
-ST[0].nSiteList[122]= 9087;  ST[0].nLinkList[122]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/2                       ZEG  */     /* tesztelve */
-ST[0].nSiteList[123]= 9088;  ST[0].nLinkList[123]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/1_2                       ZEG  */     /* tesztelve */
+ST[0].nSiteList[122]= 9087;  ST[0].nLinkList[122]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/1_2                       ZEG  */     /* tesztelve */
+ST[0].nSiteList[123]= 9088;  ST[0].nLinkList[123]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/2                       ZEG  */     /* tesztelve */
 ST[0].nSiteList[124]= 9085;  ST[0].nLinkList[124]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/12                    SZVAR  */     /* tesztelve */
 ST[0].nSiteList[125]= 9086;  ST[0].nLinkList[125]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/11                    SZVAR  */     /* tesztelve */
 ST[0].nSiteList[126]= 9089;  ST[0].nLinkList[126]	=RADIO6_6;	/* RADIO6_6	 	Szombathely Pleva Sun             077/1_2_1  SZOL  */     /* tesztelve */

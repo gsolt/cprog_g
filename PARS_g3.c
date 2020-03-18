@@ -1385,7 +1385,7 @@ sT[0].sTI[121].nType = TYP_MOT;
 	sT[0].sMOT[121].nIEC_NM				= 779;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[121].nNMNum				= 14;		/* Analóg mérések száma*/
 
-/* Pakod 2144/2   ----------------------------------------------------------------*/
+/* Pakod 2144/1_2   ----------------------------------------------------------------*/
 sT[0].sTI[122].nType = TYP_MOT;
 
 	sT[0].sMOT[122].nIEC_SP				= 2620;		/* Egybites értékek IEC kezdõcíme*/
@@ -1395,7 +1395,7 @@ sT[0].sTI[122].nType = TYP_MOT;
 	sT[0].sMOT[122].nIEC_NM				= 793;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[122].nNMNum				= 9;		/* Analóg mérések száma*/
 
-/* Pakod 2144/1_2   ----------------------------------------------------------------*/
+/* Pakod 2144/2   ----------------------------------------------------------------*/
 sT[0].sTI[123].nType = TYP_MOT;
 
 	sT[0].sMOT[123].nIEC_SP				= 2638;		/* Egybites értékek IEC kezdõcíme*/
