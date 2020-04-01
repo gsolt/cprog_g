@@ -3567,7 +3567,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 80;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 81;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642, Sótony 089/14 089/15							-----------------------*/								/**/
@@ -4375,6 +4375,13 @@ ReteszesRTUIndex[79][1] =  142;			/*  Sótony 089/15 PV erõmû		 */															
 
 ReteszesTMOK_RTUNum[79] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[79] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 80. TMOK: 41-26 B front end ->   RTU: Ikervár 0404/14,16,18,20							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[80] = 1319; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[80][0] = 1319;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[80][0] =  148;			/*  Ikervár 0404/14,16,18,20		 */															/**/
+ReteszesTMOK_RTUNum[80] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[80] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
