@@ -274,7 +274,8 @@ ST[0].nSiteList[145]= 9104;  ST[0].nLinkList[145]	=RADIO2_7;	/* RADIO2_7	 	Bocfö
 ST[0].nSiteList[146]= 9105;  ST[0].nLinkList[146]	=RADIO2_7;	/* RADIO2_7	 	Bocfölde KÁ3                        ZEG  */     /* tesztelve */
 ST[0].nSiteList[147]= 9106;  ST[0].nLinkList[147]	=RADIO2_7;	/* RADIO2_7	 	Bocfölde KÁ4                        ZEG  */     /* tesztelve */
 ST[0].nSiteList[148]= 9107;  ST[0].nLinkList[148]	=RADIO4_1;	/* RADIO4_1	 	Ikervár 0404/14,16,18,20            IK  */     /* tesztelve */
-
+ST[0].nSiteList[149]= 9033;  ST[0].nLinkList[149]	=RADIO7_1;	/* RADIO7_1	 	Kápolna                             MOS  */     /* tesztelve */
+ST[0].nSiteList[150]= 9034;  ST[0].nLinkList[150]	=RADIO7_1;	/* RADIO7_1	 	Kühne Ede                             MOS  */     /* tesztelve */
  
 
 
@@ -410,7 +411,7 @@ ST[0].sRAD_K1[0].nIndx[48]=148;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 26; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 28; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -437,6 +438,8 @@ ST[0].sRAD_K2[0].nIndx[22]=102;
 ST[0].sRAD_K2[0].nIndx[23]=117;
 ST[0].sRAD_K2[0].nIndx[24]=132;
 ST[0].sRAD_K2[0].nIndx[25]=143;
+ST[0].sRAD_K2[0].nIndx[26]=149;
+ST[0].sRAD_K2[0].nIndx[27]=150;
 
 
 
