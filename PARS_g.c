@@ -251,16 +251,16 @@ ST[0].nSiteList[122]= 9087;  ST[0].nLinkList[122]	=RADIO2_7;	/* RADIO2_7	 	Pakod
 ST[0].nSiteList[123]= 9088;  ST[0].nLinkList[123]	=RADIO2_7;	/* RADIO2_7	 	Pakod 2144/2                       ZEG  */     /* tesztelve */
 ST[0].nSiteList[124]= 9085;  ST[0].nLinkList[124]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/12                    SZVAR  */     /* tesztelve */
 ST[0].nSiteList[125]= 9086;  ST[0].nLinkList[125]	=RADIO1_5;	/* RADIO1_5	 	Polgárdi 0155/11                    SZVAR  */     /* tesztelve */
-ST[0].nSiteList[126]= 9089;  ST[0].nLinkList[126]	=RADIO6_6;	/* RADIO6_6	 	Szombathely Pleva Sun             077/1_2_1  SZOL  */     /* tesztelve */
+ST[0].nSiteList[126]= 9089;  ST[0].nLinkList[126]	=RADIO6_1;	/* RADIO6_6	 	Szombathely Pleva Sun             077/1_2_1  SZOL  */     /* tesztelve */
 ST[0].nSiteList[127]= 9090;  ST[0].nLinkList[127]	=RADIO6_6;	/* RADIO6_6	 	Szombathely Bácskai Energia III. 077/1_2_2   SZOL  */     /* tesztelve */
 ST[0].nSiteList[128]= 9091;  ST[0].nLinkList[128]	=RADIO6_6;	/* RADIO6_6	 	49777                               SZOL  */     /* tesztelve */
 ST[0].nSiteList[129]=10111;  ST[0].nLinkList[129]	=RADIO5_3;	/* RADIO5_3	 	Nagyhideghegy ISM                   IGM  */     /* tesztelve */
 ST[0].nSiteList[130]= 5228;  ST[0].nLinkList[130]	=RADIO5_9;	/* RADIO5_9	 	21-63                               IGM  */     /* tesztelve */
 ST[0].nSiteList[131]= 6095;  ST[0].nLinkList[131]	=RADIO5_9;	/* RADIO5_9	 	21-82                               IGM  */     /* tesztelve */
 ST[0].nSiteList[132]= 9093;  ST[0].nLinkList[132]	=RADIO6_6;	/* RADIO6_1	 	Szombathely Markusovszky kórház     SZOM  */     /* tesztelve */
-ST[0].nSiteList[133]= 9094;  ST[0].nLinkList[133]	=RADIO6_6;	/* RADIO6_6	 	Szhely MW Zöld-Energia II. 077/1_2_3  SZOL  */     /* tesztelve */
+ST[0].nSiteList[133]= 9094;  ST[0].nLinkList[133]	=RADIO6_1;	/* RADIO6_6	 	Szhely MW Zöld-Energia II. 077/1_2_3  SZOL  */     /* tesztelve */
 ST[0].nSiteList[134]= 9095;  ST[0].nLinkList[134]	=RADIO6_6;	/* RADIO6_6	 	Szhely Bácskai Energia II. 077/1_2_4  SZOL  */     /* tesztelve */
-ST[0].nSiteList[135]= 9096;  ST[0].nLinkList[135]	=RADIO6_6;	/* RADIO6_6	 	Szhely MW Zöld-Energia I.  077/1_2_5              SZOL  */     /* tesztelve */
+ST[0].nSiteList[135]= 9096;  ST[0].nLinkList[135]	=RADIO6_1;	/* RADIO6_6	 	Szhely MW Zöld-Energia I.  077/1_2_5              SZOL  */     /* tesztelve */
 ST[0].nSiteList[136]= 9097;  ST[0].nLinkList[136]	=RADIO6_6;	/* RADIO6_6	 	Szhely Bácskai Energia I.  077/1_2_6              SZOL  */     /* tesztelve */
 ST[0].nSiteList[137]= 9098;  ST[0].nLinkList[137]	=RADIO9_1;	/* RADIO9_1	 	Székesfehérvár, Arconic            KOF  */     /* tesztelve */
 ST[0].nSiteList[138]= 9092;  ST[0].nLinkList[138]	=RADIO5_1;	/* RADIO5_1	 	Bársonyos 0240/2                   IGM  */     /* tesztelve */
