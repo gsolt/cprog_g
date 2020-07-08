@@ -277,6 +277,7 @@ ST[0].nSiteList[148]= 9107;  ST[0].nLinkList[148]	=RADIO4_1;	/* RADIO4_1	 	Ikerv
 ST[0].nSiteList[149]= 9033;  ST[0].nLinkList[149]	=RADIO7_1;	/* RADIO7_1	 	Kápolna                             MOS  */     /* tesztelve */
 ST[0].nSiteList[150]= 9034;  ST[0].nLinkList[150]	=RADIO7_1;	/* RADIO7_1	 	Kühne Ede                           MOS  */     /* tesztelve */
 ST[0].nSiteList[151]= 9108;  ST[0].nLinkList[151]	=RADIO9_4;	/* RADIO9_4	 	Dudar 075/9                         MOR  */     /* tesztelve */
+ST[0].nSiteList[152]= 9109;  ST[0].nLinkList[152]	=RADIO6_2;	/* RADIO6_2	 	Bük, Golf utca                 CSEP  */     /* tesztelve */
  
 
 
@@ -412,7 +413,7 @@ ST[0].sRAD_K1[0].nIndx[48]=148;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 28; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 29; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -441,6 +442,7 @@ ST[0].sRAD_K2[0].nIndx[24]=132;
 ST[0].sRAD_K2[0].nIndx[25]=143;
 ST[0].sRAD_K2[0].nIndx[26]=149;
 ST[0].sRAD_K2[0].nIndx[27]=150;
+ST[0].sRAD_K2[0].nIndx[28]=152;
 
 
 
