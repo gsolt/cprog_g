@@ -583,7 +583,56 @@ short          *p_col_parInt;
 						*nSPTblIndx = p_col_parInt[73];	/* Itt van az SP24 tábla sorszáma */
 						*nIndx = nIEC_Offset - 5750;
 					}/*end if SP24 */			
+					if (nIEC_Offset>=6000 && nIEC_Offset<6250)
+					{											
+						/* Single point 25. */
+						*nSPTblIndx = p_col_parInt[74];	/* Itt van az SP25 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6000;
+					}/*end if SP25 */			
+					if (nIEC_Offset>=6250 && nIEC_Offset<6500)
+					{											
+						/* Single point 26. */
+						*nSPTblIndx = p_col_parInt[79];	/* Itt van az SP26 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6250;
+					}/*end if SP26 */			
+					if (nIEC_Offset>=6500 && nIEC_Offset<6750)
+					{											
+						/* Single point 27. */
+						*nSPTblIndx = p_col_parInt[80];	/* Itt van az SP27 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6500;
+					}/*end if SP27 */			
+					if (nIEC_Offset>=6750 && nIEC_Offset<7000)
+					{											
+						/* Single point 28. */
+						*nSPTblIndx = p_col_parInt[81];	/* Itt van az SP28 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6750;
+					}/*end if SP28 */			
+					if (nIEC_Offset>=7000 && nIEC_Offset<7250)
+					{											
+						/* Single point 29. */
+						*nSPTblIndx = p_col_parInt[82];	/* Itt van az SP29 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7000;
+					}/*end if SP29 */			
+					if (nIEC_Offset>=7250 && nIEC_Offset<7500)
+					{											
+						/* Single point 30. */
+						*nSPTblIndx = p_col_parInt[83];	/* Itt van az SP30 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7250;
+					}/*end if SP30 */			
+					if (nIEC_Offset>=7500 && nIEC_Offset<7750)
+					{											
+						/* Single point 31. */
+						*nSPTblIndx = p_col_parInt[93];	/* Itt van az SP31 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7500;
+					}/*end if SP31 */			
+					if (nIEC_Offset>=7750 && nIEC_Offset<8000)
+					{											
+						/* Single point 32. */
+						*nSPTblIndx = p_col_parInt[94];	/* Itt van az SP32 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7750;
+					}/*end if SP32 */			
 						
+            
 
 if (*nIndx>249)
 {
@@ -651,6 +700,36 @@ short          *p_col_parInt;
 			/* NM 5. */
 			*nNMTblIndx = p_col_parInt[75]; 	/* Itt van az NM5 tábla sorszáma */
 			*nIndx = nIECOffset - 960;				
+		}
+		else if (nIECOffset>=1200 && nIECOffset<1440)
+		{
+			/* NM 6. */
+			*nNMTblIndx = p_col_parInt[84]; 	/* Itt van az NM6 tábla sorszáma */
+			*nIndx = nIECOffset - 1200;				
+		}
+		else if (nIECOffset>=1440 && nIECOffset<1680)
+		{
+			/* NM 7. */
+			*nNMTblIndx = p_col_parInt[95]; 	/* Itt van az NM7 tábla sorszáma */
+			*nIndx = nIECOffset - 1440;				
+		}
+		else if (nIECOffset>=1680 && nIECOffset<1920)
+		{
+			/* NM 8. */
+			*nNMTblIndx = p_col_parInt[96]; 	/* Itt van az NM8 tábla sorszáma */
+			*nIndx = nIECOffset - 1680;				
+		}
+		else if (nIECOffset>=1920 && nIECOffset<2160)
+		{
+			/* NM 9. */
+			*nNMTblIndx = p_col_parInt[97]; 	/* Itt van az NM9 tábla sorszáma */
+			*nIndx = nIECOffset - 1920;				
+		}
+		else if (nIECOffset>=2160 && nIECOffset<2400)
+		{
+			/* NM 10. */
+			*nNMTblIndx = p_col_parInt[98]; 	/* Itt van az NM10 tábla sorszáma */
+			*nIndx = nIECOffset - 2160;				
 		}
 
 
@@ -721,6 +800,33 @@ char			message[300];
 		*nDPTblIndx = p_col_parInt[85];	/* Itt van az DP6 tábla sorszáma */
 		*nOffset =  1250;
 	}/*end if DP6 */
+	else if (nIECOffset>= 1500 && nIECOffset<1750)
+	{								
+		/* Double point 7. */
+		*nDPTblIndx = p_col_parInt[99];	/* Itt van az DP7 tábla sorszáma */
+		*nOffset =  1500;
+	}/*end if DP7 */
+	else if (nIECOffset>= 1750 && nIECOffset<2000)
+	{								
+		/* Double point 8. */
+		*nDPTblIndx = p_col_parInt[100];	/* Itt van az DP8 tábla sorszáma */
+		*nOffset =  1750;
+	}/*end if DP8 */
+	else if (nIECOffset>= 2000 && nIECOffset<2250)
+	{								
+		/* Double point 9. */
+		*nDPTblIndx = p_col_parInt[101];	/* Itt van az DP9 tábla sorszáma */
+		*nOffset =  2000;
+	}/*end if DP9 */
+	else if (nIECOffset>= 2250 && nIECOffset<2500)
+	{								
+		/* Double point 10. */
+		*nDPTblIndx = p_col_parInt[102];	/* Itt van az DP10 tábla sorszáma */
+		*nOffset =  2250;
+	}/*end if DP10 */
+  
+  
+
 
 } /* end fnDPTblIndx()*/
 /********************************************************************************/
@@ -772,6 +878,30 @@ char			message[100];
 		*nDCTblIndx = p_col_parInt[68];	/* Itt van az DC4 tábla sorszáma */
 		*nOffset =  750;
 	}/*end if DC4 */
+	else if (nIECOffset>=1000 && nIECOffset<1250)
+	{								
+		/* Double command 5. */
+		*nDCTblIndx = p_col_parInt[77];	/* Itt van az DC5 tábla sorszáma */
+		*nOffset = 1000;
+	}/*end if DC5 */
+	else if (nIECOffset>=1250 && nIECOffset<1500)
+	{								
+		/* Double command 6. */
+		*nDCTblIndx = p_col_parInt[86];	/* Itt van az DC6 tábla sorszáma */
+		*nOffset = 1250;
+	}/*end if DC6 */
+	else if (nIECOffset>=1500 && nIECOffset<1750)
+	{								
+		/* Double command 7. */
+		*nDCTblIndx = p_col_parInt[103];	/* Itt van az DC7 tábla sorszáma */
+		*nOffset = 1500;
+	}/*end if DC7 */
+	else if (nIECOffset>=1750 && nIECOffset<2000)
+	{								
+		/* Double command 8. */
+		*nDCTblIndx = p_col_parInt[104];	/* Itt van az DC8 tábla sorszáma */
+		*nOffset = 1750;
+	}/*end if DC7 */
 
 	/* Double command */
 	
@@ -836,6 +966,30 @@ CB_TABLE_INFO   table_SC;
 		*nSCTblIndx = p_col_parInt[69];	/* Itt van az SC4 tábla sorszáma */
 		*nOffset =  750;
 	}/*end if SC4 */
+	else if (nIECOffset>=1000 && nIECOffset<1250)
+	{								
+		/* Single command  5. */
+		*nSCTblIndx = p_col_parInt[78];	/* Itt van az SC5 tábla sorszáma */
+		*nOffset =  1000;
+	}/*end if SC5 */
+	else if (nIECOffset>=1250 && nIECOffset<1500)
+	{								
+		/* Single command  6. */
+		*nSCTblIndx = p_col_parInt[87];	/* Itt van az SC6 tábla sorszáma */
+		*nOffset =  1250;
+	}/*end if SC6 */
+	else if (nIECOffset>=1500 && nIECOffset<1750)
+	{								
+		/* Single command  7. */
+		*nSCTblIndx = p_col_parInt[105];	/* Itt van az SC7 tábla sorszáma */
+		*nOffset =  1500;
+	}/*end if SC7 */
+	else if (nIECOffset>=1750 && nIECOffset<2000)
+	{								
+		/* Single command  8. */
+		*nSCTblIndx = p_col_parInt[106];	/* Itt van az SC8 tábla sorszáma */
+		*nOffset =  1750;
+	}/*end if SC8 */
 
 
 	if (MOSCAD_get_table_info (*nSCTblIndx,&table_SC)!=0 )
@@ -848,7 +1002,6 @@ CB_TABLE_INFO   table_SC;
 
 
 } /* end fnSCTblIndx()*/
-
 
 /****************************************************************************/
 /* Beir egy adatot a DP adatok koze											*/
@@ -947,4 +1100,6 @@ int				nOffset;
 
 
 } /* end fnReadDPData()*/
+
+
 
