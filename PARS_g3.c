@@ -236,6 +236,8 @@ sT[0].sCP[0].sCPR[149].nDCStart=318;     sT[0].sCP[0].sCPR[149].nDCNum= 5;    sT
 sT[0].sCP[0].sCPR[150].nDCStart=324;     sT[0].sCP[0].sCPR[150].nDCNum= 7;    sT[0].sCP[0].sCPR[150].nSCStart=331;    sT[0].sCP[0].sCPR[150].nAckStart= 0;	sT[0].sCP[0].sCPR[150].nAckNum=0;   sT[0].sCP[0].sCPR[150].nSPOffsetCS=1416;  sT[0].sCP[0].sCPR[150].nSPOffsetLek=1417;
 sT[0].sCP[0].sCPR[151].nDCStart=775;     sT[0].sCP[0].sCPR[151].nDCNum= 4;    sT[0].sCP[0].sCPR[151].nSCStart=779;    sT[0].sCP[0].sCPR[151].nAckStart= 0;	sT[0].sCP[0].sCPR[151].nAckNum=0;   sT[0].sCP[0].sCPR[151].nSPOffsetCS=3359;  sT[0].sCP[0].sCPR[151].nSPOffsetLek=3360;
 sT[0].sCP[0].sCPR[152].nDCStart=780;     sT[0].sCP[0].sCPR[152].nDCNum= 8;    sT[0].sCP[0].sCPR[152].nSCStart=788;    sT[0].sCP[0].sCPR[152].nAckStart=0;	  sT[0].sCP[0].sCPR[152].nAckNum=0;   sT[0].sCP[0].sCPR[152].nSPOffsetCS=3428;  sT[0].sCP[0].sCPR[152].nSPOffsetLek=3429;
+sT[0].sCP[0].sCPR[153].nDCStart=789;     sT[0].sCP[0].sCPR[153].nDCNum= 5;    sT[0].sCP[0].sCPR[153].nSCStart=794;    sT[0].sCP[0].sCPR[153].nAckStart=0;	  sT[0].sCP[0].sCPR[153].nAckNum=0;   sT[0].sCP[0].sCPR[153].nSPOffsetCS=3454;  sT[0].sCP[0].sCPR[153].nSPOffsetLek=3455;
+sT[0].sCP[0].sCPR[154].nDCStart=795;     sT[0].sCP[0].sCPR[154].nDCNum= 4;    sT[0].sCP[0].sCPR[154].nSCStart=799;    sT[0].sCP[0].sCPR[154].nAckStart=0;	  sT[0].sCP[0].sCPR[154].nAckNum=0;   sT[0].sCP[0].sCPR[154].nSPOffsetCS=3472;  sT[0].sCP[0].sCPR[154].nSPOffsetLek=3473;
 
 
 
@@ -1758,6 +1760,25 @@ sT[0].sTI[151].nType = TYP_MOT;
 	sT[0].sTAL[152].nIEC_DP_2BIT_KINT1	= 912;
 	sT[0].sTAL[152].nIEC_DP_2BIT_BENT1	= 913;
 
+/* Csolnok 078/3,4 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[153].nType = TYP_MOT;
+
+	sT[0].sMOT[153].nIEC_SP				= 3430;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[153].nIEC_SP_NUM		= 24;		/* Egybites értékek száma*/
+	sT[0].sMOT[153].nIEC_DP				= 1098;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[153].nIEC_DP_NUM		= 10;   		/* Két bites értékek száma*/
+	sT[0].sMOT[153].nIEC_NM				= 1049;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[153].nNMNum				= 13;
+
+/* Celldömölk 1873/27 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[154].nType = TYP_MOT;
+
+	sT[0].sMOT[154].nIEC_SP				= 3456;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[154].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[154].nIEC_DP				= 1108;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[154].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[154].nIEC_NM				= 1062;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[154].nNMNum				= 9;
 
 } /* end fnSetDataPar()*/
 
