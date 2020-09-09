@@ -238,6 +238,8 @@ sT[0].sCP[0].sCPR[151].nDCStart=775;     sT[0].sCP[0].sCPR[151].nDCNum= 4;    sT
 sT[0].sCP[0].sCPR[152].nDCStart=780;     sT[0].sCP[0].sCPR[152].nDCNum= 8;    sT[0].sCP[0].sCPR[152].nSCStart=788;    sT[0].sCP[0].sCPR[152].nAckStart=0;	  sT[0].sCP[0].sCPR[152].nAckNum=0;   sT[0].sCP[0].sCPR[152].nSPOffsetCS=3428;  sT[0].sCP[0].sCPR[152].nSPOffsetLek=3429;
 sT[0].sCP[0].sCPR[153].nDCStart=789;     sT[0].sCP[0].sCPR[153].nDCNum= 5;    sT[0].sCP[0].sCPR[153].nSCStart=794;    sT[0].sCP[0].sCPR[153].nAckStart=0;	  sT[0].sCP[0].sCPR[153].nAckNum=0;   sT[0].sCP[0].sCPR[153].nSPOffsetCS=3454;  sT[0].sCP[0].sCPR[153].nSPOffsetLek=3455;
 sT[0].sCP[0].sCPR[154].nDCStart=795;     sT[0].sCP[0].sCPR[154].nDCNum= 4;    sT[0].sCP[0].sCPR[154].nSCStart=799;    sT[0].sCP[0].sCPR[154].nAckStart=0;	  sT[0].sCP[0].sCPR[154].nAckNum=0;   sT[0].sCP[0].sCPR[154].nSPOffsetCS=3472;  sT[0].sCP[0].sCPR[154].nSPOffsetLek=3473;
+sT[0].sCP[0].sCPR[155].nDCStart=800;     sT[0].sCP[0].sCPR[155].nDCNum= 4;    sT[0].sCP[0].sCPR[155].nSCStart=804;    sT[0].sCP[0].sCPR[155].nAckStart=0;	  sT[0].sCP[0].sCPR[155].nAckNum=0;   sT[0].sCP[0].sCPR[155].nSPOffsetCS=3490;  sT[0].sCP[0].sCPR[155].nSPOffsetLek=3491;
+sT[0].sCP[0].sCPR[156].nDCStart=805;     sT[0].sCP[0].sCPR[156].nDCNum= 4;    sT[0].sCP[0].sCPR[156].nSCStart=809;    sT[0].sCP[0].sCPR[156].nAckStart=0;	  sT[0].sCP[0].sCPR[156].nAckNum=0;   sT[0].sCP[0].sCPR[156].nSPOffsetCS=4008;  sT[0].sCP[0].sCPR[156].nSPOffsetLek=4009;
 
 
 
@@ -1779,6 +1781,27 @@ sT[0].sTI[154].nType = TYP_MOT;
 	sT[0].sMOT[154].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
 	sT[0].sMOT[154].nIEC_NM				= 1062;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[154].nNMNum				= 9;
+
+/* Zalaegrszeg Pláza  ----------------------------------------------------------------*/
+sT[0].sTI[155].nType = TYP_MOT;
+
+	sT[0].sMOT[155].nIEC_SP				= 3474;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[155].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[155].nIEC_DP				= 1112;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[155].nIEC_DP_NUM		= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[155].nIEC_NM				= 1071;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[155].nNMNum				= 6;
+
+/* Zalaegrszeg Kerámia tömb  ----------------------------------------------------------------*/
+sT[0].sTI[156].nType = TYP_MOT;
+
+	sT[0].sMOT[156].nIEC_SP				= 3492;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[156].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[156].nIEC_DP				= 1120;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[156].nIEC_DP_NUM		= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[156].nIEC_NM				= 1077;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[156].nNMNum				= 6;
+
 
 } /* end fnSetDataPar()*/
 
