@@ -239,7 +239,9 @@ sT[0].sCP[0].sCPR[152].nDCStart=780;     sT[0].sCP[0].sCPR[152].nDCNum= 8;    sT
 sT[0].sCP[0].sCPR[153].nDCStart=789;     sT[0].sCP[0].sCPR[153].nDCNum= 5;    sT[0].sCP[0].sCPR[153].nSCStart=794;    sT[0].sCP[0].sCPR[153].nAckStart=0;	  sT[0].sCP[0].sCPR[153].nAckNum=0;   sT[0].sCP[0].sCPR[153].nSPOffsetCS=3454;  sT[0].sCP[0].sCPR[153].nSPOffsetLek=3455;
 sT[0].sCP[0].sCPR[154].nDCStart=795;     sT[0].sCP[0].sCPR[154].nDCNum= 4;    sT[0].sCP[0].sCPR[154].nSCStart=799;    sT[0].sCP[0].sCPR[154].nAckStart=0;	  sT[0].sCP[0].sCPR[154].nAckNum=0;   sT[0].sCP[0].sCPR[154].nSPOffsetCS=3472;  sT[0].sCP[0].sCPR[154].nSPOffsetLek=3473;
 sT[0].sCP[0].sCPR[155].nDCStart=800;     sT[0].sCP[0].sCPR[155].nDCNum= 4;    sT[0].sCP[0].sCPR[155].nSCStart=804;    sT[0].sCP[0].sCPR[155].nAckStart=0;	  sT[0].sCP[0].sCPR[155].nAckNum=0;   sT[0].sCP[0].sCPR[155].nSPOffsetCS=3490;  sT[0].sCP[0].sCPR[155].nSPOffsetLek=3491;
-sT[0].sCP[0].sCPR[156].nDCStart=805;     sT[0].sCP[0].sCPR[156].nDCNum= 4;    sT[0].sCP[0].sCPR[156].nSCStart=809;    sT[0].sCP[0].sCPR[156].nAckStart=0;	  sT[0].sCP[0].sCPR[156].nAckNum=0;   sT[0].sCP[0].sCPR[156].nSPOffsetCS=4008;  sT[0].sCP[0].sCPR[156].nSPOffsetLek=4009;
+sT[0].sCP[0].sCPR[156].nDCStart=805;     sT[0].sCP[0].sCPR[156].nDCNum= 4;    sT[0].sCP[0].sCPR[156].nSCStart=809;    sT[0].sCP[0].sCPR[156].nAckStart=0;	  sT[0].sCP[0].sCPR[156].nAckNum=0;   sT[0].sCP[0].sCPR[156].nSPOffsetCS=3508;  sT[0].sCP[0].sCPR[156].nSPOffsetLek=3509;
+sT[0].sCP[0].sCPR[157].nDCStart=810;     sT[0].sCP[0].sCPR[157].nDCNum= 4;    sT[0].sCP[0].sCPR[157].nSCStart=814;    sT[0].sCP[0].sCPR[157].nAckStart=0;	  sT[0].sCP[0].sCPR[157].nAckNum=0;   sT[0].sCP[0].sCPR[157].nSPOffsetCS=3526;  sT[0].sCP[0].sCPR[157].nSPOffsetLek=3527;
+sT[0].sCP[0].sCPR[158].nDCStart=815;     sT[0].sCP[0].sCPR[158].nDCNum= 4;    sT[0].sCP[0].sCPR[158].nSCStart=819;    sT[0].sCP[0].sCPR[158].nAckStart=0;	  sT[0].sCP[0].sCPR[158].nAckNum=0;   sT[0].sCP[0].sCPR[158].nSPOffsetCS=3544;  sT[0].sCP[0].sCPR[158].nSPOffsetLek=3545;
 
 
 
@@ -1802,6 +1804,25 @@ sT[0].sTI[156].nType = TYP_MOT;
 	sT[0].sMOT[156].nIEC_NM				= 1077;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[156].nNMNum				= 6;
 
+/* Bakonysárkány 05/30  ----------------------------------------------------------------*/
+sT[0].sTI[157].nType = TYP_MOT;
+
+	sT[0].sMOT[157].nIEC_SP				= 3510;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[157].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[157].nIEC_DP				= 1128;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[157].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[157].nIEC_NM				= 1083;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[157].nNMNum				= 9;
+
+/* Kincsesbánya 03100/3  ----------------------------------------------------------------*/
+sT[0].sTI[158].nType = TYP_MOT;
+
+	sT[0].sMOT[158].nIEC_SP				= 3528;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[158].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[158].nIEC_DP				= 1132;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[158].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[158].nIEC_NM				= 1091;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[158].nNMNum				= 9;
 
 } /* end fnSetDataPar()*/
 

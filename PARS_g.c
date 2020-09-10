@@ -282,6 +282,9 @@ ST[0].nSiteList[153]= 9110;  ST[0].nLinkList[153]	=RADIO5_3;	/* RADIO5_3	 	Csoln
 ST[0].nSiteList[154]= 9111;  ST[0].nLinkList[154]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 1873/27                  CELL */     /* tesztelve */
 ST[0].nSiteList[155]= 9112;  ST[0].nLinkList[155]	=RADIO2_6;	/* RADIO2_6	 	Zalaegerszeg  Pláza                 ZEG */     /* tesztelve */
 ST[0].nSiteList[156]= 9113;  ST[0].nLinkList[156]	=RADIO2_6;	/* RADIO2_6	 	Zalaegerszeg  Kerámia tömb          ZEG */     /* tesztelve */
+ST[0].nSiteList[157]= 9114;  ST[0].nLinkList[157]	=RADIO9_4;	/* RADIO9_4	 	Bakonysárkány 05/30                 MOR */     /* tesztelve */
+ST[0].nSiteList[158]= 9115;  ST[0].nLinkList[158]	=RADIO1_3;	/* RADIO1_3	 	Kincsesbánya 03100/3                RAK */     /* tesztelve */
+ST[0].nSiteList[159]= 10115; ST[0].nLinkList[159]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/34            SZVAR */     /* tesztelve */
  
 
 
@@ -455,7 +458,7 @@ ST[0].sRAD_K2[0].nIndx[28]=152;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 71; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 72; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -528,6 +531,7 @@ ST[0].sRAD_K3[0].nIndx[67]=139;
 ST[0].sRAD_K3[0].nIndx[68]=140;
 ST[0].sRAD_K3[0].nIndx[69]=151;
 ST[0].sRAD_K3[0].nIndx[70]=153;
+ST[0].sRAD_K3[0].nIndx[71]=157;
       
 
 /*RST[0].sLINK RTUk indexei*/
