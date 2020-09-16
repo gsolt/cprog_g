@@ -27,7 +27,7 @@
 #define  LEKERDEZES_TIMEOUT		100
 #define  COMMAND_LENGTH			14
 
-#define  			RETESZ_TMOK_NUM		90	
+#define  			RETESZ_TMOK_NUM		120	
 #define  			RETESZ_RTU_NUM		10	
 
 
@@ -3567,7 +3567,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 86;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 90;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642, Sótony 089/14 089/15							-----------------------*/								/**/
@@ -3634,16 +3634,19 @@ ReteszesRTUIndex[4][1] =102;			/* Gyöngyösfalu PV erõmû 		 */															/**/
 ReteszesTMOK_RTUNum[4] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 5. TMOK: 34-37 RTU: Kincsesbánya 03_78
- PV erõmû 							-----------------------*/								/**/
+/* 5. TMOK: 34-37 RTU: Kincsesbánya 03_78 PV erõmû , Kincsesbánya 03100/3							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[5] = 350; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[5][0] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[5][0] = 61;			/* Kincsesbánya 03_78 PV erõmû		 */															/**/
+
 TMOK_ID[5][1] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[5][1] = 72;			/* Kincsesbánya 03_100 PV erõmû		 */															/**/
 
-ReteszesTMOK_RTUNum[5] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[5][2] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[5][2] = 158;			/* Kincsesbánya 03100/3 PV erõmû		 */															/**/
+
+ReteszesTMOK_RTUNum[5] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[5] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[5] = 5;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
@@ -3654,7 +3657,7 @@ ReteszesRTUIndex[6][0] = 19;			/* Söréd PV erõmû 		 */															/**/
 ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 7. TMOK: 30-57 RTU: Kincsesbánya 03_100 PV erõmû, Videoton 3523/34				- Tesztelve				-----------------------*/								/**/
+/* 7. TMOK: 30-57 RTU: Kincsesbánya 03_100 PV erõmû, Videoton 3523/34, Kincsesbánya 03100/3				- Tesztelve				-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[7] = 1257; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[7][0] =1257;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
@@ -3663,28 +3666,46 @@ ReteszesRTUIndex[7][0] = 72;			/* Kincsesbánya 03_100 PV erõmû			 */												
 TMOK_ID[7][1] =1257;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[7][1] = 105;			/* Videoton 3523/34 PV erõmû			 */															/**/
 
-ReteszesTMOK_RTUNum[7] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[7][2] =1257;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[7][2] = 158;			/* Kincsesbánya 03100/3 PV erõmû			 */															/**/
+
+ReteszesTMOK_RTUNum[7] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[7] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 8. TMOK: 34-26 RTU: Kincsesbánya 03_100 PV erõmû					- Tesztelve			-----------------------*/								/**/
+/* 8. TMOK: 34-26 RTU: Kincsesbánya 03_100 PV erõmû	,  Kincsesbánya 03100/3					- Tesztelve			-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[8] = 1258; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[8][0] =1258;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[8][0] = 72;			/* Kincsesbánya 03_100 PV erõmû			 */															/**/
-ReteszesTMOK_RTUNum[8] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[8][1] =1258;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[8][1] = 158;			/* Kincsesbánya 03100/3 PV erõmû			 */															/**/
+
+ReteszesTMOK_RTUNum[8] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[8] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 9. TMOK: 30-55 RTU: Kincsesbánya 03_100 PV erõmû						- Tesztelve		-----------------------*/								/**/
+/* 9. TMOK: 30-55 RTU: Kincsesbánya 03_100 PV erõmû	, Kincsesbánya 03100/3					- Tesztelve		-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[9] = 1259; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[9][0] =1259;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[9][0] = 72;			/* Kincsesbánya 03_100 PV erõmû			 */															/**/
-ReteszesTMOK_RTUNum[9] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[9][1] =1259;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[9][1] = 158;			/* Kincsesbánya 03100/3 PV erõmû			 */															/**/
+
+ReteszesTMOK_RTUNum[9] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[9] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 10. TMOK: 31-48 RTU: Kincsesbánya 03_100 PV erõmû					- Tesztelve			-----------------------*/								/**/
+/* 10. TMOK: 31-48 RTU: Kincsesbánya 03_100 PV erõmû, Kincsesbánya 03100/3					- Tesztelve			-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[10] = 1260; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[10][0] =1260;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[10][0] = 72;			/* Kincsesbánya 03_100 PV erõmû			 */															/**/
-ReteszesTMOK_RTUNum[10] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[10][1] =1260;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[10][1] = 158;			/* Kincsesbánya 03100/3 PV erõmû			 */															/**/
+
+ReteszesTMOK_RTUNum[10] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[10] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 11. TMOK: 12-05 RTU: Mosonmagyaróvár 738-8 PV erõmû				- Tesztelve				-----------------------*/								/**/
@@ -4111,11 +4132,16 @@ ReteszesRTUIndex[55][0] =  111;			/* Kisbér 0129 PV	 */															/**/
 ReteszesTMOK_RTUNum[55] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[55] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 56. TMOK: 86-38 E front end ->   RTU: Kisbér 0129 PV 							----------------------- tesztelve */								/**/
+/* 56. TMOK: 86-38 E front end ->   RTU: Kisbér 0129 PV , Bakonysárkány 05/30							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[56] = 1299; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[56][0] = 1299;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[56][0] =  111;			/* Kisbér 0129 PV	 */															/**/
-ReteszesTMOK_RTUNum[56] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[56][1] = 1299;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[56][1] =  157;			/* Bakonysárkány 05/30 PV	 */															/**/
+
+ReteszesTMOK_RTUNum[56] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[56] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 57. TMOK:10-24 B front end ->   RTU: Ács 0421/17 PV 							----------------------- tesztelve */								/**/
@@ -4430,6 +4456,59 @@ TMOK_ID[85][0] = 1324;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[85][0] =  153;			/*  Csolnok 078/3,4	PV erõmû	 */															/**/
 ReteszesTMOK_RTUNum[85] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[85] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 86. TMOK: Kisbér DAC G front end ->   RTU:  Bakonysárkány 05/30  PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[86] = 1136; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[86][0] = 1136;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[86][0] =  157;			/* Bakonysárkány 05/30 */															/**/
+ReteszesTMOK_RTUNum[86] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[86] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[86] = 18;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 87. TMOK: 54-24 C front end ->   RTU: Királyszentistván 017/34 PV erõmû,Királyszentistván 017/35 PV erõmû,Királyszentistván 017/36 PV erõmû	----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[87] = 1325; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[87][0] = 1325;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[87][0] =  159;			/*  Királyszentistván 017/34 PV erõmû	 */															/**/
+
+TMOK_ID[87][1] = 1325;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[87][1] =  160;			/*  Királyszentistván 017/35 PV erõmû	 */															/**/
+
+TMOK_ID[87][2] = 1325;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[87][2] =  161;			/*  Királyszentistván 017/36 PV erõmû	 */															/**/
+
+ReteszesTMOK_RTUNum[87] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[87] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 88. TMOK: 54-74 F front end ->   RTU: Királyszentistván 017/34 PV erõmû,Királyszentistván 017/35 PV erõmû,Királyszentistván 017/36 PV erõmû	----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[88] = 1326; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[88][0] = 1326;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[88][0] =  159;			/*  Királyszentistván 017/34 PV erõmû	 */															/**/
+
+TMOK_ID[88][1] = 1326;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[88][1] =  160;			/*  Királyszentistván 017/35 PV erõmû	 */															/**/
+
+TMOK_ID[88][2] = 1326;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[88][2] =  161;			/*  Királyszentistván 017/36 PV erõmû	 */															/**/
+
+ReteszesTMOK_RTUNum[88] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[88] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 89. TMOK: 50-63 F front end ->   RTU: Királyszentistván 017/34 PV erõmû,Királyszentistván 017/35 PV erõmû,Királyszentistván 017/36 PV erõmû	----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[89] = 1327; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[89][0] = 1327;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[89][0] =  159;			/*  Királyszentistván 017/34 PV erõmû	 */															/**/
+
+TMOK_ID[89][1] = 1327;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[89][1] =  160;			/*  Királyszentistván 017/35 PV erõmû	 */															/**/
+
+TMOK_ID[89][2] = 1327;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[89][2] =  161;			/*  Királyszentistván 017/36 PV erõmû	 */															/**/
+
+ReteszesTMOK_RTUNum[89] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[89] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/

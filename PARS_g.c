@@ -285,6 +285,8 @@ ST[0].nSiteList[156]= 9113;  ST[0].nLinkList[156]	=RADIO2_6;	/* RADIO2_6	 	Zalae
 ST[0].nSiteList[157]= 9114;  ST[0].nLinkList[157]	=RADIO9_4;	/* RADIO9_4	 	Bakonysárkány 05/30                 MOR */     /* tesztelve */
 ST[0].nSiteList[158]= 9115;  ST[0].nLinkList[158]	=RADIO1_3;	/* RADIO1_3	 	Kincsesbánya 03100/3                RAK */     /* tesztelve */
 ST[0].nSiteList[159]= 10115; ST[0].nLinkList[159]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/34            SZVAR */     /* tesztelve */
+ST[0].nSiteList[160]= 10116; ST[0].nLinkList[160]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/35            SZVAR */     /* tesztelve */
+ST[0].nSiteList[161]= 10117; ST[0].nLinkList[161]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/36            SZVAR */     /* tesztelve */
  
 
 
@@ -458,7 +460,7 @@ ST[0].sRAD_K2[0].nIndx[28]=152;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 72; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 75; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -532,6 +534,9 @@ ST[0].sRAD_K3[0].nIndx[68]=140;
 ST[0].sRAD_K3[0].nIndx[69]=151;
 ST[0].sRAD_K3[0].nIndx[70]=153;
 ST[0].sRAD_K3[0].nIndx[71]=157;
+ST[0].sRAD_K3[0].nIndx[72]=159;
+ST[0].sRAD_K3[0].nIndx[73]=160;
+ST[0].sRAD_K3[0].nIndx[74]=161;
       
 
 /*RST[0].sLINK RTUk indexei*/
