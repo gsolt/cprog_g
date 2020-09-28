@@ -287,6 +287,8 @@ ST[0].nSiteList[158]= 9115;  ST[0].nLinkList[158]	=RADIO1_3;	/* RADIO1_3	 	Kincs
 ST[0].nSiteList[159]= 10115; ST[0].nLinkList[159]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/34            SZVAR */     /* tesztelve */
 ST[0].nSiteList[160]= 10116; ST[0].nLinkList[160]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/35            SZVAR */     /* tesztelve */
 ST[0].nSiteList[161]= 10117; ST[0].nLinkList[161]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/36            SZVAR */     /* tesztelve */
+ST[0].nSiteList[162]= 600;	 ST[0].nLinkList[162]	=LINE2;     /* LINE2      Szabadbattyán DAC					               */
+ST[0].nSiteList[163]= 9116;  ST[0].nLinkList[163]	=RADIO8_5;	/* RADIO8_5	 	Csesztreg 066/2,3                   LEN */     /* tesztelve */
  
 
 
@@ -368,7 +370,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 52; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 53; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -421,6 +423,7 @@ ST[0].sRAD_K1[0].nIndx[48]=148;
 ST[0].sRAD_K1[0].nIndx[49]=154;
 ST[0].sRAD_K1[0].nIndx[50]=155;
 ST[0].sRAD_K1[0].nIndx[51]=156;
+ST[0].sRAD_K1[0].nIndx[52]=163;
  
 
 
@@ -540,10 +543,11 @@ ST[0].sRAD_K3[0].nIndx[74]=161;
       
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 3;
+ST[0].sLIN[0].nRtuNumLin = 4;
 ST[0].sLIN[0].nIndx[0] =17;
 ST[0].sLIN[0].nIndx[1] =53;
 ST[0].sLIN[0].nIndx[2] =114;
+ST[0].sLIN[0].nIndx[3] =162;
 
 
 

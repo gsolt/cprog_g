@@ -245,6 +245,8 @@ sT[0].sCP[0].sCPR[158].nDCStart=815;     sT[0].sCP[0].sCPR[158].nDCNum= 4;    sT
 sT[0].sCP[0].sCPR[159].nDCStart=820;     sT[0].sCP[0].sCPR[159].nDCNum= 4;    sT[0].sCP[0].sCPR[159].nSCStart=824;    sT[0].sCP[0].sCPR[159].nAckStart=0;	  sT[0].sCP[0].sCPR[159].nAckNum=0;   sT[0].sCP[0].sCPR[159].nSPOffsetCS=3583;  sT[0].sCP[0].sCPR[159].nSPOffsetLek=3584;
 sT[0].sCP[0].sCPR[160].nDCStart=825;     sT[0].sCP[0].sCPR[160].nDCNum= 4;    sT[0].sCP[0].sCPR[160].nSCStart=829;    sT[0].sCP[0].sCPR[160].nAckStart=0;	  sT[0].sCP[0].sCPR[160].nAckNum=0;   sT[0].sCP[0].sCPR[160].nSPOffsetCS=3622;  sT[0].sCP[0].sCPR[160].nSPOffsetLek=3623;
 sT[0].sCP[0].sCPR[161].nDCStart=830;     sT[0].sCP[0].sCPR[161].nDCNum= 4;    sT[0].sCP[0].sCPR[161].nSCStart=834;    sT[0].sCP[0].sCPR[161].nAckStart=0;	  sT[0].sCP[0].sCPR[161].nAckNum=0;   sT[0].sCP[0].sCPR[161].nSPOffsetCS=3661;  sT[0].sCP[0].sCPR[161].nSPOffsetLek=3662;
+sT[0].sCP[0].sCPR[162].nDCStart = 0;     sT[0].sCP[0].sCPR[162].nDCNum= 0;    sT[0].sCP[0].sCPR[162].nSCStart=835;    sT[0].sCP[0].sCPR[162].nAckStart=0;   sT[0].sCP[0].sCPR[162].nAckNum=0;   sT[0].sCP[0].sCPR[162].nSPOffsetCS=3668;  sT[0].sCP[0].sCPR[162].nSPOffsetLek=3669;
+sT[0].sCP[0].sCPR[163].nDCStart=836;     sT[0].sCP[0].sCPR[163].nDCNum= 4;    sT[0].sCP[0].sCPR[163].nSCStart=840;    sT[0].sCP[0].sCPR[163].nAckStart=0;	  sT[0].sCP[0].sCPR[163].nAckNum=0;   sT[0].sCP[0].sCPR[163].nSPOffsetCS=3686;  sT[0].sCP[0].sCPR[163].nSPOffsetLek=3687;
 
 
 
@@ -1824,7 +1826,7 @@ sT[0].sTI[158].nType = TYP_MOT;
 	sT[0].sMOT[158].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
 	sT[0].sMOT[158].nIEC_DP				= 1132;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[158].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
-	sT[0].sMOT[158].nIEC_NM				= 1091;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[158].nIEC_NM				= 1092;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[158].nNMNum				= 9;
 
   /* Királyszentistván 017/34 PV erõmû ----------------------------------------------------------------*/
@@ -1871,6 +1873,26 @@ sT[0].sTI[158].nType = TYP_MOT;
   
   sT[0].sTAL[161].nSP_EXTRA_OFFSET		=3659;
 	sT[0].sTAL[161].nSP_EXTRA_NUM		= 2;
+
+/* Szabadbattyán DAC -----------------------------------------------------------*/
+sT[0].sTI[162].nType = TYP_MOT;
+
+	sT[0].sMOT[162].nIEC_SP				= 3663;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[162].nIEC_SP_NUM			= 5;		/* Egybites értékek száma*/
+	sT[0].sMOT[162].nIEC_DP_NUM			= 0;
+	sT[0].sMOT[162].nNMNum      		= 0;
+
+/* Csesztreg 066/2,3  ----------------------------------------------------------------*/
+sT[0].sTI[163].nType = TYP_MOT;
+
+	sT[0].sMOT[163].nIEC_SP				= 3670;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[163].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[163].nIEC_DP				= 1161;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[163].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[163].nIEC_NM				= 1128;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[163].nNMNum				= 9;
+
+
 
 } /* end fnSetDataPar()*/
 
