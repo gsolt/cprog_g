@@ -289,6 +289,7 @@ ST[0].nSiteList[160]= 10116; ST[0].nLinkList[160]	=RADIO1_5;	/* RADIO1_5	 	Királ
 ST[0].nSiteList[161]= 10117; ST[0].nLinkList[161]	=RADIO1_5;	/* RADIO1_5	 	Királyszentistván 017/36            SZVAR */     /* tesztelve */
 ST[0].nSiteList[162]= 600;	 ST[0].nLinkList[162]	=LINE2;     /* LINE2      Szabadbattyán DAC					               */
 ST[0].nSiteList[163]= 9116;  ST[0].nLinkList[163]	=RADIO8_5;	/* RADIO8_5	 	Csesztreg 066/2,3                   LEN */     /* tesztelve */
+ST[0].nSiteList[164]= 36;    ST[0].nLinkList[164]	=RADIO6_2;	/* RADIO6_	 	Bükfürdõ, Greenfield Hotel          CSEP */     /* tesztelve */
  
 
 
@@ -428,7 +429,7 @@ ST[0].sRAD_K1[0].nIndx[52]=163;
 
 
 /* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 29; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 30; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -458,6 +459,7 @@ ST[0].sRAD_K2[0].nIndx[25]=143;
 ST[0].sRAD_K2[0].nIndx[26]=149;
 ST[0].sRAD_K2[0].nIndx[27]=150;
 ST[0].sRAD_K2[0].nIndx[28]=152;
+ST[0].sRAD_K2[0].nIndx[29]=164;
 
 
 

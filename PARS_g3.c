@@ -247,6 +247,7 @@ sT[0].sCP[0].sCPR[160].nDCStart=825;     sT[0].sCP[0].sCPR[160].nDCNum= 4;    sT
 sT[0].sCP[0].sCPR[161].nDCStart=830;     sT[0].sCP[0].sCPR[161].nDCNum= 4;    sT[0].sCP[0].sCPR[161].nSCStart=834;    sT[0].sCP[0].sCPR[161].nAckStart=0;	  sT[0].sCP[0].sCPR[161].nAckNum=0;   sT[0].sCP[0].sCPR[161].nSPOffsetCS=3661;  sT[0].sCP[0].sCPR[161].nSPOffsetLek=3662;
 sT[0].sCP[0].sCPR[162].nDCStart = 0;     sT[0].sCP[0].sCPR[162].nDCNum= 0;    sT[0].sCP[0].sCPR[162].nSCStart=835;    sT[0].sCP[0].sCPR[162].nAckStart=0;   sT[0].sCP[0].sCPR[162].nAckNum=0;   sT[0].sCP[0].sCPR[162].nSPOffsetCS=3668;  sT[0].sCP[0].sCPR[162].nSPOffsetLek=3669;
 sT[0].sCP[0].sCPR[163].nDCStart=836;     sT[0].sCP[0].sCPR[163].nDCNum= 4;    sT[0].sCP[0].sCPR[163].nSCStart=840;    sT[0].sCP[0].sCPR[163].nAckStart=0;	  sT[0].sCP[0].sCPR[163].nAckNum=0;   sT[0].sCP[0].sCPR[163].nSPOffsetCS=3686;  sT[0].sCP[0].sCPR[163].nSPOffsetLek=3687;
+sT[0].sCP[0].sCPR[164].nDCStart=841;     sT[0].sCP[0].sCPR[164].nDCNum= 4;    sT[0].sCP[0].sCPR[164].nSCStart=845;    sT[0].sCP[0].sCPR[164].nAckStart=0;	  sT[0].sCP[0].sCPR[164].nAckNum=0;   sT[0].sCP[0].sCPR[164].nSPOffsetCS=3723;  sT[0].sCP[0].sCPR[164].nSPOffsetLek=3724;
 
 
 
@@ -1892,7 +1893,18 @@ sT[0].sTI[163].nType = TYP_MOT;
 	sT[0].sMOT[163].nIEC_NM				= 1128;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[163].nNMNum				= 9;
 
+/* Bükfürdõ, Greenfield Hotel -----------------------------------------------------------*/
+    sT[0].sTI[164].nType = TYP_TAL;
 
+		sT[0].sTAL[164].nIEC_SP       		= 3688;
+		sT[0].sTAL[164].nIEC_OsszevontHiba	= 3720;
+		sT[0].sTAL[164].nIEC_MT_KommHiba		= 3721;
+		sT[0].sTAL[164].nIEC_DP       		= 1165;
+		sT[0].sTAL[164].nIEC_DP_FSZ1  		= 1169;
+		sT[0].sTAL[164].nIEC_NM				= 1137;
+		sT[0].sTAL[164].nNMNum		  		= 4;
+		sT[0].sTAL[164].nKommStatusNum		= 2;
+		
 
 } /* end fnSetDataPar()*/
 
