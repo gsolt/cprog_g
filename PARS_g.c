@@ -290,6 +290,8 @@ ST[0].nSiteList[161]= 10117; ST[0].nLinkList[161]	=RADIO1_5;	/* RADIO1_5	 	Királ
 ST[0].nSiteList[162]= 600;	 ST[0].nLinkList[162]	=LINE2;     /* LINE2      Szabadbattyán DAC					               */
 ST[0].nSiteList[163]= 9116;  ST[0].nLinkList[163]	=RADIO8_5;	/* RADIO8_5	 	Csesztreg 066/2,3                   LEN */     /* tesztelve */
 ST[0].nSiteList[164]= 36;    ST[0].nLinkList[164]	=RADIO6_2;	/* RADIO6_	 	Bükfürdõ, Greenfield Hotel          CSEP */     /* tesztelve */
+ST[0].nSiteList[165]= 9117;  ST[0].nLinkList[165]	=RADIO9_1;	/* RADIO9_1	 	32-75                               KOF */     /* tesztelve */
+ST[0].nSiteList[166]= 9118;  ST[0].nLinkList[166]	=RADIO6_6;	/* RADIO6_6	 	Lukácsháza 0107/4                   SZOL */     /* tesztelve */
  
 
 
@@ -371,7 +373,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : ZEG, IK, CELL, TAT, SZÖL, LEN */
-ST[0].sRAD_K1[0].nRtuNumRad = 53; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 54; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=11; 
 ST[0].sRAD_K1[0].nIndx[1]=12; 
 ST[0].sRAD_K1[0].nIndx[2]=13; 
@@ -425,6 +427,7 @@ ST[0].sRAD_K1[0].nIndx[49]=154;
 ST[0].sRAD_K1[0].nIndx[50]=155;
 ST[0].sRAD_K1[0].nIndx[51]=156;
 ST[0].sRAD_K1[0].nIndx[52]=163;
+ST[0].sRAD_K1[0].nIndx[53]=166;
  
 
 
@@ -465,7 +468,7 @@ ST[0].sRAD_K2[0].nIndx[29]=164;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 75; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 76; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -542,6 +545,7 @@ ST[0].sRAD_K3[0].nIndx[71]=157;
 ST[0].sRAD_K3[0].nIndx[72]=159;
 ST[0].sRAD_K3[0].nIndx[73]=160;
 ST[0].sRAD_K3[0].nIndx[74]=161;
+ST[0].sRAD_K3[0].nIndx[75]=165;
       
 
 /*RST[0].sLINK RTUk indexei*/

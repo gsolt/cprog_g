@@ -3567,7 +3567,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 93;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 95;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642, Sótony 089/14 089/15							-----------------------*/								/**/
@@ -4041,18 +4041,28 @@ ReteszesRTUIndex[43][0] =  102;			/* Gyöngyösfalu 968/967 PV	 */															/
 ReteszesTMOK_RTUNum[43] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[43] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 44. TMOK: 41-66 A front end ->   RTU: Gyöngyösfalu 968/967 PV 							----------------------- tesztelve */								/**/
+/* 44. TMOK: 41-66 A front end ->   RTU: Gyöngyösfalu 968/967 PV, Lukácsháza 0107/3 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[44] = 1289; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[44][0] = 1289;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[44][0] =  102;			/* Gyöngyösfalu 968/967 PV	 */															/**/
-ReteszesTMOK_RTUNum[44] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[44][1] = 1289;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[44][1] =  166;			/* Lukácsháza 0107/3 PV	 */															/**/
+
+ReteszesTMOK_RTUNum[44] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[44] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 45. TMOK: 45-11 C front end ->   RTU: Gyöngyösfalu 968/967 PV 							----------------------- tesztelve */								/**/
+/* 45. TMOK: 45-11 C front end ->   RTU: Gyöngyösfalu 968/967 PV ,Lukácsháza 0107/3 PV							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[45] = 1290; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[45][0] = 1290;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[45][0] =  102;			/* Gyöngyösfalu 968/967 PV	 */															/**/
-ReteszesTMOK_RTUNum[45] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[45][1] = 1290;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[45][1] =  166;			/*  Lukácsháza 0107/3 PV	 */															/**/
+
+ReteszesTMOK_RTUNum[45] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[45] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 46. TMOK: 92-03 C front end ->   RTU: Nova 2037/2 PV 							----------------------- tesztelve */								/**/
@@ -4530,6 +4540,20 @@ TMOK_ID[92][0] = 1330;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[92][0] =  163;			/*  Csesztreg 066/2,3 PV erõmû	 */															/**/
 ReteszesTMOK_RTUNum[92] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[92] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 93. TMOK: 41-92 A front end ->   RTU: Lukácsháza 0107/3 PV erõmû	----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[93] = 1331; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[93][0] = 1331;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[93][0] =  166;			/*  Lukácsháza 0107/3 PV erõmû	 */															/**/
+ReteszesTMOK_RTUNum[93] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[93] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 94. TMOK: 45-23 C front end ->   RTU: Lukácsháza 0107/3 PV erõmû	----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[94] = 1332; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[94][0] = 1332;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[94][0] =  166;			/*  Lukácsháza 0107/3 PV erõmû	 */															/**/
+ReteszesTMOK_RTUNum[94] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[94] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
