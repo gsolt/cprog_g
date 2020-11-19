@@ -4202,11 +4202,16 @@ ReteszesTMOK_RTUNum[61] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnás
 nReteszPar[61] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[61] = 14;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 62. TMOK: 70-09 G front end ->   RTU: Vönöck 064/25 PV és szél 							----------------------- tesztelve */								/**/
+/* 62. TMOK: 70-09 G front end ->   RTU: Vönöck 064/25 PV és szél. Mihályháza 016/6_8 							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[62] = 28; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[62][0] = 28;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[62][0] =  121;			/* Vönöck 064/25 PV és szél  */															/**/
-ReteszesTMOK_RTUNum[62] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[62][1] = 14;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[62][1] =  52;			/* A Redundancia  */															/**/
+
+ReteszesTMOK_RTUNum[62] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[62] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[62] = 15;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
