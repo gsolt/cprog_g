@@ -3782,7 +3782,7 @@ nReteszOffset[17] = 6;             /* DC parancs és DP állapot offsete, ha tarto
 /* 18. TMOK: 70-34 RTU: Celldömölk 2912/17, Celldömölk 1873/28 PV erõmû, Celldömölk 1873/28 PV		- Tesztelve					-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[18] = 1266; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
-TMOK_ID[18][0] =1266;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+TMOK_ID[18][0] =11266;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[18][0] = 78;			/* Celldömölk 2912/17 PV erõmû				 */															/**/
 
 TMOK_ID[18][1] =1266;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
@@ -3796,7 +3796,7 @@ nReteszPar[18] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tarto
 
 /* 19. TMOK: 41-33 RTU: Celldömölk 2912/17 PV erõmû				- Tesztelve				-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[19] = 1267; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[19][0] =1267;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+TMOK_ID[19][0] =11267;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[19][0] = 78;			/* Celldömölk 2912/17 PV erõmû				 */															/**/
 ReteszesTMOK_RTUNum[19] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[19] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
