@@ -249,7 +249,9 @@ sT[0].sCP[0].sCPR[162].nDCStart = 0;     sT[0].sCP[0].sCPR[162].nDCNum= 0;    sT
 sT[0].sCP[0].sCPR[163].nDCStart=836;     sT[0].sCP[0].sCPR[163].nDCNum= 4;    sT[0].sCP[0].sCPR[163].nSCStart=840;    sT[0].sCP[0].sCPR[163].nAckStart=0;	  sT[0].sCP[0].sCPR[163].nAckNum=0;   sT[0].sCP[0].sCPR[163].nSPOffsetCS=3686;  sT[0].sCP[0].sCPR[163].nSPOffsetLek=3687;
 sT[0].sCP[0].sCPR[164].nDCStart=841;     sT[0].sCP[0].sCPR[164].nDCNum= 4;    sT[0].sCP[0].sCPR[164].nSCStart=845;    sT[0].sCP[0].sCPR[164].nAckStart=0;	  sT[0].sCP[0].sCPR[164].nAckNum=0;   sT[0].sCP[0].sCPR[164].nSPOffsetCS=3723;  sT[0].sCP[0].sCPR[164].nSPOffsetLek=3724;
 sT[0].sCP[0].sCPR[165].nDCStart=846;     sT[0].sCP[0].sCPR[165].nDCNum= 1;    sT[0].sCP[0].sCPR[165].nSCStart=847;    sT[0].sCP[0].sCPR[165].nAckStart=848;	sT[0].sCP[0].sCPR[165].nAckNum=1;   sT[0].sCP[0].sCPR[165].nSPOffsetCS=3739;  sT[0].sCP[0].sCPR[165].nSPOffsetLek=3740;
-sT[0].sCP[0].sCPR[166].nDCStart=849;     sT[0].sCP[0].sCPR[166].nDCNum= 5;    sT[0].sCP[0].sCPR[166].nSCStart=847;    sT[0].sCP[0].sCPR[166].nAckStart=854;	sT[0].sCP[0].sCPR[166].nAckNum=1;   sT[0].sCP[0].sCPR[166].nSPOffsetCS=3765;  sT[0].sCP[0].sCPR[166].nSPOffsetLek=3766;
+sT[0].sCP[0].sCPR[166].nDCStart=849;     sT[0].sCP[0].sCPR[166].nDCNum= 5;    sT[0].sCP[0].sCPR[166].nSCStart=854;    sT[0].sCP[0].sCPR[166].nAckStart=0;	  sT[0].sCP[0].sCPR[166].nAckNum=0;   sT[0].sCP[0].sCPR[166].nSPOffsetCS=3765;  sT[0].sCP[0].sCPR[166].nSPOffsetLek=3766;
+sT[0].sCP[0].sCPR[167].nDCStart=855;     sT[0].sCP[0].sCPR[167].nDCNum= 4;    sT[0].sCP[0].sCPR[167].nSCStart=859;    sT[0].sCP[0].sCPR[167].nAckStart=0;	  sT[0].sCP[0].sCPR[167].nAckNum=0;   sT[0].sCP[0].sCPR[167].nSPOffsetCS=3783;  sT[0].sCP[0].sCPR[167].nSPOffsetLek=3784;
+sT[0].sCP[0].sCPR[168].nDCStart=860;     sT[0].sCP[0].sCPR[168].nDCNum= 4;    sT[0].sCP[0].sCPR[168].nSCStart=864;    sT[0].sCP[0].sCPR[168].nAckStart=0;	  sT[0].sCP[0].sCPR[168].nAckNum=0;   sT[0].sCP[0].sCPR[168].nSPOffsetCS=3801;  sT[0].sCP[0].sCPR[168].nSPOffsetLek=3802;
 
 
 
@@ -1924,6 +1926,25 @@ sT[0].sTI[166].nType = TYP_MOT;
 	sT[0].sMOT[166].nIEC_NM				= 1144;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[166].nNMNum				= 19;
 		
+/* Csákberény 0146_1  ----------------------------------------------------------------*/
+sT[0].sTI[167].nType = TYP_MOT;
+
+	sT[0].sMOT[167].nIEC_SP				= 3767;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[167].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[167].nIEC_DP				= 1184;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[167].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[167].nIEC_NM				= 1163;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[167].nNMNum				= 9;
+
+/* Csákberény 0146_2  ----------------------------------------------------------------*/
+sT[0].sTI[168].nType = TYP_MOT;
+
+	sT[0].sMOT[168].nIEC_SP				= 3785;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[168].nIEC_SP_NUM		= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[168].nIEC_DP				= 1188;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[168].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[168].nIEC_NM				= 1172;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[168].nNMNum				= 9;
 
 } /* end fnSetDataPar()*/
 

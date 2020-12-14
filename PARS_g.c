@@ -292,6 +292,8 @@ ST[0].nSiteList[163]= 9116;  ST[0].nLinkList[163]	=RADIO8_5;	/* RADIO8_5	 	Csesz
 ST[0].nSiteList[164]= 36;    ST[0].nLinkList[164]	=RADIO6_2;	/* RADIO6_	 	Bükfürdõ, Greenfield Hotel          CSEP */     /* tesztelve */
 ST[0].nSiteList[165]= 9117;  ST[0].nLinkList[165]	=RADIO9_1;	/* RADIO9_1	 	32-75                               KOF */     /* tesztelve */
 ST[0].nSiteList[166]= 9118;  ST[0].nLinkList[166]	=RADIO6_6;	/* RADIO6_6	 	Lukácsháza 0107/4                   SZOL */     /* tesztelve */
+ST[0].nSiteList[167]= 9119;  ST[0].nLinkList[167]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_1                   RAK */     /* tesztelve */
+ST[0].nSiteList[168]= 9120;  ST[0].nLinkList[168]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_2                   RAK */     /* tesztelve */
  
 
 
@@ -468,7 +470,7 @@ ST[0].sRAD_K2[0].nIndx[29]=164;
 
 
 /* K3 : SZVAR, ORNY, IG, MOR, KOF, BAR, TAT, KOM */
-ST[0].sRAD_K3[0].nRtuNumRad = 76; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 78; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=0; 
 ST[0].sRAD_K3[0].nIndx[1]=1; 
 ST[0].sRAD_K3[0].nIndx[2]=2; 
@@ -546,6 +548,8 @@ ST[0].sRAD_K3[0].nIndx[72]=159;
 ST[0].sRAD_K3[0].nIndx[73]=160;
 ST[0].sRAD_K3[0].nIndx[74]=161;
 ST[0].sRAD_K3[0].nIndx[75]=165;
+ST[0].sRAD_K3[0].nIndx[76]=167;
+ST[0].sRAD_K3[0].nIndx[77]=168;
       
 
 /*RST[0].sLINK RTUk indexei*/
