@@ -231,7 +231,7 @@ ST[0].nSiteList[102]= 9067;  ST[0].nLinkList[102]	=RADIO6_1;	/* RADIO6_1	  Gyöng
 ST[0].nSiteList[103]= 9068;  ST[0].nLinkList[103]	=RADIO2_7;	/* RADIO2_7	  Nova 2037/2 PV                     SZOM  */     /*  */
 ST[0].nSiteList[104]= 9069;  ST[0].nLinkList[104]	=RADIO8_5;	/* RADIO8_5	  Lenti 0236 PV                     LEN  */     /*  */
 ST[0].nSiteList[105]= 9070;  ST[0].nLinkList[105]	=RADIO9_1;	/* RADIO9_1	  Videoton 3523/34 PV                     KOF  */     /*  */
-ST[0].nSiteList[106]= 9071;  ST[0].nLinkList[106]	=RADIO9_4;	/* RADIO9_4	 	31-81                               MOR  */     /* tesztelve */
+ST[0].nSiteList[106]= 9071;  ST[0].nLinkList[106]	=RADIO1_3;	/* RADIO9_4	 	31-81                               MOR  */     /* tesztelve */
 ST[0].nSiteList[107]= 9072;  ST[0].nLinkList[107]	=RADIO9_4;	/* RADIO9_4	 	34-82                               MOR  */     /* tesztelve */
 ST[0].nSiteList[108]= 9073;  ST[0].nLinkList[108]	=RADIO9_4;	/* RADIO9_4	 	Csókakõ 070/2 PV erõmû              MOR  */     /* tesztelve */
 ST[0].nSiteList[109]= 9074;  ST[0].nLinkList[109]	=RADIO4_2;	/* RADIO4_2	 	Celldömölk 173/28 PV erõmû          CELL  */     /* tesztelve */
