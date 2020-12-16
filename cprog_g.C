@@ -3567,7 +3567,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 130;  /* DP1, 130 */																		/**/
 ReteszParancsokKezdoCim = 180;	/* DC1, 180 */																		/**/
 																													/**/
-ReteszesTMOKNum = 95;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 97;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: 90-90 RTU: TMOK 48642, Sótony 089/14 089/15							-----------------------*/								/**/
@@ -3634,7 +3634,7 @@ ReteszesRTUIndex[4][1] =102;			/* Gyöngyösfalu PV erõmû 		 */															/**/
 ReteszesTMOK_RTUNum[4] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 5. TMOK: 34-37 RTU: Kincsesbánya 03_78 PV erõmû , Kincsesbánya 03100/3							-----------------------*/								/**/
+/* 5. TMOK: 34-37 RTU: Kincsesbánya 03_78 PV erõmû , Kincsesbánya 03100/3, Csákberény 0146_1, Csákberény 0146_2 							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[5] = 350; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[5][0] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
@@ -3646,15 +3646,29 @@ ReteszesRTUIndex[5][1] = 72;			/* Kincsesbánya 03_100 PV erõmû		 */													
 TMOK_ID[5][2] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[5][2] = 158;			/* Kincsesbánya 03100/3 PV erõmû		 */															/**/
 
-ReteszesTMOK_RTUNum[5] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[5][3] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[5][3] = 167;			/* Csákberény 0146_1 PV erõmû		 */															/**/
+
+TMOK_ID[5][4] =350;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[5][4] = 168;			/* Csákberény 0146_2 PV erõmû		 */															/**/
+
+ReteszesTMOK_RTUNum[5] = 5;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[5] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[5] = 5;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 6. TMOK: 34-62 RTU: Söréd PV erõmû 							-----------------------*/								/**/
+/* 6. TMOK: 34-62 RTU: Söréd PV erõmû , Csákberény 0146_1, Csákberény 0146_2							-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[6] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[6][0] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[6][0] = 19;			/* Söréd PV erõmû 		 */															/**/
-ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[6][1] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[6][1] = 167;			/* Csákberény 0146_1 PV erõmû 		 */															/**/
+
+TMOK_ID[6][2] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[6][2] = 168;			/* Csákberény 0146_2 PV erõmû 		 */															/**/
+
+ReteszesTMOK_RTUNum[6] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 7. TMOK: 30-57 RTU: Kincsesbánya 03_100 PV erõmû, Videoton 3523/34, Kincsesbánya 03100/3				- Tesztelve				-----------------------*/								/**/
@@ -4026,11 +4040,19 @@ ReteszesRTUIndex[41][3] =  125;			/* Polgárdi 0155/11 PV	 */															/**/
 ReteszesTMOK_RTUNum[41] = 4;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[41] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 42. TMOK: 31-63   RTU: A redundancia-> H: Bicske 041/8 OVIT PV erõmû 							----------------------- tesztelve */								/**/
+/* 42. TMOK: 31-63   RTU: A redundancia-> H: Bicske 041/8 OVIT PV erõmû ,  Csákberény 0146_1, Csákberény 0146_2							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[42] = 122; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[42][0] = 7;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[42][0] = 52;			/* A redundancia		 */															/**/
-ReteszesTMOK_RTUNum[42] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[42][1] = 7;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[42][1] = 167;			/* Csákberény 0146_1		 */															/**/
+
+TMOK_ID[42][2] = 7;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[42][2] = 168;			/* Csákberény 0146_2		 */															/**/
+
+ReteszesTMOK_RTUNum[42] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[42] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[42] = 9;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
@@ -4086,18 +4108,34 @@ ReteszesRTUIndex[48][0] =  105;			/* Videoton 3523/34 PV	 */															/**/
 ReteszesTMOK_RTUNum[48] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[48] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 49. TMOK: 32-91 C front end ->   RTU: Videoton 3523/34 PV 							----------------------- tesztelve */								/**/
+/* 49. TMOK: 32-91 C front end ->   RTU: Videoton 3523/34 PV, Csákberény 0146_1, Csákberény 0146_2  							----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[49] = 1294; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[49][0] = 1294;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[49][0] =  105;			/* Videoton 3523/34 PV	 */															/**/
-ReteszesTMOK_RTUNum[49] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[49][1] = 1294;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[49][1] =  167;			/* Csákberény 0146_1 PV	 */															/**/
+
+TMOK_ID[49][2] = 1294;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[49][2] =  168;			/* Csákberény 0146_2 PV	 */															/**/
+
+ReteszesTMOK_RTUNum[49] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[49] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 50. TMOK: 34-18 C front end ->   RTU: Csókakõ 070/2 MVM OVIT PV 							----------------------- tesztelve */								/**/
+/* 50. TMOK: 34-18 C front end ->   RTU: Csókakõ 070/2 MVM OVIT PV , Csákberény 0146_1, Csákberény 0146_2						----------------------- tesztelve */								/**/
 TMOKAllasjelzesOffsetek[50] = 1295; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[50][0] = 1295;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[50][0] =  108;			/* Csókakö 070/2 MVM OVIT PV	 */															/**/
-ReteszesTMOK_RTUNum[50] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[50][1] = 1295;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[50][1] =  167;			/* Csákberény 0146_1 PV	 */															/**/
+
+TMOK_ID[50][2] = 1295;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[50][2] =  168;			/* Csákberény 0146_2 PV	 */															/**/
+
+ReteszesTMOK_RTUNum[50] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[50] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 51. TMOK: 31-81 G front end ->   RTU: Csókakõ 070/2 MVM OVIT PV 							----------------------- tesztelve */								/**/
@@ -4559,7 +4597,32 @@ TMOK_ID[94][0] = 1332;						/* TMOK azonosítója a táviratban = DP offset */					
 ReteszesRTUIndex[94][0] =  166;			/*  Lukácsháza 0107/3 PV erõmû	 */															/**/
 ReteszesTMOK_RTUNum[94] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[94] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
-              																								
+
+/* 95. TMOK: 31-58 ->   RTU:  Csákberény 0146_1, Csákberény 0146_2 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[95] = 121; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[95][0] = 121;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[95][0] =  167;			/* Csákberény 0146_1 */															/**/
+
+TMOK_ID[95][1] = 121;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[95][1] =  168;			/* Csákberény 0146_2 */															/**/
+
+ReteszesTMOK_RTUNum[95] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[95] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[95] = 19;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 96. TMOK: 31-68 ->   RTU:  Csákberény 0146_1, Csákberény 0146_2 PV 							----------------------- tesztelve */								/**/
+TMOKAllasjelzesOffsetek[96] = 1333; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[96][0] = 1333;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[96][0] =  167;			/* Csákberény 0146_1 */															/**/
+
+TMOK_ID[96][1] = 1333;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[96][1] =  168;			/* Csákberény 0146_2 */															/**/
+
+ReteszesTMOK_RTUNum[96] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomással kommunikál */			/**/
+nReteszPar[96] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+               																								
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
