@@ -292,8 +292,8 @@ ST[0].nSiteList[163]= 9116;  ST[0].nLinkList[163]	=RADIO8_5;	/* RADIO8_5	 	Csesz
 ST[0].nSiteList[164]= 36;    ST[0].nLinkList[164]	=RADIO6_2;	/* RADIO6_	 	Bükfürdõ, Greenfield Hotel          CSEP */     /* tesztelve */
 ST[0].nSiteList[165]= 9117;  ST[0].nLinkList[165]	=RADIO9_1;	/* RADIO9_1	 	32-75                               KOF */     /* tesztelve */
 ST[0].nSiteList[166]= 9118;  ST[0].nLinkList[166]	=RADIO6_6;	/* RADIO6_6	 	Lukácsháza 0107/4                   SZOL */     /* tesztelve */
-ST[0].nSiteList[167]= 9119;  ST[0].nLinkList[167]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_1                   RAK */     /* tesztelve */
-ST[0].nSiteList[168]= 9120;  ST[0].nLinkList[168]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_2                   RAK */     /* tesztelve */
+ST[0].nSiteList[167]= 9120;  ST[0].nLinkList[167]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_1                   RAK */     /* tesztelve */
+ST[0].nSiteList[168]= 9121;  ST[0].nLinkList[168]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_2                   RAK */     /* tesztelve */
  
 
 
