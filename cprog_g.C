@@ -570,7 +570,7 @@ void rx(void)
 
    unsigned short site_inx;
 
-   unsigned char  rx_buffer[CB_MAX_MDLC_BUF_SIZE];
+   unsigned char  rx_buffer[CB_MAX_MDLC_BUF_SIZE];      
 
    unsigned short buff_len;
    unsigned	char  type;
@@ -784,13 +784,14 @@ nMoscadHours = mdt.hours;
 /*--------------------------------------------------------------------------------------------------------------------*/
 void tx_command(void)
 {
-   unsigned char  tx_buffer[CB_MAX_MDLC_BUF_SIZE];
+   unsigned char  tx_buffer[CB_MAX_MDLC_BUF_SIZE];   /* 160 */
 
 
 
 
    int				nI;  
    int				nJ;  
+   int				nK;  
 
    
    unsigned short *nTxBuf;
@@ -813,37 +814,19 @@ void tx_command(void)
    		
    		if (p_col_DCAct[nJ-nOffset]>0)
    		{
-   		   	/*tx_buffer[0] = 8;							
-   		   	tx_buffer[1] = nJ - sCP.sCPR[nI].nDCStart;	
-   		   	tx_buffer[2] = p_col_DC[nJ];				*/
-   		   	
-   		   	nTxBuf[0] = 0;
-   		   	nTxBuf[1] = 0;
-   		   	nTxBuf[2] = 0;
-   		   	nTxBuf[3] = 0;
-   		   	nTxBuf[4] = 0;
-   		   	nTxBuf[5] = 0;
-   		   	nTxBuf[6] = 0;
-    		  nTxBuf[7] = 0;
-   		   	nTxBuf[8] = 0;    		   	
-   		   	nTxBuf[9] = 0;    		   	
-   		   	nTxBuf[10] = 0;    		   	
-   		   	nTxBuf[11] = 0;    		   	
-   		   	nTxBuf[12] = 0;    		   	
-   		   	nTxBuf[13] = 0;    		   	
-   		   	nTxBuf[14] = 0;    		   	
-   		   	nTxBuf[15] = 0;    		   	
-   		   	nTxBuf[16] = 0;    		   	
-   		   	nTxBuf[17] = 0;    		   	
-   		   	nTxBuf[18] = 0;    		   	
-   		   	nTxBuf[19] = 0;    		   	
-   		   	nTxBuf[20] = 0;    		   	
+
+          /* A biztonság kedvéért nullázza a TxBuf-t */   		   	
+          for (nK=0;nK<80;nK++)
+          {
+   		   	 nTxBuf[nK] = 0;
+          }
+          
     		   	  		   	
  		   	MOSCAD_sprintf(message,"Parancs aktiv,nI: %d, Value: %d, nJ: %d",nI,p_col_DCAct[nJ-nOffset],nJ );
    			MOSCAD_error(message );  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=95 && nI!=139 && nI!=140 && nI!=144 && nI!=145 && nI!=146 && nI!=147)
+			if ( nI!=95 && nI!=139 && nI!=140 && nI!=144 && nI!=145 && nI!=146 && nI!=147 && nI!=169)
 			{			
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -868,6 +851,18 @@ void tx_command(void)
    				p_col_DCAct[nJ-nOffset] = 0;
 			}
       
+			else if ( nI==169) /* Szabadbattyán 09/32 PV erõmû */
+			{			
+				nTxBuf[74] = value_CComX(nI)+1;   		   	   		   	
+   		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
+	 		  	if (MOSCAD_TxFrm(nI, tx_buffer, 75*2) !=0 )
+ 			  	{
+					MOSCAD_sprintf(message,"Could not send parancs ,nI: %d",nI);
+   				 	MOSCAD_error(message ); 				
+   				}     			
+		   		/* Mindenkeppen visszanullaz */
+   				p_col_DCAct[nJ-nOffset] = 0;
+			}
 			
       
       
