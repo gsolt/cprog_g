@@ -252,6 +252,7 @@ sT[0].sCP[0].sCPR[165].nDCStart=846;     sT[0].sCP[0].sCPR[165].nDCNum= 1;    sT
 sT[0].sCP[0].sCPR[166].nDCStart=849;     sT[0].sCP[0].sCPR[166].nDCNum= 5;    sT[0].sCP[0].sCPR[166].nSCStart=854;    sT[0].sCP[0].sCPR[166].nAckStart=0;	  sT[0].sCP[0].sCPR[166].nAckNum=0;   sT[0].sCP[0].sCPR[166].nSPOffsetCS=3765;  sT[0].sCP[0].sCPR[166].nSPOffsetLek=3766;
 sT[0].sCP[0].sCPR[167].nDCStart=855;     sT[0].sCP[0].sCPR[167].nDCNum= 4;    sT[0].sCP[0].sCPR[167].nSCStart=859;    sT[0].sCP[0].sCPR[167].nAckStart=0;	  sT[0].sCP[0].sCPR[167].nAckNum=0;   sT[0].sCP[0].sCPR[167].nSPOffsetCS=3783;  sT[0].sCP[0].sCPR[167].nSPOffsetLek=3784;
 sT[0].sCP[0].sCPR[168].nDCStart=860;     sT[0].sCP[0].sCPR[168].nDCNum= 4;    sT[0].sCP[0].sCPR[168].nSCStart=864;    sT[0].sCP[0].sCPR[168].nAckStart=0;	  sT[0].sCP[0].sCPR[168].nAckNum=0;   sT[0].sCP[0].sCPR[168].nSPOffsetCS=3801;  sT[0].sCP[0].sCPR[168].nSPOffsetLek=3802;
+sT[0].sCP[0].sCPR[169].nDCStart=865;     sT[0].sCP[0].sCPR[169].nDCNum= 74;   sT[0].sCP[0].sCPR[169].nSCStart=939;    sT[0].sCP[0].sCPR[169].nAckStart=0;	  sT[0].sCP[0].sCPR[169].nAckNum=0;   sT[0].sCP[0].sCPR[169].nSPOffsetCS=3867;  sT[0].sCP[0].sCPR[169].nSPOffsetLek=3868;
 
 
 
@@ -1038,7 +1039,7 @@ sT[0].sTI[85].nType = TYP_MOT;
 
 	sT[0].sMOT[85].nIEC_SP				= 1726;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[85].nIEC_SP_NUM			= 22;		/* Egybites értékek száma*/
-	sT[0].sMOT[85].nIEC_DP				= 437;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[85].nIEC_DP				= 437;		/* Kétbites értékek IEC kezdõcíme*/                                                                                                                                                                                                              
 	sT[0].sMOT[85].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[85].nIEC_NM				= 473;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[85].nNMNum				= 9;		/* Analóg mérések száma*/
@@ -1945,6 +1946,16 @@ sT[0].sTI[168].nType = TYP_MOT;
 	sT[0].sMOT[168].nIEC_DP_NUM		= 4;   		/* Két bites értékek száma*/
 	sT[0].sMOT[168].nIEC_NM				= 1172;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[168].nNMNum				= 9;
+
+/* Szabadbattyán  09/32 ----------------------------------------------------------------*/
+sT[0].sTI[169].nType = TYP_MOT2;
+
+	sT[0].sMOT[169].nIEC_SP				= 3803;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[169].nIEC_SP_NUM		= 64;		/* Egybites értékek száma*/
+	sT[0].sMOT[169].nIEC_DP				= 1188;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[169].nIEC_DP_NUM		= 148;   		/* Két bites értékek száma*/
+	sT[0].sMOT[169].nIEC_NM				= 1181;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[169].nNMNum				= 17;
 
 } /* end fnSetDataPar()*/
 

@@ -294,6 +294,7 @@ ST[0].nSiteList[165]= 9117;  ST[0].nLinkList[165]	=RADIO9_1;	/* RADIO9_1	 	32-75
 ST[0].nSiteList[166]= 9118;  ST[0].nLinkList[166]	=RADIO6_6;	/* RADIO6_6	 	Lukácsháza 0107/4                   SZOL */     /* tesztelve */
 ST[0].nSiteList[167]= 9120;  ST[0].nLinkList[167]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_1                   RAK */     /* tesztelve */
 ST[0].nSiteList[168]= 9121;  ST[0].nLinkList[168]	=RADIO1_3;	/* RADIO1_1	 	Csákberény 0146_2                   RAK */     /* tesztelve */
+ST[0].nSiteList[169]= 9122;  ST[0].nLinkList[169]	=RADIO1_4;	/* RADIO1_4	 	Szabadbatyán 09/32                  SZAB */     /* tesztelve */
  
 
 
@@ -433,8 +434,8 @@ ST[0].sRAD_K1[0].nIndx[53]=166;
  
 
 
-/* K2 : SZOM, MOS, CSEP, GALL*/
-ST[0].sRAD_K2[0].nRtuNumRad = 30; /*76*/
+/* K2 : SZOM, MOS, CSEP, GALL, SZAB*/
+ST[0].sRAD_K2[0].nRtuNumRad = 31; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=7;
 ST[0].sRAD_K2[0].nIndx[1]=20;
 ST[0].sRAD_K2[0].nIndx[2]=21;
@@ -465,6 +466,7 @@ ST[0].sRAD_K2[0].nIndx[26]=149;
 ST[0].sRAD_K2[0].nIndx[27]=150;
 ST[0].sRAD_K2[0].nIndx[28]=152;
 ST[0].sRAD_K2[0].nIndx[29]=164;
+ST[0].sRAD_K2[0].nIndx[30]=169;
 
 
 
