@@ -1952,7 +1952,7 @@ sT[0].sTI[169].nType = TYP_MOT2;
 
 	sT[0].sMOT[169].nIEC_SP				= 3803;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[169].nIEC_SP_NUM		= 64;		/* Egybites értékek száma*/
-	sT[0].sMOT[169].nIEC_DP				= 1188;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[169].nIEC_DP				= 1500;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[169].nIEC_DP_NUM		= 148;   		/* Két bites értékek száma*/
 	sT[0].sMOT[169].nIEC_NM				= 1181;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[169].nNMNum				= 17;
